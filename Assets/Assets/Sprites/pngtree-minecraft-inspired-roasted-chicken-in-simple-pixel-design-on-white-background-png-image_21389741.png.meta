@@ -1,0 +1,4537 @@
+fileFormatVersion: 2
+guid: f34ae54f8917c4286a640aee2391683d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5506660360488230982
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_0
+  - first:
+      213: 5373755673113698643
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_1
+  - first:
+      213: -3560720238204989486
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_2
+  - first:
+      213: 2795277621323566872
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_3
+  - first:
+      213: 4322098507178668969
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_4
+  - first:
+      213: 8277938357883464996
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_5
+  - first:
+      213: -7800049360400334887
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_6
+  - first:
+      213: -8755337511556301279
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_7
+  - first:
+      213: -2232503741705431963
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_8
+  - first:
+      213: -453912710891628803
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_9
+  - first:
+      213: -8270355498094279049
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_10
+  - first:
+      213: 7387654799306874585
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_11
+  - first:
+      213: 8675248051663351181
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_12
+  - first:
+      213: 7434980743173992329
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_13
+  - first:
+      213: 8506991965408134900
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_14
+  - first:
+      213: 8837277823192336742
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_15
+  - first:
+      213: -8048193241843123629
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_16
+  - first:
+      213: 519544446535693026
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_17
+  - first:
+      213: -7493750224566643838
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_18
+  - first:
+      213: -2405053918797687825
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_19
+  - first:
+      213: 4380074514117686637
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_20
+  - first:
+      213: -4125383415123615812
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_21
+  - first:
+      213: -7875569534625464311
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_22
+  - first:
+      213: 8668752228888658573
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_23
+  - first:
+      213: -1754033054160402485
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_24
+  - first:
+      213: 1208953273307950776
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_25
+  - first:
+      213: -4467059828487608831
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_26
+  - first:
+      213: -8079251553612524328
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_27
+  - first:
+      213: -6459733031962542252
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_28
+  - first:
+      213: 3143589005034087055
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_29
+  - first:
+      213: 9017062169754344225
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_30
+  - first:
+      213: -3128459504485517956
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_31
+  - first:
+      213: -1364464741442601598
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_32
+  - first:
+      213: 6197469161119841288
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_33
+  - first:
+      213: 6516342721543241850
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_34
+  - first:
+      213: 8147820582894976170
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_35
+  - first:
+      213: -11262138924099124
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_36
+  - first:
+      213: 2773174091865529408
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_37
+  - first:
+      213: 7163857431007551396
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_38
+  - first:
+      213: -5306588207146498606
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_39
+  - first:
+      213: -2817549949209329151
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_40
+  - first:
+      213: 496000766065198714
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_41
+  - first:
+      213: -5540258807075420685
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_42
+  - first:
+      213: 7974323548282747408
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_43
+  - first:
+      213: -5398175712679735243
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_44
+  - first:
+      213: 8002039080958723522
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_45
+  - first:
+      213: -8993042920574739867
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_46
+  - first:
+      213: 4308018780059995870
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_47
+  - first:
+      213: 649596018271913195
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_48
+  - first:
+      213: 487304317701073881
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_49
+  - first:
+      213: -903871223685067009
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_50
+  - first:
+      213: -4768990038370347975
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_51
+  - first:
+      213: 198248385925883262
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_52
+  - first:
+      213: 5627008205789588556
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_53
+  - first:
+      213: 2592268286160716348
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_54
+  - first:
+      213: 6711150473478741630
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_55
+  - first:
+      213: 5270725094072901699
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_56
+  - first:
+      213: -149797368814896169
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_57
+  - first:
+      213: -6017801861957091791
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_58
+  - first:
+      213: -415788280509564130
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_59
+  - first:
+      213: 9102552268118104355
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_60
+  - first:
+      213: 1092229286989857776
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_61
+  - first:
+      213: -1688335700512879455
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_62
+  - first:
+      213: 3012677111416873460
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_63
+  - first:
+      213: -5522527281780954404
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_64
+  - first:
+      213: 8143636897729022674
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_65
+  - first:
+      213: -4416611675611345815
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_66
+  - first:
+      213: -3056351103908456477
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_67
+  - first:
+      213: 4908495474101546459
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_68
+  - first:
+      213: -2176784319971232220
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_69
+  - first:
+      213: -5736557801962626710
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_70
+  - first:
+      213: -7025895081762522561
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_71
+  - first:
+      213: 7859618066214398149
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_72
+  - first:
+      213: 5451948699297686846
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_73
+  - first:
+      213: 2702526045599853206
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_74
+  - first:
+      213: 314270063495658806
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_75
+  - first:
+      213: -5002853661540883644
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_76
+  - first:
+      213: 1601683649378685418
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_77
+  - first:
+      213: -3731708156533913421
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_78
+  - first:
+      213: -6035081687330319771
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_79
+  - first:
+      213: -6736348074215643900
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_80
+  - first:
+      213: 6870816802462211740
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_81
+  - first:
+      213: -6792283090921978462
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_82
+  - first:
+      213: -4504628024142078004
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_83
+  - first:
+      213: 454360278821659101
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_84
+  - first:
+      213: 3195178659608007641
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_85
+  - first:
+      213: -6740269201867965790
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_86
+  - first:
+      213: 6249348920488851322
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_87
+  - first:
+      213: 5360544619290386321
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_88
+  - first:
+      213: -8246845242871498112
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_89
+  - first:
+      213: -7834561116956769443
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_90
+  - first:
+      213: -5290884069696223354
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_91
+  - first:
+      213: 697348061889962393
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_92
+  - first:
+      213: -66432636515513094
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_93
+  - first:
+      213: -7792850037049001828
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_94
+  - first:
+      213: -8838297463848730000
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_95
+  - first:
+      213: -5532045723621532742
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_96
+  - first:
+      213: -223215154569336346
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_97
+  - first:
+      213: 6273390290896345263
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_98
+  - first:
+      213: -6878107824527470080
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_99
+  - first:
+      213: -9106224323334341918
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_100
+  - first:
+      213: -7065191652325798553
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_101
+  - first:
+      213: -5183407485859266126
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_102
+  - first:
+      213: -2154496946236711350
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_103
+  - first:
+      213: 7018873809057196942
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_104
+  - first:
+      213: 3313778184906309758
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_105
+  - first:
+      213: -985362203957799703
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_106
+  - first:
+      213: -4673357732817024406
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_107
+  - first:
+      213: -5776133112978208335
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_108
+  - first:
+      213: 3580114171063621297
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_109
+  - first:
+      213: 1679003862766317128
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_110
+  - first:
+      213: -4427663096284341679
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_111
+  - first:
+      213: 3799274967247892434
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_112
+  - first:
+      213: -9211303533413475292
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_113
+  - first:
+      213: 4154788828101505860
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_114
+  - first:
+      213: 9102529380902562655
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_115
+  - first:
+      213: 2554308530872492110
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_116
+  - first:
+      213: 233237926103308732
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_117
+  - first:
+      213: 5757046427800999565
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_118
+  - first:
+      213: 149313850735771043
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_119
+  - first:
+      213: -8827384133061233910
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_120
+  - first:
+      213: 1802726478729355802
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_121
+  - first:
+      213: 4111524631230498607
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_122
+  - first:
+      213: 6378774008577440556
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_123
+  - first:
+      213: 5814421691510561559
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_124
+  - first:
+      213: 3565394556299413706
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_125
+  - first:
+      213: -8574335476571169304
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_126
+  - first:
+      213: 6146604552142615797
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_127
+  - first:
+      213: 297272936138759807
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_128
+  - first:
+      213: -5597880448474960503
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_129
+  - first:
+      213: -2205541749487487534
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_130
+  - first:
+      213: 2741085556410494755
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_131
+  - first:
+      213: -5834147830590574236
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_132
+  - first:
+      213: 3813432670727291556
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_133
+  - first:
+      213: 222385455438500637
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_134
+  - first:
+      213: 3639214365059821253
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_135
+  - first:
+      213: -991439916841239824
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_136
+  - first:
+      213: 1456924717067311048
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_137
+  - first:
+      213: -8734389991338364868
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_138
+  - first:
+      213: 860711458899941775
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_139
+  - first:
+      213: -6964933443251782900
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_140
+  - first:
+      213: -7313218359352561757
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_141
+  - first:
+      213: 2103763145766848642
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_142
+  - first:
+      213: -6214246274080542231
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_143
+  - first:
+      213: 8297283783874997756
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_144
+  - first:
+      213: -3525387435878663097
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_145
+  - first:
+      213: -2564757984422034844
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_146
+  - first:
+      213: 2635282493892339586
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_147
+  - first:
+      213: 8617692964160579695
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_148
+  - first:
+      213: -310467059785765858
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_149
+  - first:
+      213: -8281785068965540141
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_150
+  - first:
+      213: -7285630008056046206
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_151
+  - first:
+      213: 123958050696509622
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_152
+  - first:
+      213: 7007833771175774800
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_153
+  - first:
+      213: -7712843882326931425
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_154
+  - first:
+      213: -290914533751542318
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_155
+  - first:
+      213: -5365687246936422384
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_156
+  - first:
+      213: -4445144667137841983
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_157
+  - first:
+      213: 4279125834576870702
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_158
+  - first:
+      213: -8096991536898418262
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_159
+  - first:
+      213: -2572621898446805996
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_160
+  - first:
+      213: -8962433261554635450
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_161
+  - first:
+      213: 2567781607786887782
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_162
+  - first:
+      213: -374691810006564220
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_163
+  - first:
+      213: 8140115132678408508
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_164
+  - first:
+      213: 5105212925109117886
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_165
+  - first:
+      213: -5417707172076786700
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_166
+  - first:
+      213: 5743274521649158209
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_167
+  - first:
+      213: 6384652414364596400
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_168
+  - first:
+      213: -265813708205817611
+    second: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_169
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64020ad1c669b6c40800000000000000
+      internalID: 5506660360488230982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351aea5305a639a40800000000000000
+      internalID: 5373755673113698643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2390
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df4f311fc7c59ec0800000000000000
+      internalID: -3560720238204989486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f0793cf22dac620800000000000000
+      internalID: 2795277621323566872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_4
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a371ac51bd2bfb30800000000000000
+      internalID: 4322098507178668969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_5
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2390
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d693ef31521e270800000000000000
+      internalID: 8277938357883464996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_6
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df33d2ee68a0c390800000000000000
+      internalID: -7800049360400334887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_7
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12eb807cbeace7680800000000000000
+      internalID: -8755337511556301279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_8
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 2390
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564daebdcad8401e0800000000000000
+      internalID: -2232503741705431963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_9
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6154c5bc063b9f0800000000000000
+      internalID: -453912710891628803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_10
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77644e12e7bc93d80800000000000000
+      internalID: -8270355498094279049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_11
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 2390
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de55e306e8368660800000000000000
+      internalID: 7387654799306874585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_12
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 2397
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d2bc9b32ca46870800000000000000
+      internalID: 8675248051663351181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_13
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 2308
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f61ccf79b5e2760800000000000000
+      internalID: 7434980743173992329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_14
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6014dde18ee0670800000000000000
+      internalID: 8506991965408134900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_15
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2308
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66901d8bb5154aa70800000000000000
+      internalID: 8837277823192336742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_16
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35abd3043e21f4090800000000000000
+      internalID: -8048193241843123629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_17
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 2308
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e279c4ebeac53700800000000000000
+      internalID: 519544446535693026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_18
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2839335dfd9d00890800000000000000
+      internalID: -7493750224566643838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_19
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 2308
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3176014388f9ed0800000000000000
+      internalID: -2405053918797687825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_20
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65f9bf509629cc30800000000000000
+      internalID: 4380074514117686637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_21
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfd44324a1bfb6c0800000000000000
+      internalID: -4125383415123615812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_22
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 2278
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900c2cc1c3b54b290800000000000000
+      internalID: -7875569534625464311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_23
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82c8c029389d4870800000000000000
+      internalID: 8668752228888658573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_24
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 2278
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7c9720b3c68a7e0800000000000000
+      internalID: -1754033054160402485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_25
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bee095c89017c010800000000000000
+      internalID: 1208953273307950776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_26
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 2278
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1062494e0c0d102c0800000000000000
+      internalID: -4467059828487608831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_27
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d417e7848bb0ef80800000000000000
+      internalID: -8079251553612524328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_28
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 2278
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ff306580b6a56a0800000000000000
+      internalID: -6459733031962542252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_29
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 2162
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8261ec6b8540ab20800000000000000
+      internalID: 3143589005034087055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_30
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1914
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b12d9d44a032d70800000000000000
+      internalID: 9017062169754344225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_31
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2162
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7532fce7aa7594d0800000000000000
+      internalID: -3128459504485517956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_32
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1914
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28db4c10c82701de0800000000000000
+      internalID: -1364464741442601598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_33
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 2162
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c7cfecd55d10650800000000000000
+      internalID: 6197469161119841288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_34
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 1914
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7089402e23be6a50800000000000000
+      internalID: 6516342721543241850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_35
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 2162
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac3211b6afd21170800000000000000
+      internalID: 8147820582894976170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_36
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1914
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc99402f42df7dff0800000000000000
+      internalID: -11262138924099124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_37
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2086
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c16f5c42b4c7620800000000000000
+      internalID: 2773174091865529408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_38
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2111
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af5fb4b0622b6360800000000000000
+      internalID: 7163857431007551396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_39
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2086
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d581cf14263b56b0800000000000000
+      internalID: -5306588207146498606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_40
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 2111
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102457ccf3d06e8d0800000000000000
+      internalID: -2817549949209329151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_41
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 2086
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7643ad911622e600800000000000000
+      internalID: 496000766065198714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_42
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2111
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f54a80f7fb0d13b0800000000000000
+      internalID: -5540258807075420685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_43
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2086
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01afc63740d7aae60800000000000000
+      internalID: 7974323548282747408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_44
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 2111
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53055924ac3d515b0800000000000000
+      internalID: -5398175712679735243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_45
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2028
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c58653c524fc0f60800000000000000
+      internalID: 8002039080958723522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_46
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2066
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a1d456c1b423380800000000000000
+      internalID: -8993042920574739867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_47
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 2028
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede003f614829cb30800000000000000
+      internalID: 4308018780059995870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_48
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2066
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be40b9c0324d30900800000000000000
+      internalID: 649596018271913195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_49
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 2028
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db2612f1b043c600800000000000000
+      internalID: 487304317701073881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_50
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 2066
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffecd8539edc473f0800000000000000
+      internalID: -903871223685067009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_51
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 2028
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9341f89c3d421ddb0800000000000000
+      internalID: -4768990038370347975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_52
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 2066
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75286c4bd150c200800000000000000
+      internalID: 198248385925883262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_53
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1968
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ceb466626271e40800000000000000
+      internalID: 5627008205789588556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_54
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1999
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32ce17954699f320800000000000000
+      internalID: 2592268286160716348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_55
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1968
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e15e56ccbc22d50800000000000000
+      internalID: 6711150473478741630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_56
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1999
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340e3fc2c80652940800000000000000
+      internalID: 5270725094072901699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_57
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1968
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbff733610dbedf0800000000000000
+      internalID: -149797368814896169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_58
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1999
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13efc5917197c7ca0800000000000000
+      internalID: -6017801861957091791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_59
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1968
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bf47603c2da3af0800000000000000
+      internalID: -415788280509564130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_60
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 1999
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3291b9a7f03c25e70800000000000000
+      internalID: 9102552268118104355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_61
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 1969
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f30f48efb0682f00800000000000000
+      internalID: 1092229286989857776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_62
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1645
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1acc15520a3d198e0800000000000000
+      internalID: -1688335700512879455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_63
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 712
+        width: 1740
+        height: 1180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1e3f8fedd2fc920800000000000000
+      internalID: 3012677111416873460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_64
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1764
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdaea0362ba0c53b0800000000000000
+      internalID: -5522527281780954404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_65
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 1789
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da07e49c92040170800000000000000
+      internalID: 8143636897729022674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_66
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 1796
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96cc75cc41b05b2c0800000000000000
+      internalID: -4416611675611345815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_67
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1707
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7d9ae3dd8a595d0800000000000000
+      internalID: -3056351103908456477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_68
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1744
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd6f6b90aa7e1440800000000000000
+      internalID: 4908495474101546459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_69
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 1646
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426797fa1328ac1e0800000000000000
+      internalID: -2176784319971232220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_70
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1677
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61a58c9217a360b0800000000000000
+      internalID: -5736557801962626710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_71
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1561
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a716ed5a10f7e90800000000000000
+      internalID: -7025895081762522561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_72
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 1561
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8a3fa3df8f21d60800000000000000
+      internalID: 7859618066214398149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_73
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1313
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35aa43d47639ab40800000000000000
+      internalID: 5451948699297686846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_74
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1485
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a6830be1d418520800000000000000
+      internalID: 2702526045599853206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_75
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1510
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63db23a25f28c5400800000000000000
+      internalID: 314270063495658806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_76
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1427
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443e790e91b429ab0800000000000000
+      internalID: -5002853661540883644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_77
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1465
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae194c30bc25a3610800000000000000
+      internalID: 1601683649378685418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_78
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1367
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b84e5cf33f463cc0800000000000000
+      internalID: -3731708156533913421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_79
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1398
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562163c3e251f3ca0800000000000000
+      internalID: -6035081687330319771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_80
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 1368
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4056df00e1fa382a0800000000000000
+      internalID: -6736348074215643900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_81
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1044
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e9b8b8a7b0a5f50800000000000000
+      internalID: 6870816802462211740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_82
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1163
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a504bf0486fcb1a0800000000000000
+      internalID: -6792283090921978462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_83
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 1188
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfddb7bda85c71c0800000000000000
+      internalID: -4504628024142078004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_84
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 1195
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1663b24463e4600800000000000000
+      internalID: 454360278821659101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_85
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1106
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d318d7ef0e875c20800000000000000
+      internalID: 3195178659608007641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_86
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1143
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa77245fd0c572a0800000000000000
+      internalID: -6740269201867965790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_87
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 1045
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7775339bb52ab650800000000000000
+      internalID: 6249348920488851322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_88
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1076
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f5f6b0eea746a40800000000000000
+      internalID: 5360544619290386321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_89
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 960
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a360df1f15d8d80800000000000000
+      internalID: -8246845242871498112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_90
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 960
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5344b46c2c064390800000000000000
+      internalID: -7834561116956769443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_91
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 712
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687cbfd88f00396b0800000000000000
+      internalID: -5290884069696223354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_92
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 884
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99122c91e5a7da900800000000000000
+      internalID: 697348061889962393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_93
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 909
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc000b7edbf31ff0800000000000000
+      internalID: -66432636515513094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_94
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 826
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98fdc9fd2c3ad390800000000000000
+      internalID: -7792850037049001828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_95
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 864
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0728f00b84f085580800000000000000
+      internalID: -8838297463848730000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_96
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 766
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbd15279b93a33b0800000000000000
+      internalID: -5532045723621532742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_97
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 797
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e92963effaf6ecf0800000000000000
+      internalID: -223215154569336346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_98
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 767
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8d2425b3f8f0750800000000000000
+      internalID: 6273390290896345263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_99
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 443
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0029438106d0c80a0800000000000000
+      internalID: -6878107824527470080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_100
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 562
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea72aa893130a180800000000000000
+      internalID: -9106224323334341918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_101
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 587
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76dc01d00a563fd90800000000000000
+      internalID: -7065191652325798553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_102
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 443
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1024fba56d018b0800000000000000
+      internalID: -5183407485859266126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_103
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 562
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e95e14170b912e0800000000000000
+      internalID: -2154496946236711350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_104
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 587
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ba520ba8c086160800000000000000
+      internalID: 7018873809057196942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_105
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 443
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7087c7b3b7ecfd20800000000000000
+      internalID: 3313778184906309758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_106
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 562
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4dff1db4a4352f0800000000000000
+      internalID: -985362203957799703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_107
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 587
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6acd1b07e5e42fb0800000000000000
+      internalID: -4673357732817024406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_108
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 443
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b90099798d07dfa0800000000000000
+      internalID: -5776133112978208335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_109
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 562
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6d69dcede1fa130800000000000000
+      internalID: 3580114171063621297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_110
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 587
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ee1b01e150d4710800000000000000
+      internalID: 1679003862766317128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_111
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 594
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a9dd86fd7cd82c0800000000000000
+      internalID: -4427663096284341679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_112
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 505
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df28da047cb9b430800000000000000
+      internalID: 3799274967247892434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_113
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 542
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cd69c6d30ea2080800000000000000
+      internalID: -9211303533413475292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_114
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 505
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44370c71d66c8a930800000000000000
+      internalID: 4154788828101505860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_115
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 542
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5be042ae3ea25e70800000000000000
+      internalID: 9102529380902562655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_116
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 505
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40a765531ab27320800000000000000
+      internalID: 2554308530872492110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_117
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 542
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9598578a0ac3300800000000000000
+      internalID: 233237926103308732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_118
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 505
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d869284593325ef40800000000000000
+      internalID: 5757046427800999565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_119
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 542
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adb629f728721200800000000000000
+      internalID: 149313850735771043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_120
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 444
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0337f486e4de7580800000000000000
+      internalID: -8827384133061233910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_121
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 475
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12aadf5e22940910800000000000000
+      internalID: 1802726478729355802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_122
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 444
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2743c94ed11f0930800000000000000
+      internalID: 4111524631230498607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_123
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 475
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bb0c32a25f58850800000000000000
+      internalID: 6378774008577440556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_124
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 444
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b10d8e8b9f0b050800000000000000
+      internalID: 5814421691510561559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_125
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 475
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8865c6573da7130800000000000000
+      internalID: 3565394556299413706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_126
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 444
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed12f51057d10980800000000000000
+      internalID: -8574335476571169304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_127
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 475
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4724926402d4550800000000000000
+      internalID: 6146604552142615797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_128
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 359
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e53ef0920202400800000000000000
+      internalID: 297272936138759807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_129
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 111
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dab8514655052b0800000000000000
+      internalID: -5597880448474960503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_130
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 359
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5318cd6775461e0800000000000000
+      internalID: -2205541749487487534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_131
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 111
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f2dc86aca4a0620800000000000000
+      internalID: 2741085556410494755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_132
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 359
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461788e6571f80fa0800000000000000
+      internalID: -5834147830590574236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_133
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 111
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2c1914fc80ce430800000000000000
+      internalID: 3813432670727291556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_134
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 359
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1310aab462161300800000000000000
+      internalID: 222385455438500637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_135
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 111
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cea3e20f26118230800000000000000
+      internalID: 3639214365059821253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_136
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 283
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0faf88406a2bd32f0800000000000000
+      internalID: -991439916841239824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_137
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 308
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c79841af49083410800000000000000
+      internalID: 1456924717067311048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_138
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 283
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30bc84649639c680800000000000000
+      internalID: -8734389991338364868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_139
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 308
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89d6d9f28cd1fb00800000000000000
+      internalID: 860711458899941775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_140
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 283
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b3db66fe5975f90800000000000000
+      internalID: -6964933443251782900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_141
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 308
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3afece536aa328a90800000000000000
+      internalID: -7313218359352561757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_142
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 283
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288cdf25f61123d10800000000000000
+      internalID: 2103763145766848642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_143
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 308
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e172ae20ff82c9a0800000000000000
+      internalID: -6214246274080542231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_144
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 225
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd6a7af3afd52370800000000000000
+      internalID: 8297283783874997756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_145
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 263
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74cb3dc2ece431fc0800000000000000
+      internalID: -3525387435878663097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_146
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 225
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4628daba336286cd0800000000000000
+      internalID: -2564757984422034844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_147
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 263
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28722434777629420800000000000000
+      internalID: 2635282493892339586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_148
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 225
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68ac28a712389770800000000000000
+      internalID: 8617692964160579695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_149
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 263
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c6203aadff0bbf0800000000000000
+      internalID: -310467059785765858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_150
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 225
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3decc2acb50311d80800000000000000
+      internalID: -8281785068965540141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_151
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 263
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d94eccb1e34ea90800000000000000
+      internalID: -7285630008056046206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_152
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 165
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8b0dab03368b100800000000000000
+      internalID: 123958050696509622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_153
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 196
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a0bef8fa3d04160800000000000000
+      internalID: 7007833771175774800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_154
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 165
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18cbd97a5976f490800000000000000
+      internalID: -7712843882326931425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_155
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 196
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddadbbd5c676fbf0800000000000000
+      internalID: -290914533751542318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_156
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 165
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018c286a0ef3985b0800000000000000
+      internalID: -5365687246936422384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_157
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 196
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4e6040a7caf42c0800000000000000
+      internalID: -4445144667137841983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_158
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 165
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2db6275642826b30800000000000000
+      internalID: 4279125834576870702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_159
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 196
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa953ddc815b1af80800000000000000
+      internalID: -8096991536898418262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_160
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 166
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414efa183063c4cd0800000000000000
+      internalID: -2572621898446805996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_161
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64de3e10f6a0f9380800000000000000
+      internalID: -8962433261554635450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_162
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a3be084c792a320800000000000000
+      internalID: 2567781607786887782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_163
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4828f44b8c3dccaf0800000000000000
+      internalID: -374691810006564220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_164
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c390412c59f77f070800000000000000
+      internalID: 8140115132678408508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_165
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3acd75b1c59d640800000000000000
+      internalID: 5105212925109117886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_166
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbe64ff70070d4b0800000000000000
+      internalID: -5417707172076786700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_167
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148137e8fb534bf40800000000000000
+      internalID: 5743274521649158209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_168
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8ba842b87da9850800000000000000
+      internalID: 6384652414364596400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_169
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 0
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f086f937d3af4cf0800000000000000
+      internalID: -265813708205817611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_0: 5506660360488230982
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_1: 5373755673113698643
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_10: -8270355498094279049
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_100: -9106224323334341918
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_101: -7065191652325798553
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_102: -5183407485859266126
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_103: -2154496946236711350
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_104: 7018873809057196942
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_105: 3313778184906309758
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_106: -985362203957799703
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_107: -4673357732817024406
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_108: -5776133112978208335
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_109: 3580114171063621297
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_11: 7387654799306874585
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_110: 1679003862766317128
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_111: -4427663096284341679
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_112: 3799274967247892434
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_113: -9211303533413475292
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_114: 4154788828101505860
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_115: 9102529380902562655
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_116: 2554308530872492110
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_117: 233237926103308732
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_118: 5757046427800999565
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_119: 149313850735771043
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_12: 8675248051663351181
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_120: -8827384133061233910
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_121: 1802726478729355802
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_122: 4111524631230498607
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_123: 6378774008577440556
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_124: 5814421691510561559
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_125: 3565394556299413706
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_126: -8574335476571169304
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_127: 6146604552142615797
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_128: 297272936138759807
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_129: -5597880448474960503
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_13: 7434980743173992329
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_130: -2205541749487487534
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_131: 2741085556410494755
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_132: -5834147830590574236
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_133: 3813432670727291556
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_134: 222385455438500637
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_135: 3639214365059821253
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_136: -991439916841239824
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_137: 1456924717067311048
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_138: -8734389991338364868
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_139: 860711458899941775
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_14: 8506991965408134900
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_140: -6964933443251782900
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_141: -7313218359352561757
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_142: 2103763145766848642
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_143: -6214246274080542231
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_144: 8297283783874997756
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_145: -3525387435878663097
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_146: -2564757984422034844
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_147: 2635282493892339586
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_148: 8617692964160579695
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_149: -310467059785765858
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_15: 8837277823192336742
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_150: -8281785068965540141
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_151: -7285630008056046206
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_152: 123958050696509622
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_153: 7007833771175774800
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_154: -7712843882326931425
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_155: -290914533751542318
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_156: -5365687246936422384
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_157: -4445144667137841983
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_158: 4279125834576870702
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_159: -8096991536898418262
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_16: -8048193241843123629
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_160: -2572621898446805996
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_161: -8962433261554635450
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_162: 2567781607786887782
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_163: -374691810006564220
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_164: 8140115132678408508
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_165: 5105212925109117886
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_166: -5417707172076786700
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_167: 5743274521649158209
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_168: 6384652414364596400
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_169: -265813708205817611
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_17: 519544446535693026
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_18: -7493750224566643838
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_19: -2405053918797687825
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_2: -3560720238204989486
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_20: 4380074514117686637
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_21: -4125383415123615812
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_22: -7875569534625464311
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_23: 8668752228888658573
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_24: -1754033054160402485
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_25: 1208953273307950776
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_26: -4467059828487608831
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_27: -8079251553612524328
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_28: -6459733031962542252
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_29: 3143589005034087055
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_3: 2795277621323566872
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_30: 9017062169754344225
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_31: -3128459504485517956
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_32: -1364464741442601598
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_33: 6197469161119841288
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_34: 6516342721543241850
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_35: 8147820582894976170
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_36: -11262138924099124
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_37: 2773174091865529408
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_38: 7163857431007551396
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_39: -5306588207146498606
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_4: 4322098507178668969
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_40: -2817549949209329151
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_41: 496000766065198714
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_42: -5540258807075420685
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_43: 7974323548282747408
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_44: -5398175712679735243
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_45: 8002039080958723522
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_46: -8993042920574739867
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_47: 4308018780059995870
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_48: 649596018271913195
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_49: 487304317701073881
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_5: 8277938357883464996
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_50: -903871223685067009
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_51: -4768990038370347975
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_52: 198248385925883262
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_53: 5627008205789588556
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_54: 2592268286160716348
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_55: 6711150473478741630
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_56: 5270725094072901699
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_57: -149797368814896169
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_58: -6017801861957091791
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_59: -415788280509564130
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_6: -7800049360400334887
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_60: 9102552268118104355
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_61: 1092229286989857776
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_62: -1688335700512879455
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_63: 3012677111416873460
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_64: -5522527281780954404
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_65: 8143636897729022674
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_66: -4416611675611345815
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_67: -3056351103908456477
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_68: 4908495474101546459
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_69: -2176784319971232220
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_7: -8755337511556301279
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_70: -5736557801962626710
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_71: -7025895081762522561
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_72: 7859618066214398149
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_73: 5451948699297686846
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_74: 2702526045599853206
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_75: 314270063495658806
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_76: -5002853661540883644
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_77: 1601683649378685418
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_78: -3731708156533913421
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_79: -6035081687330319771
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_8: -2232503741705431963
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_80: -6736348074215643900
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_81: 6870816802462211740
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_82: -6792283090921978462
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_83: -4504628024142078004
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_84: 454360278821659101
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_85: 3195178659608007641
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_86: -6740269201867965790
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_87: 6249348920488851322
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_88: 5360544619290386321
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_89: -8246845242871498112
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_9: -453912710891628803
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_90: -7834561116956769443
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_91: -5290884069696223354
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_92: 697348061889962393
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_93: -66432636515513094
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_94: -7792850037049001828
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_95: -8838297463848730000
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_96: -5532045723621532742
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_97: -223215154569336346
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_98: 6273390290896345263
+      pngtree-minecraft-inspired-roasted-chicken-in-simple-pixel-design-on-white-background-png-image_21389741_99: -6878107824527470080
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
