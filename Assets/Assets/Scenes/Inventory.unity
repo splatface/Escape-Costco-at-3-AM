@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8872296a5944e4d47a5f9dcd2c45f418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpenInventory
-  InventoryBox: {fileID: 748652639}
+  InventoryBox: {fileID: 748652641}
 --- !u!1 &1058382998
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498018790}
   - component: {fileID: 1498018791}
+  - component: {fileID: 1498018792}
   m_Layer: 0
   m_Name: InventoryBar
   m_TagString: Untagged
@@ -405,6 +406,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1498018792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498018789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c3724895ce5d84297fb35858c21445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  InventoryFull: {fileID: 748652642}
+  InventoryBar: {fileID: 1498018791}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
