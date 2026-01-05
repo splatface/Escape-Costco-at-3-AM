@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     public static PauseManager Instance;
@@ -18,6 +18,13 @@ public class PauseManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+   void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
+    void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Resume(); // Ensures new scenes start at Time.timeScale = 1
     }
 
     void Update()
