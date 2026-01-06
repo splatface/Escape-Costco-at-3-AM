@@ -1,7 +1,8 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+//this script opens up the inventory onto the screen; it doesn't put the items onto the inventory (this is in the PlaceItemInvenFull script)
 public class OpenInventory : MonoBehaviour
 {
     public SpriteRenderer InventoryBox;

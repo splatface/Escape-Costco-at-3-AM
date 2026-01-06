@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ItemBaseClass : MonoBehaviour
 {
+
+    private string _name = "";
     private string _description = "";
 
     public SpriteRenderer _renderer;
@@ -10,9 +12,19 @@ public class ItemBaseClass : MonoBehaviour
 
     public Rigidbody2D Item;
 
-    public void MoveItem(int newX, int newY)
+    public void MoveItem(float newX, float newY)
     {
         _position = new Vector2 (newX, newY);
+    }
+
+    public string GetDescription()
+    {
+        return _description;
+    }
+
+    public string GetName()
+    {
+        return _name;
     }
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created

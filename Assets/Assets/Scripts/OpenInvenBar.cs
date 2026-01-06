@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//script includes: the inventory bar shows or hides itself 
 public class OpenInvenBar : MonoBehaviour
 {
 
