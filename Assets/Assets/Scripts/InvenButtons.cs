@@ -1,14 +1,11 @@
 using UnityEngine;
 
-public class ButtonClick : MonoBehaviour
+public class InvenButtons : MonoBehaviour
 {
-
-    public FullInventoryLogic FullInventory;
-
-    void OnClick()
+    public FullInventoryLogic Inventory;
+    public void ButtonClicked(int buttonNum)
     {
-        ItemBaseClass item = FullInventory.GetCurrentItem();
-        //equip item into 4 slots based on type
+        Inventory.OnClickItem(buttonNum);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

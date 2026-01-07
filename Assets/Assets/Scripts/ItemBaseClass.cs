@@ -5,6 +5,7 @@ public class ItemBaseClass : MonoBehaviour
 
     private string _name = "";
     private string _description = "";
+    private string _type = "";
 
     public SpriteRenderer _renderer;
 

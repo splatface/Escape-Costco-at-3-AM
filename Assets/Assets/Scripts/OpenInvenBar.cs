@@ -1,10 +1,10 @@
 using UnityEngine;
 
 //script includes: the inventory bar shows or hides itself 
-public class OpenInvenBar : MonoBehaviour
+public class InvenBarState : MonoBehaviour
 {
 
-    public OpenInventory InventoryFull;
+    public InvenFullState InventoryFull;
 
     public SpriteRenderer InventoryBar;
 

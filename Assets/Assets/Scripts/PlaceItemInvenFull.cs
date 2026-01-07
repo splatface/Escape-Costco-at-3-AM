@@ -3,12 +3,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //script includes: logic behind placing items into the correct box for the full inventory screen
-public class PlaceItemInvenFull : MonoBehaviour
+public class FullInventoryLogic : MonoBehaviour
 {
 
     private int _lengthRow = 6; // for putting the images on the screen
 
-    private SpriteRenderer[] _itemsInside = new SpriteRenderer[30]; // array maxes at visual capacity of inventory full
+    private ItemBaseClass[] _itemsInside = new ItemBaseClass[30]; // array of all items in the inventory
 
     private int _lastPosition = 0; // cursor in array
 
@@ -19,14 +19,7 @@ public class PlaceItemInvenFull : MonoBehaviour
     public TextMeshPro ItemDescrip;
     public Button EquipButton;
 
-
-
-    //called by another class when an item is picked up
-    public void PickedUpItem(SpriteRenderer itemName)
-    {
-        _itemsInside[_lastPosition] = itemName; // SpriteRenderer type so can actually put on screen
-        _lastPosition += 1;
-    }
+    private ItemBaseClass _currentItem;
 
     //what happens when the item needs to go into the full inventory
     public void PlaceIntoInven(ItemBaseClass item)
@@ -42,14 +35,21 @@ public class PlaceItemInvenFull : MonoBehaviour
         }
     }
 
-    public void OnClickItem(ItemBaseClass item)
+    public void OnClickItem(int itemNumber) // pass in the index
     {
+        ItemBaseClass item = _itemsInside[itemNumber];
+        _currentItem = item;
         string name = item.GetName();
         string descrip = item.GetDescription();
 
         //updates the item's text
         ItemTitle.text = name;
         ItemDescrip.text = descrip;
+    }
+
+    public ItemBaseClass GetCurrentItem()
+    {
+        return _currentItem;
     }
 
 
