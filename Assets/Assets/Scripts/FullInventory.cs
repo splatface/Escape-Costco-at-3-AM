@@ -40,8 +40,8 @@ public class FullInventory : MonoBehaviour
     {
         ItemBaseClass item = _itemsInside[itemNumber];
         _currentItem = item;
-        string name = item.GetName();
-        string descrip = item.GetDescription();
+        string name = item.Name;
+        string descrip = item.Description;
 
         //updates the item's text
         ItemTitle.text = name;

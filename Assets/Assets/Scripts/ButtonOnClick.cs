@@ -9,15 +9,15 @@ public class ButtonClick : MonoBehaviour
     {
         ItemBaseClass item = FullInventory.GetCurrentItem();
 
-        if (item.GetItemType() == "weapon")
+        if (item.Type == "weapon")
         {
             
         }
-        else if (item.GetItemType() == "interactable")
+        else if (item.Type == "interactable")
         {
             
         }
-        else if (item.GetItemType() == "powerup")
+        else if (item.Type == "powerup")
         {
             
         }
