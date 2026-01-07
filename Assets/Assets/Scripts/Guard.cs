@@ -1,32 +1,25 @@
 using UnityEngine;
 
-public class Guard : MonoBehaviour
+public class AutoMoveBackAndForth : MonoBehaviour
 {
-    public float moveSpeed = 5f;
 
-    private Rigidbody2D rb;
-    private float moveInput;
+public float delta = 3.0f;
+public float speed = 2.0f;
 
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+private Vector3 startPos;
 
-    void Update()
-    {
-        // If the game is paused, stop movement
-        if (Time.timeScale == 0f)
-        {
-            rb.linearVelocity = Vector2.zero;
-            return;
-        }
+void Start()
+{
 
-        // Get left/right input
-        moveInput = Input.GetAxisRaw("Horizontal");
-    }
+startPos = transform.position;
+}
 
-    void FixedUpdate()
-    {
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
-    }
+void Update()
+{
+
+float newX = startPos.x + delta * Mathf.Sin(Time.time * speed);
+
+
+transform.position = new Vector3(newX, startPos.y, startPos.z);
+}
 }
