@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 //script includes: logic behind placing items into the correct box for the full inventory screen
 public class PlaceItemInvenFull : MonoBehaviour
@@ -16,6 +17,9 @@ public class PlaceItemInvenFull : MonoBehaviour
     //text objects for the item when clicked
     public TextMeshPro ItemTitle;
     public TextMeshPro ItemDescrip;
+    public Button EquipButton;
+
+
 
     //called by another class when an item is picked up
     public void PickedUpItem(SpriteRenderer itemName)
@@ -47,6 +51,9 @@ public class PlaceItemInvenFull : MonoBehaviour
         ItemTitle.text = name;
         ItemDescrip.text = descrip;
     }
+
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
