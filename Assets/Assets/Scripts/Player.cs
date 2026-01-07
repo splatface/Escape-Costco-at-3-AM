@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -6,10 +7,12 @@ public class PlayerMovement : MonoBehaviour
     private float _moveSpeed = 10f;
     private Animator _anim;
     private Vector3 _movementDirection;
+    private ItemBaseClass _item;
 
     public void Awake()
     {
         this.SetAnimator(GetComponent<Animator>());
+        this._item = null;
     }
 
     public void Update()
