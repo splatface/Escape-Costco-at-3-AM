@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class InvenButtons : MonoBehaviour
 {
-    public FullInventoryLogic Inventory;
+    public FullInventory Inventory;
     public void ButtonClicked(int buttonNum)
     {
         Inventory.OnClickItem(buttonNum);

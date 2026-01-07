@@ -13,11 +13,13 @@ public class ItemBaseClass : MonoBehaviour
 
     public Rigidbody2D Item;
 
+    // temporary; may change
     public void MoveItem(float newX, float newY)
     {
         _position = new Vector2 (newX, newY);
     }
 
+    //all getters for encapsulation
     public string GetDescription()
     {
         return _description;
@@ -26,6 +28,11 @@ public class ItemBaseClass : MonoBehaviour
     public string GetName()
     {
         return _name;
+    }
+
+    public string GetItemType()
+    {
+        return _type;
     }
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
