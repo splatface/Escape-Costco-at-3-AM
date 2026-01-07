@@ -3,9 +3,9 @@ using UnityEngine;
 public class ItemBaseClass : MonoBehaviour
 {
 
-    private string _name = "";
-    private string _description = "";
-    private string _type = "";
+    public string Name = "";
+    public string Description = "";
+    public string Type = "";
 
     public SpriteRenderer _renderer;
 
@@ -17,22 +17,6 @@ public class ItemBaseClass : MonoBehaviour
     public void MoveItem(float newX, float newY)
     {
         _position = new Vector2 (newX, newY);
-    }
-
-    //all getters for encapsulation
-    public string GetDescription()
-    {
-        return _description;
-    }
-
-    public string GetName()
-    {
-        return _name;
-    }
-
-    public string GetItemType()
-    {
-        return _type;
     }
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
