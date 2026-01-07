@@ -1,25 +1,26 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 //script includes: logic behind placing items into the correct box for the full inventory screen
-public class FullInventoryLogic : MonoBehaviour
+public class FullInventory : MonoBehaviour
 {
-
+    //variables for showing the inventory
+    public SpriteRenderer InventoryBox;
+    private static bool _isOpen = false;
     private int _lengthRow = 6; // for putting the images on the screen
 
+    //variables for storing items in the inventory
     private ItemBaseClass[] _itemsInside = new ItemBaseClass[30]; // array of all items in the inventory
-
     private int _lastPosition = 0; // cursor in array
-
     private float _boxSideLength = 1f; // (PLACEHOLDER FOR NOW! CHECK LENGTH)
+    private ItemBaseClass _currentItem;
 
     //text objects for the item when clicked
     public TextMeshPro ItemTitle;
     public TextMeshPro ItemDescrip;
-    public Button EquipButton;
 
-    private ItemBaseClass _currentItem;
 
     //what happens when the item needs to go into the full inventory
     public void PlaceIntoInven(ItemBaseClass item)
@@ -39,32 +40,50 @@ public class FullInventoryLogic : MonoBehaviour
     {
         ItemBaseClass item = _itemsInside[itemNumber];
         _currentItem = item;
-        string name = item.GetName();
-        string descrip = item.GetDescription();
+        string name = item.Name;
+        string descrip = item.Description;
 
         //updates the item's text
         ItemTitle.text = name;
         ItemDescrip.text = descrip;
     }
 
+
+    //getters for encapsulation
     public ItemBaseClass GetCurrentItem()
     {
         return _currentItem;
     }
 
+    public bool GetOpenState()
+    {
+        return _isOpen;
+    }
 
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //initiates text objects
         ItemTitle = GetComponent<TextMeshPro>();
         ItemDescrip = GetComponent<TextMeshPro>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        //changes state of whether inventory is shown or not
+        if (Keyboard.current.iKey.wasPressedThisFrame)
+        {
+
+            if (_isOpen == false)
+            {
+                InventoryBox.sortingLayerName = "ShowInventory";
+                _isOpen = true;
+            }
+            else
+            {
+                InventoryBox.sortingLayerName = "HideInventory";                
+                _isOpen = false;
+            }
+        }
     }
 }

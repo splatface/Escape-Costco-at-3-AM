@@ -1,12 +1,7 @@
 using UnityEngine;
 
-public class InvenButtons : MonoBehaviour
+public class BlueKeyCard : KeyCard
 {
-    public FullInventory Inventory;
-    public void ButtonClicked(int buttonNum)
-    {
-        Inventory.OnClickItem(buttonNum);
-    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
