@@ -40,6 +40,11 @@ public class PlayerMovement : MonoBehaviour
         transform.position += this.GetMovementDirection() * this.GetMoveSpeed() * Time.deltaTime;
     }
 
+    public Vector3 GetCurrentPosition()
+    {
+        return transform.position;
+    }
+
     public void AnimatePlayer()
     {
         Animator anim = GetAnimator();

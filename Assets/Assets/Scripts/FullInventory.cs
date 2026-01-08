@@ -27,7 +27,6 @@ public class FullInventory : MonoBehaviour
     {
         for (int cursor=1; cursor<_lastPosition; cursor += 1)
         {
-
             // not sure on this logic yet; CHECK
             float x_position = cursor%_lengthRow;
             float y_position = cursor/_lengthRow * _boxSideLength;
