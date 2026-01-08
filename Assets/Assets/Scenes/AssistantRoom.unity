@@ -713,6 +713,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057b5359644d9ad4db5d7d6b775a673c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyCards
+  Name: keycard
+  Description: Use this to open specific colour-coded locked doors
+  Type: interactable
+  _renderer: {fileID: 0}
+  Item: {fileID: 0}
+  Colour: 
 --- !u!1 &1136155090
 GameObject:
   m_ObjectHideFlags: 0
