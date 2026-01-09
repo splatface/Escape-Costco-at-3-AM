@@ -8,11 +8,15 @@ public class PlayerMovement : MonoBehaviour
     private Animator _anim;
     private Vector3 _movementDirection;
     private ItemBaseClass _item;
+    private ItemBaseClass _powerUp;
+    private ItemBaseClass _weapon;
 
     public void Awake()
     {
         this.SetAnimator(GetComponent<Animator>());
         this._item = null;
+        this._powerUp = null;
+        this._weapon = null;
     }
 
     public void Update()
