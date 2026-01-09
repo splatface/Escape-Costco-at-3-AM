@@ -25,7 +25,13 @@ public class FullInventory : MonoBehaviour
     //what happens when the item needs to go into the full inventory
     public void PlaceIntoInven(ItemBaseClass item)
     {
-        for (int cursor=1; cursor<_lastPosition; cursor += 1)
+        _itemsInside[_lastPosition+1] = item;
+    }
+
+    // what happens when the inventory is revealed onto the screen
+    public void ShowInvenItems(ItemBaseClass item)
+    {
+        for (int cursor=0; cursor<_lastPosition; cursor += 1)
         {
             // not sure on this logic yet; CHECK
             float x_position = cursor%_lengthRow;
