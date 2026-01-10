@@ -8,43 +8,49 @@ public class BarInventory : MonoBehaviour
     public SpriteRenderer InventoryBar;
     private bool _showState;
 
+    public MilkItem Milk;
+
     //variables for putting items into inventory / current items in inventory
     private ItemBaseClass[] _currentItems = new ItemBaseClass[4];
 
     public void PlaceIntoInven(ItemBaseClass item)
     {
+        string type = item.Type;
         float newX = 0;
         float newY = 0;
-        if (item.Type == "weapon")
+        Debug.Log(type);
+        Debug.Log(item.Type);
+
+        if (type == "weapon")
         {
             _currentItems[0] = item;
             //change values of newX and newY here (and for all of the others) 
         }
-        else if (item.Type == "interactable")
+        else if (type == "interactable")
         {
             _currentItems[1] = item;
+            newX = 1;
+            newY = 1;
         }
-        else if (item.Type == "keycard")
+        else if (type == "keycard")
         {
             _currentItems[2] = item;
         }
-        else if (item.Type == "powerup")
+        else if (type == "powerup")
         {
             _currentItems[3] = item;
         }
 
-        for (int cursor=0; cursor<4; cursor += 1)
-        {
-            if (_currentItems[cursor] != null)
-            {
-                item.MoveItem(newX, newY);
-            }
-        }
+        item.MoveItem(newX, newY);
     }
     
     void Start()
     {
-        
+    }
+
+    void Awake()
+    {
+        //PlaceIntoInven(Milk);
     }
 
     void Update()

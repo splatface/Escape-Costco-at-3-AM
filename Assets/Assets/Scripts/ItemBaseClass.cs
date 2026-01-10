@@ -35,22 +35,22 @@ public class ItemBaseClass : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        Item.position = transform.position;
+        // Item.position = transform.position;
 
-        Vector3 playerPosition = Player.GetCurrentPosition();
+        // Vector3 playerPosition = Player.GetCurrentPosition();
 
-        float x = playerPosition.x - Item.position.x;
-        float y = playerPosition.y - Item.position.y;
+        // float x = playerPosition.x - Item.position.x;
+        // float y = playerPosition.y - Item.position.y;
 
-        float distance = Mathf.Sqrt((float)(Math.Pow(x,2) + Math.Pow(y,2))); //change to calculate the distance between the player and the item
+        // float distance = Mathf.Sqrt((float)(Math.Pow(x,2) + Math.Pow(y,2))); //change to calculate the distance between the player and the item
 
-        if (distance <= 5)
-        {
-            if (Keyboard.current.eKey.wasPressedThisFrame)
-            {
-                Inventory.PlaceIntoInven(this);
-            }
-        }
+        // if (distance <= 5)
+        // {
+        //     if (Keyboard.current.eKey.wasPressedThisFrame)
+        //     {
+        //         Inventory.PlaceIntoInven(this);
+        //     }
+        // }
 
     }
 }

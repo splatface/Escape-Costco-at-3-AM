@@ -11,36 +11,42 @@ public class FullInventory : MonoBehaviour
     private static bool _isOpen = false;
     private int _lengthRow = 6; // for putting the images on the screen
 
+
     //variables for storing items in the inventory
     private ItemBaseClass[] _itemsInside = new ItemBaseClass[30]; // array of all items in the inventory
-    private int _lastPosition = 0; // cursor in array
+    private int _nextPosition = 0; // cursor in array
     private float _boxSideLength = 1f; // (PLACEHOLDER FOR NOW! CHECK LENGTH)
     private ItemBaseClass _currentItem;
 
+
     //text objects for the item when clicked
-    public TextMeshPro ItemTitle;
-    public TextMeshPro ItemDescrip;
+    public TMP_Text ItemTitle;
+    public TMP_Text ItemDescrip;
+
+    public MilkItem Milk; // for testing purposes; remove in actual
 
 
     //what happens when the item needs to go into the full inventory
     public void PlaceIntoInven(ItemBaseClass item)
     {
-        _itemsInside[_lastPosition+1] = item;
+        _itemsInside[_nextPosition] = item;
+        _nextPosition += 1;
     }
 
     // what happens when the inventory is revealed onto the screen
-    public void ShowInvenItems(ItemBaseClass item)
+    public void ShowInvenItems()
     {
-        for (int cursor=0; cursor<_lastPosition; cursor += 1)
+        for (int cursor=0; cursor<_nextPosition; cursor += 1)
         {
             // not sure on this logic yet; CHECK
-            float x_position = cursor%_lengthRow;
-            float y_position = cursor/_lengthRow * _boxSideLength;
+            float x = cursor%_lengthRow;
+            float y = cursor/_lengthRow * _boxSideLength;
 
-            item.MoveItem(x_position, y_position);
+            _itemsInside[cursor].MoveItem(x, y);
         }
     }
 
+    // what happens when you click on an item in the inventory
     public void OnClickItem(int itemNumber) // pass in the index
     {
         ItemBaseClass item = _itemsInside[itemNumber];
@@ -68,9 +74,7 @@ public class FullInventory : MonoBehaviour
 
     void Start()
     {
-        //initiates text objects
-        ItemTitle = GetComponent<TextMeshPro>();
-        ItemDescrip = GetComponent<TextMeshPro>();
+        PlaceIntoInven(Milk); // for testing purposes; remove in actual
     }
 
     void Update()
@@ -83,6 +87,7 @@ public class FullInventory : MonoBehaviour
             {
                 InventoryBox.sortingLayerName = "ShowInventory";
                 _isOpen = true;
+                ShowInvenItems();
             }
             else
             {
