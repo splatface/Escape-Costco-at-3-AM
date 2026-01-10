@@ -5,11 +5,20 @@ using UnityEngine.InputSystem;
 
 public class ManagerEnemy : MonoBehaviour
 {
+    public PlayerMovement Player;
 
+    // base variables
     private int _attackValue = 10;
     private int _healthValue = 70;
 
-    public PlayerMovement Player;
+    //variables for moving
+    private bool _runMovementAgain = false;
+
+    //variables for attacking
+    public Transform ShootPos;
+    public GameObject CarrotBullet;
+
+
 
     private float CalculateDistanceApart(Vector3 playerPos, Vector3 managerPos)
     {
@@ -66,10 +75,27 @@ public class ManagerEnemy : MonoBehaviour
         }
     }
 
+    public void BasicAttack()
+    {
+        Instantiate(CarrotBullet, ShootPos.position, ShootPos.rotation);
+    }
+
     public void ChargeULT()
     {
         
     }
+
+    public int GetAttackValue()
+    {
+        return _attackValue;
+    }
+
+    public void LoseHP(int damage)
+    {
+        _healthValue -= damage;
+    }
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -79,6 +105,22 @@ public class ManagerEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //when to call movement function
+        if (_runMovementAgain == true)
+        {
+            NormalMovement();
+            _runMovementAgain = false;
+        }
+
+        Vector3 playerPos = Player.GetCurrentPosition();
+        Vector3 managerPos = transform.position;
+
+        float distance = CalculateDistanceApart(playerPos, managerPos);
+
+        if (distance > 3f)
+        {
+            _runMovementAgain = true;
+        }
     
         if (_healthValue < 10)
         {

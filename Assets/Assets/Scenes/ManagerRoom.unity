@@ -489,6 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de57f731de9995f45a070808b0669f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManagerEnemy
+  Player: {fileID: 0}
 --- !u!1 &1466069170
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de57f731de9995f45a070808b0669f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  Player: {fileID: 0}
 --- !u!1001 &1994419218
 PrefabInstance:
   m_ObjectHideFlags: 0
