@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class BlueKeyCard : KeyCard
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
-        
+        this.Colour = "blue";
+        base.Start();
     }
-
-    // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        OpenDoor();
+    }
+    public void OpenDoor()
+    {
+        // check if player equipped blue keycard and is touching the blue room door 
+        // if so, open blue room scene 
     }
 }
