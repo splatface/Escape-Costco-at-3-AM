@@ -17,20 +17,25 @@ public class FullInventory : MonoBehaviour
     private int _nextPosition = 0; // cursor in array
     private float _boxSideLength = 1f; // (PLACEHOLDER FOR NOW! CHECK LENGTH)
     private ItemBaseClass _currentItem;
+    public ItemSpawner Spawner;
+
 
 
     //text objects for the item when clicked
     public TMP_Text ItemTitle;
     public TMP_Text ItemDescrip;
 
-    public MilkItem Milk; // for testing purposes; remove in actual
-
 
     //what happens when the item needs to go into the full inventory
-    public void PlaceIntoInven(ItemBaseClass item)
+    public void PlaceIntoInven(string tag)
     {
+        Debug.Log(tag);
+        GameObject itemObject = GameObject.FindWithTag(tag);
+        ItemBaseClass item = itemObject.GetComponent<ItemBaseClass>(); // "converts" it to ItemBaseClass type for usage
+
         _itemsInside[_nextPosition] = item;
         _nextPosition += 1;
+        Debug.Log(item);
     }
 
     // what happens when the inventory is revealed onto the screen
@@ -41,8 +46,9 @@ public class FullInventory : MonoBehaviour
             // not sure on this logic yet; CHECK
             float x = cursor%_lengthRow;
             float y = cursor/_lengthRow * _boxSideLength;
+            Vector3 position = new Vector3 (x,y);
 
-            _itemsInside[cursor].MoveItem(x, y);
+            Spawner.SpawnItem(_itemsInside[cursor].tag, position);
         }
     }
 
@@ -50,6 +56,11 @@ public class FullInventory : MonoBehaviour
     public void OnClickItem(int itemNumber) // pass in the index
     {
         ItemBaseClass item = _itemsInside[itemNumber];
+        string tag = item.tag;
+
+        GameObject itemObject = GameObject.FindWithTag(tag);
+        item = itemObject.GetComponent<ItemBaseClass>();
+
         _currentItem = item;
         string name = item.Name;
         string descrip = item.Description;
@@ -74,7 +85,7 @@ public class FullInventory : MonoBehaviour
 
     void Start()
     {
-        PlaceIntoInven(Milk); // for testing purposes; remove in actual
+        PlaceIntoInven("Milk"); // for testing purposes; remove in actual
     }
 
     void Update()

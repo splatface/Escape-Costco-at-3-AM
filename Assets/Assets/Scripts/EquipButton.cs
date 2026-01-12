@@ -7,7 +7,7 @@ public class EquipButton : MonoBehaviour
 
     public BarInventory BarInventory;
 
-    void OnClick()
+    public void OnClick()
     {
         ItemBaseClass item = FullInventory.GetCurrentItem();
 

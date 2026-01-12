@@ -16,14 +16,13 @@ public class ItemBaseClass : MonoBehaviour
     public PlayerMovement Player;
     public FullInventory Inventory;
 
-    // temporary; may change
-    public void MoveItem(float newX, float newY)
-    {
-        transform.position = new Vector3 (newX, newY, 0);
-    }
-
     public void EquipItem(ItemBaseClass item)
     {
+    }
+
+    public virtual void UseItem()
+    {
+        
     }
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created

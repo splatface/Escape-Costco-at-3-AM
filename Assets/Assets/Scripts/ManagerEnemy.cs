@@ -17,6 +17,8 @@ public class ManagerEnemy : MonoBehaviour
     //variables for attacking
     public Transform ShootPos;
     public GameObject CarrotBullet;
+    public GameObject TomatoBullet;
+    private bool _ultUsed = false;
 
 
 
@@ -82,7 +84,7 @@ public class ManagerEnemy : MonoBehaviour
 
     public void ChargeULT()
     {
-        
+        Instantiate(TomatoBullet, ShootPos.position, ShootPos.rotation);
     }
 
     public int GetAttackValue()
@@ -122,9 +124,10 @@ public class ManagerEnemy : MonoBehaviour
             _runMovementAgain = true;
         }
     
-        if (_healthValue < 10)
+        if (_healthValue < 10 && _ultUsed == false)
         {
             ChargeULT();
+            _ultUsed = true;
         }
     }
 }
