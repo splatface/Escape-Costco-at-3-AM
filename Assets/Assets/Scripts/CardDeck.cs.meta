@@ -1,2 +1,19 @@
 fileFormatVersion: 2
 guid: 48761c0aef5ace44aa20266d590dc275
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Card1: {fileID: 3482017663218969105, guid: 00dc9fbcb4125d64188643cc2371f303, type: 3}
+  - Card2: {fileID: 2552400029577593474, guid: f7506700b9534b94bb04681134a1a6aa, type: 3}
+  - Card3: {fileID: 5556892880733590260, guid: 58bf39effe01bde44a9f633c6c1f0e15, type: 3}
+  - Card4: {fileID: 2052671249867668035, guid: 002f878be1ee39b4d9fc37240f492934, type: 3}
+  - Card5: {fileID: 8144199125905582965, guid: bad75a709fe231544ace417b87dfabbb, type: 3}
+  - Card6: {fileID: 6984089872447773271, guid: 48b61ca5f5bd16a4db39fa97cca7430e, type: 3}
+  - Card7: {fileID: 2292847691393837274, guid: da04dafb6341d524095e00abb1f1a448, type: 3}
+  - Card8: {fileID: 4743010874698275173, guid: 1d48b186a8bc5444fa8c78cd43f4c9ab, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,27 +11,33 @@ public class CardDeck : MonoBehaviour
     public GameObject Card7;
     public GameObject Card8;
 
-    private Card[] cards;
+    private GameObject[] cards = new GameObject[8];
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Card card1 = Card1.GetComponent<Card>();
-        cards[0] = card1;
-        Card card2 = Card2.GetComponent<Card>();
-        cards[1] = card2;
-        Card card3 = Card3.GetComponent<Card>();
-        cards[2] = card3;
-        Card card4 = Card4.GetComponent<Card>();
-        cards[3] = card4;
-        Card card5 = Card5.GetComponent<Card>();
-        cards[4] = card5;
-        Card card6 = Card6.GetComponent<Card>();
-        cards[5] = card6;
-        Card card7 = Card7.GetComponent<Card>();
-        cards[6] = card7;
-        Card card8 = Card8.GetComponent<Card>();
-        cards[7] = card8;
+        GameObject spawncard1 = Instantiate(Card1, transform.position, transform.rotation);
+        cards[0] = spawncard1;
+        GameObject spawncard2 = Instantiate(Card2, transform.position, transform.rotation);
+        cards[1] = spawncard2;
+        GameObject spawncard3 = Instantiate(Card3, transform.position, transform.rotation);
+        cards[2] = spawncard3;
+        GameObject spawncard4 = Instantiate(Card4, transform.position, transform.rotation);
+        cards[3] = spawncard4;
+        GameObject spawncard5 = Instantiate(Card5, transform.position, transform.rotation);
+        cards[4] = spawncard5;
+        GameObject spawncard6 = Instantiate(Card6, transform.position, transform.rotation);
+        cards[5] = spawncard6;
+        GameObject spawncard7 = Instantiate(Card7, transform.position, transform.rotation);
+        cards[6] = spawncard7;
+        GameObject spawncard8 = Instantiate(Card8, transform.position, transform.rotation);
+        cards[7] = spawncard8;
+        Shuffle();
+        foreach (GameObject card in cards)
+        {
+            Card cardobject = card.GetComponent<Card>();
+            Debug.Log(cardobject.GetNumber());
+        }
 
     }
 
@@ -43,17 +49,17 @@ public class CardDeck : MonoBehaviour
     public void Shuffle()
     {
         // sorting by numbers first, then by suits (alphabetical) within the numbers 
-        for (int i = 0; i < cards.Length; i++)
+        for (int j = 0; j < cards.Length - 1; j++)
         {
-            for (int j = 0; j < cards.Length - 1; j++)
+            Card card1 = cards[j].GetComponent<Card>();
+            Card card2 = cards[j+1].GetComponent<Card>();
+            if (card1.GetNumber() > card2.GetNumber())
             {
-                if (cards[j].GetNumber() > cards[j+1].GetNumber())
-                {
-                    Card toSwap = cards[j];
-                    cards[j] = cards[j+1];
-                    cards[j+1] = toSwap; 
-                }
+                GameObject toSwap = cards[j];
+                cards[j] = cards[j+1];
+                cards[j+1] = toSwap; 
             }
         }
+        
     }
 }
