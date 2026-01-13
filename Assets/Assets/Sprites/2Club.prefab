@@ -103,5 +103,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c6f198f0389bf8469df91e272baef32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Card
-  Number: 2
-  Suit: club
+  _number: 2
+  _suit: club
