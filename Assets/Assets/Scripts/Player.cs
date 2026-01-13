@@ -5,17 +5,14 @@ using UnityEngine.Rendering;
 public class PlayerMovement : MonoBehaviour
 {
     private float _moveSpeed = 10f;
+    private int _health = 100;
     private Animator _anim;
     private Vector3 _movementDirection;
-    private ItemBaseClass _item;
-    private ItemBaseClass _powerUp;
     private ItemBaseClass _weapon;
 
     public void Awake()
     {
         this.SetAnimator(GetComponent<Animator>());
-        this._item = null;
-        this._powerUp = null;
         this._weapon = null;
     }
 
@@ -104,4 +101,24 @@ public class PlayerMovement : MonoBehaviour
     {
         this._movementDirection = newDirection;
     }
+
+    public int GetHealth()
+    {
+        return this._health;
+    }
+
+    public void SetHealth(int newHealth)
+    {
+        if (newHealth < 0)
+        {
+            this._health = 0;
+        } else if (newHealth > 100)
+        {
+            this._health = 100;
+        } else
+        {
+            this._health = newHealth;
+        }
+    }
+
 }

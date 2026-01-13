@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 381246309}
   - component: {fileID: 381246308}
   m_Layer: 5
-  m_Name: Star Powerup
+  m_Name: Heart Powerup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,8 +504,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 460.1797, y: 108.649994}
-  m_SizeDelta: {x: 124.681, y: 123.49}
+  m_AnchoredPosition: {x: 455.62, y: 109.73}
+  m_SizeDelta: {x: 115.55, y: 109.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381246308
 MonoBehaviour:
@@ -527,7 +527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2898642787918477729, guid: 3013a9c3f0cb346fe9666348eff4ec5e, type: 3}
+  m_Sprite: {fileID: -4657243761757014800, guid: 14192d738330c45e6afa4a0fee314df4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -961,7 +961,7 @@ GameObject:
   - component: {fileID: 898341027}
   - component: {fileID: 898341026}
   m_Layer: 5
-  m_Name: Star Text
+  m_Name: Heart Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1008,11 +1008,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Price: $25
 
-    Time: 10s
-
-    Speed + 10
-
-    Attack +10'
+    Health + 10'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
