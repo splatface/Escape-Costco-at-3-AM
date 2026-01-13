@@ -7,6 +7,16 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip background;
     public AudioClip death;
-    public AudioClip door;
     public AudioClip walk;
+
+    private void Start()
+    {
+        musicSource.clip = background;
+        musicSource.Play();
+    }
+
+    public void PlaySFX(AudioClip clip)
+    {
+        SFXSource.PlayOneShot(clip);
+    }
 }

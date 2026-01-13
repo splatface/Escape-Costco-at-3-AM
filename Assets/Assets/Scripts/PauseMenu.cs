@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     public static PauseManager Instance;
-
     public GameObject pauseMenuUI;
     private bool isPaused = false;
 
