@@ -643,6 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb03ae5aed05294ab50ab2c72d4b832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  MilkPrefab: {fileID: 3018084283017518044, guid: a05a6953284865f4196e574244262c38, type: 3}
 --- !u!4 &394976992
 Transform:
   m_ObjectHideFlags: 0

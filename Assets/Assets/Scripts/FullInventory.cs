@@ -13,9 +13,9 @@ public class FullInventory : MonoBehaviour
 
 
     //variables for storing items in the inventory
-    private ItemBaseClass[] _itemsInside = new ItemBaseClass[30]; // array of all items in the inventory
+    private string[] _itemsInside = new string[30]; // array of all items in the inventory as their tags
     private int _nextPosition = 0; // cursor in array
-    private float _boxSideLength = 1f; // (PLACEHOLDER FOR NOW! CHECK LENGTH)
+    private float _boxSideLength = 1.5f; // (PLACEHOLDER FOR NOW! CHECK LENGTH)
     private ItemBaseClass _currentItem;
     public ItemSpawner Spawner;
 
@@ -29,45 +29,61 @@ public class FullInventory : MonoBehaviour
     //what happens when the item needs to go into the full inventory
     public void PlaceIntoInven(string tag)
     {
-        Debug.Log(tag);
-        GameObject itemObject = GameObject.FindWithTag(tag);
-        ItemBaseClass item = itemObject.GetComponent<ItemBaseClass>(); // "converts" it to ItemBaseClass type for usage
-
-        _itemsInside[_nextPosition] = item;
+        _itemsInside[_nextPosition] = tag;
         _nextPosition += 1;
-        Debug.Log(item);
     }
 
     // what happens when the inventory is revealed onto the screen
     public void ShowInvenItems()
     {
+        float startingLength = -3.5f;
+        float endingLength = startingLength+5*_boxSideLength;
+        float y = 3f;
+        float x = startingLength;
+        Debug.Log("endingLength:" + endingLength);
+
         for (int cursor=0; cursor<_nextPosition; cursor += 1)
         {
-            // not sure on this logic yet; CHECK
-            float x = cursor%_lengthRow;
-            float y = cursor/_lengthRow * _boxSideLength;
+            if (x<=endingLength)
+            {
+            x += _boxSideLength; // moves to the next box
+            }
+            else
+            {
+                x=startingLength+_boxSideLength; // sets it back to the first box on the left
+                y-=_boxSideLength; // moves position one row down
+            }
+            Debug.Log("c:" + cursor);
+            Debug.Log("x:" + x);
+            Debug.Log("");
+
             Vector3 position = new Vector3 (x,y);
 
-            Spawner.SpawnItem(_itemsInside[cursor].tag, position);
+            Spawner.SpawnItem(_itemsInside[cursor], position);
+        }
+    }
+
+    public void DestroyInvenItems()
+    {
+        for (int cursor=0; cursor<_nextPosition; cursor += 1)
+        {
+            tag = _itemsInside[cursor];
+
+            GameObject item = GameObject.FindWithTag(tag);
+            DestroyImmediate(item);
         }
     }
 
     // what happens when you click on an item in the inventory
     public void OnClickItem(int itemNumber) // pass in the index
     {
-        ItemBaseClass item = _itemsInside[itemNumber];
-        string tag = item.tag;
-
-        GameObject itemObject = GameObject.FindWithTag(tag);
-        item = itemObject.GetComponent<ItemBaseClass>();
-
-        _currentItem = item;
-        string name = item.Name;
-        string descrip = item.Description;
+        string itemTag = _itemsInside[itemNumber];
+        GameObject itemObject = GameObject.FindWithTag(itemTag);
+        ItemBaseClass item = itemObject.GetComponent<ItemBaseClass>();
 
         //updates the item's text
-        ItemTitle.text = name;
-        ItemDescrip.text = descrip;
+        ItemTitle.text = item.Name;
+        ItemDescrip.text = item.Description;
     }
 
 
@@ -85,11 +101,15 @@ public class FullInventory : MonoBehaviour
 
     void Start()
     {
-        PlaceIntoInven("Milk"); // for testing purposes; remove in actual
     }
 
     void Update()
     {
+        if (Keyboard.current.aKey.isPressed)
+        {
+            PlaceIntoInven("Milk");
+        }
+
         //changes state of whether inventory is shown or not
         if (Keyboard.current.iKey.wasPressedThisFrame)
         {
@@ -104,6 +124,7 @@ public class FullInventory : MonoBehaviour
             {
                 InventoryBox.sortingLayerName = "HideInventory";                
                 _isOpen = false;
+                DestroyInvenItems();
             }
         }
     }
