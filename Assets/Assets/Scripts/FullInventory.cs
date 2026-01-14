@@ -37,7 +37,7 @@ public class FullInventory : MonoBehaviour
     }
 
     // what happens when the inventory is revealed onto the screen
-    public void ShowInvenItems()
+    public void ShowInvenItems(string[] items=null)
     {
         float startingLength = -3.5f;
         float endingLength = startingLength+(_lengthRow-1)*_boxSideLength;
@@ -58,7 +58,15 @@ public class FullInventory : MonoBehaviour
 
             Vector3 position = new Vector3 (x,y);
 
-            Spawner.SpawnItem(_itemsInside[cursor], position);
+            if (items != null) // if argument given
+            {
+                Spawner.SpawnItem(items[cursor], position); // goes based off of the sorted list
+            }
+            else
+            {
+                Spawner.SpawnItem(_itemsInside[cursor], position); // goes based off unsorted list
+            }
+
         }
     }
 
@@ -90,8 +98,6 @@ public class FullInventory : MonoBehaviour
         GameObject itemObject = GameObject.FindWithTag(itemTag);
         ItemBaseClass item = itemObject.GetComponent<ItemBaseClass>();
         _currentItem = item;
-
-        Debug.Log(item.Description);
 
         //updates the item's text
         ItemTitle.text = itemTag;
@@ -127,7 +133,7 @@ public class FullInventory : MonoBehaviour
                 InventoryBox.sortingLayerName = "ShowInventory";
                 InventoryBox.sortingOrder = 0;
                 _isOpen = true;
-                ShowInvenItems();
+                ShowInvenItems(_itemsInside);
                 TextRender.sortingLayerName = "Text";
                 TextRender.sortingOrder = 10;
             }

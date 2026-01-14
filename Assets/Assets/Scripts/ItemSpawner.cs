@@ -3,8 +3,8 @@ using UnityEngine;
 public class ItemSpawner : MonoBehaviour
 {
     public GameObject MilkPrefab;
-    public GameObject ItemSpawned;
-    public SpriteRenderer ItemRender;
+    private GameObject ItemSpawned;
+    private SpriteRenderer ItemRender;
     public void SpawnItem(string itemTag, Vector3 position)
     {
 
@@ -12,7 +12,6 @@ public class ItemSpawner : MonoBehaviour
         {
             ItemSpawned = Instantiate(MilkPrefab, position, transform.rotation);
             ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
-            
         }
 
         ItemRender.sortingLayerName = "ShowInventory";
