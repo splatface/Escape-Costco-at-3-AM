@@ -48,5 +48,8 @@ TagManager:
   - name: ShowInventory
     uniqueID: 3628579805
     locked: 0
+  - name: Text
+    uniqueID: 247508753
+    locked: 0
   m_RenderingLayers:
   - Default

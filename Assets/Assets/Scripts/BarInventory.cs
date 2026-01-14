@@ -9,34 +9,36 @@ public class BarInventory : MonoBehaviour
     private bool _showState;
 
     //variables for putting items into inventory / current items in inventory
-    private ItemBaseClass[] _currentItems = new ItemBaseClass[4];
-    private float _itemSpacing = 0.5f;
+    private string[] _currentItems = new string[4];
+    private float _itemSpacing = 1.5f;
     public ItemSpawner Spawner;
 
-    public void PlaceIntoInven(ItemBaseClass item)
+    public void PlaceIntoInven(string itemTag)
     {
+        GameObject itemObject = GameObject.FindWithTag(itemTag);
+        ItemBaseClass item = itemObject.GetComponent<ItemBaseClass>();
         string type = item.Type;
-        float newX = 0f;
-        float newY = 0f;
+        float newX = 3.7f;
+        float newY = -3.7f;
 
         if (type == "weapon")
         {
-            _currentItems[0] = item;
-            //change values of newX and newY here (and for all of the others) 
+            _currentItems[0] = itemTag;
         }
         else if (type == "interactable")
         {
-            _currentItems[1] = item;
-            newX = 3.5f;
-            newY = -3f;
+            _currentItems[1] = itemTag;
+            newX += _itemSpacing;
         }
         else if (type == "keycard")
         {
-            _currentItems[2] = item;
+            _currentItems[2] = itemTag;
+            newX += 2*_itemSpacing;
         }
         else if (type == "powerup")
         {
-            _currentItems[3] = item;
+            _currentItems[3] = itemTag;
+            newX += 3*_itemSpacing;
         }
 
         Vector3 position = new Vector3 (newX, newY);
@@ -50,13 +52,18 @@ public class BarInventory : MonoBehaviour
         {
             if (_currentItems[cursor] != null)
             {
-                GameObject itemName = GameObject.FindWithTag(_currentItems[cursor].Name);
+                GameObject itemName = GameObject.FindWithTag(_currentItems[cursor]);
                 SpriteRenderer renderer = itemName.GetComponent<SpriteRenderer>();
                 
                 renderer.sortingLayerName = "ShowInventory";
                 
             }
         }
+    }
+
+    public string[] GetCurrentItems()
+    {
+        return _currentItems;
     }
     
     void Start()

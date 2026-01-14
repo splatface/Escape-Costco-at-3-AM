@@ -10,8 +10,9 @@ public class EquipButton : MonoBehaviour
     public void OnClick()
     {
         ItemBaseClass item = FullInventory.GetCurrentItem();
+        tag = item.tag;
 
-        BarInventory.PlaceIntoInven(item);
+        BarInventory.PlaceIntoInven(tag);
         //equip item into 4 slots based on type
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
