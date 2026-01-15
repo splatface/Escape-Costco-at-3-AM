@@ -123,6 +123,14 @@ public class FullInventory : MonoBehaviour
 
     void Update()
     {
+        if (Keyboard.current.aKey.wasPressedThisFrame)
+        {
+            PlaceIntoInven("Milk");
+        }
+        if (Keyboard.current.sKey.wasPressedThisFrame)
+        {
+            PlaceIntoInven("Banana");
+        }
 
         //changes state of whether inventory is shown or not
         if (Keyboard.current.iKey.wasPressedThisFrame)

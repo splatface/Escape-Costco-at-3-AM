@@ -7,10 +7,13 @@ public class InvenSorting1 : MonoBehaviour
     public TMP_Dropdown Sorting1;
     private int _index = 0;
     public FullInventory Inventory;
+
+    private bool _needChange = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void ChangeSort(TMP_Dropdown newSort)
     {
         _index = newSort.value;
+        _needChange = true;
     }
 
     void Start()
@@ -21,9 +24,10 @@ public class InvenSorting1 : MonoBehaviour
 
     void Update()
     {
-        if (_index == 0)
+        if (_index == 0 && _needChange == true)
         {
             Inventory.ShowInvenItems();
+            _needChange = false;
         }
         else if (_index == 1)
         {

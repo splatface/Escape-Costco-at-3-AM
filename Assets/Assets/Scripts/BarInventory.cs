@@ -12,6 +12,8 @@ public class BarInventory : MonoBehaviour
     private string[] _currentItems = new string[4];
     private float _itemSpacing = 1.5f;
     public ItemSpawner Spawner;
+    private GameObject[] _previousObjectList;
+    private GameObject[] SpawnedObjects = new GameObject[4];
 
     public void PlaceIntoInven(string itemTag)
     {
@@ -20,30 +22,46 @@ public class BarInventory : MonoBehaviour
         string type = item.Type;
         float newX = 3.7f;
         float newY = -3.7f;
+        int index = 0;
+        
+        GameObject[] pastItemObject = new GameObject[4];
+
+        for (int itemNum = 0; itemNum<4; itemNum+=1) //to copy over the info and not the location
+        {
+            pastItemObject[itemNum] = SpawnedObjects[itemNum];
+        }
 
         if (type == "weapon")
         {
             _currentItems[0] = itemTag;
+            index = 0;
         }
         else if (type == "interactable")
         {
             _currentItems[1] = itemTag;
             newX += _itemSpacing;
+            index = 1;
         }
         else if (type == "keycard")
         {
             _currentItems[2] = itemTag;
             newX += 2*_itemSpacing;
+            index = 2;
         }
         else if (type == "powerup")
         {
             _currentItems[3] = itemTag;
             newX += 3*_itemSpacing;
+            index = 3;
         }
-
         Vector3 position = new Vector3 (newX, newY);
 
-        Spawner.SpawnItem(item.tag, position);
+        SpawnedObjects[index] = Spawner.SpawnItem(item.tag, position);
+
+        if (pastItemObject[index] != null)
+        {
+            Destroy(pastItemObject[index]); // destroys previous sprite at that specific location
+        }
     }
 
     public void ShowItems()
