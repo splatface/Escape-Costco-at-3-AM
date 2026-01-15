@@ -5,6 +5,7 @@ public class CreateGas : MonoBehaviour
 {
     public GameObject Bleach;
     public GameObject Vinegar;
+    public GameObject Bowl;
     public GameObject OneSubstance;
     public GameObject TwoSubstances;
     public GameObject MixButton;
@@ -20,15 +21,16 @@ public class CreateGas : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Vector3 bleachPosition = new Vector3(-7f, -2f, 1f);
-        Instantiate(Bleach, bleachPosition, transform.rotation);
-        Vector3 vinegarPosition = new Vector3(7f, -2f, 1f);
-        Instantiate(Vinegar, vinegarPosition, transform.rotation);
+        Bleach.SetActive(true);
+        Vinegar.SetActive(true);
         MixButton.SetActive(false);
         Transition1.SetActive(false);
         Transition2.SetActive(false);
         Transition3.SetActive(false);
         Transition4.SetActive(false);
+        OneSubstance.SetActive(false);
+        TwoSubstances.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -47,20 +49,29 @@ public class CreateGas : MonoBehaviour
         if (this._substances == 0)
         {
             // show one substance 
-            Vector3 oneSubstancePosition = new Vector3(-0.2f, -1.2f, 1f);
-            Instantiate(OneSubstance, oneSubstancePosition, transform.rotation);
+            OneSubstance.SetActive(true);
             this._substances += 1;
         }
         else 
         {
             // show two substances 
-            Instantiate(TwoSubstances, transform.position, transform.rotation);
+            TwoSubstances.SetActive(true);
             this._substances += 1;
             MixButton.SetActive(true);
         }
     }
+    public void DisappearBleach()
+    {
+        Bleach.SetActive(false);
+    }
+    public void DisappearVinegar()
+    {
+        Vinegar.SetActive(false);
+    }
     IEnumerator Transition()
     {
+        MixButton.SetActive(false);
+
         Transition1.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         Transition2.SetActive(true);
@@ -68,6 +79,20 @@ public class CreateGas : MonoBehaviour
         Transition3.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         Transition4.SetActive(true);
+
+        Instantiate(ToxicGas, transform.position, transform.rotation);
+        Bowl.SetActive(false);
+        OneSubstance.SetActive(false);
+        TwoSubstances.SetActive(false);
+
+        yield return new WaitForSeconds(0.5f);
+        Transition4.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        Transition3.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        Transition2.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        Transition1.SetActive(false);
     }
     public void StartTransition()
     {

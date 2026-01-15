@@ -13,6 +13,8 @@ public class CardDeck : MonoBehaviour
 
     private GameObject[] cards = new GameObject[8];
 
+    private int _layerNumber = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,12 +26,13 @@ public class CardDeck : MonoBehaviour
         cards[5] = Card6;
         cards[6] = Card7;
         cards[7] = Card8;
-        InstantiateAll();
+        InstantiateAll(this._layerNumber);
         //foreach (GameObject card in cards)
         //{
         //    Card cardobject = card.GetComponent<Card>();
         //    Debug.Log(cardobject.GetNumber());
         //}
+        Shuffle();
 
     }
 
@@ -38,15 +41,21 @@ public class CardDeck : MonoBehaviour
     {
         
     }
-    public void InstantiateAll()
+    public void InstantiateAll(int layer)
     {
         for (int i = 0; i < cards.Length; i++)
         {
-            Instantiate(cards[i], new Vector3(-7f + i*2, 0f, 1f), transform.rotation);
+            GameObject newCard = Instantiate(cards[i], new Vector3(-7f + i*2, 0f, 1f), transform.rotation);
+            Renderer objectRenderer = newCard.GetComponent<Renderer>(); 
+            if (objectRenderer != null)
+            {
+                objectRenderer.sortingOrder = layer;
+            }
         }
     }
     public void RemoveAll()
     {
+        // THIS DOESNT WORK !!! 
         for (int i = 0; i < cards.Length; i++)
         {
             cards[i].SetActive(false);
@@ -96,7 +105,8 @@ public class CardDeck : MonoBehaviour
                 }
             }
         }
-        
+        this._layerNumber += 1;
+        InstantiateAll(this._layerNumber);
     }
 
 }
