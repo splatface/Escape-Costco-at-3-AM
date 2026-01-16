@@ -2118,6 +2118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaceItemInvenFull
   InventoryBox: {fileID: 748652641}
   BarInventory: {fileID: 1498018792}
+  DropdownCanvas: {fileID: 380660168}
   Spawner: {fileID: 394976991}
   ItemTitle: {fileID: 973309043}
   ItemDescrip: {fileID: 1190839423}
@@ -3021,6 +3022,7 @@ GameObject:
   - component: {fileID: 1102842519}
   - component: {fileID: 1102842518}
   - component: {fileID: 1102842517}
+  - component: {fileID: 1102842520}
   m_Layer: 5
   m_Name: Sorting2
   m_TagString: Untagged
@@ -3152,6 +3154,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102842515}
   m_CullTransparentMesh: 1
+--- !u!114 &1102842520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102842515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79fcb423e7fdd542a55e12c23f7e043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvenSorting2
 --- !u!1 &1150687977
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,7 +3872,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 808340728}
+        m_TargetAssemblyTypeName: InvenSorting1, Assembly-CSharp
+        m_MethodName: ChangeSort
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1215148262}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1215148263
 MonoBehaviour:

@@ -12,6 +12,7 @@ public class FullInventory : MonoBehaviour
     private static bool _isOpen = false;
     private int _lengthRow = 6; // for putting the images on the screen
     public BarInventory BarInventory;
+    public Canvas DropdownCanvas;
 
 
     //variables for storing items in the inventory
@@ -27,6 +28,8 @@ public class FullInventory : MonoBehaviour
     public TMP_Text ItemTitle;
     public TMP_Text ItemDescrip;
     public Canvas TextRender;
+
+    public static FullInventory Instance {get; set;}
 
 
     //what happens when the item needs to go into the full inventory
@@ -104,6 +107,11 @@ public class FullInventory : MonoBehaviour
         ItemDescrip.text = item.Description;
     }
 
+    public string[] GetAllItems()
+    {
+        return _itemsInside;
+    }
+
 
     //getters for encapsulation
     public ItemBaseClass GetCurrentItem()
@@ -119,6 +127,20 @@ public class FullInventory : MonoBehaviour
 
     void Start()
     {
+    }
+
+    // singleton logic so will always exist
+    void Awake()
+    {
+        if (Instance == null) // makes it so that only one exists at a time
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject); // destroy this would destroy the one we want
+        }
     }
 
     void Update()
@@ -143,7 +165,9 @@ public class FullInventory : MonoBehaviour
                 _isOpen = true;
                 ShowInvenItems(_itemsInside);
                 TextRender.sortingLayerName = "Text";
+                DropdownCanvas.sortingLayerName = "ShowInventory";
                 TextRender.sortingOrder = 10;
+                DropdownCanvas.sortingOrder = 10;
             }
             else
             {
@@ -151,6 +175,7 @@ public class FullInventory : MonoBehaviour
                 _isOpen = false;
                 DestroyInvenItems();
                 TextRender.sortingLayerName = "HideInventory";
+                DropdownCanvas.sortingLayerName = "HideInventory";
             }
         }
     }
