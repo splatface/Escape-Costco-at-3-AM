@@ -1608,8 +1608,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 739032711}
-        m_TargetAssemblyTypeName: ButtonTimePower, Assembly-CSharp
-        m_MethodName: OnButtonClicked
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: SortTimePower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
