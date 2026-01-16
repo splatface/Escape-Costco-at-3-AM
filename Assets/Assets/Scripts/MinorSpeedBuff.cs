@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MinorSpeedBuff : PowerUpEffect
+public class MinorSpeedBuff : SpeedBuff
 {
     private void Awake()
     {

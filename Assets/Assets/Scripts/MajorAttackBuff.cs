@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MajorAttackBuff : PowerUpEffect
+public class MajorAttackBuff : AttackBuff
 {
     private void Awake()
     {
