@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class MajorSpeedBuff : PowerUpEffect
+public class MajorAttackBuff : PowerUpEffect
 {
     private void Awake()
     {
-        _buff = 8;
+        _buff = 6;
         _duration = 10;
     }
 }

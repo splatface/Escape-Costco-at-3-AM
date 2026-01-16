@@ -78,8 +78,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetMoveSpeed(float newSpeed)
     {
-        //Move speed can only be set between 0 and 10
-        if (newSpeed > 0 && newSpeed < 10)
+        //Move speed can only be set between 0 and 18
+        if (newSpeed > 0 && newSpeed < 18)
         {
             this._moveSpeed = newSpeed;
         } else
@@ -132,5 +132,27 @@ public class PlayerMovement : MonoBehaviour
             this._health = newHealth;
         }
     }
+
+    public ItemBaseClass GetWeapon()
+    {
+        //Cannot return the weapon if the player is not holding a weapon
+        if (this._weapon == null)
+        {
+            throw new System.Exception("Weapon is null.");
+        }
+        
+        return this._weapon;
+    }
+
+    public void SetWeapon(ItemBaseClass newWeapon)
+    {   
+        if (this._weapon != null)
+        {
+            //add back to inventory
+            this._weapon = newWeapon;
+        }
+    }
+
+    //Add a method where you use the weapon probably
 
 }

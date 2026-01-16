@@ -3,29 +3,31 @@ using System.Collections;
 
 public abstract class SpeedBuff : PowerUpEffect
 {
-    protected float speedMultiplier;
-    protected float duration;
-
-    public override void Apply(GameObject target)
+    private void Awake()
     {
-        PlayerMovement player = target.GetComponent<PlayerMovement>();
-
-        if (player != null)
-        {
-            player.StartCoroutine(ApplyBuff(player));
-        }
+        
     }
 
-    private IEnumerator ApplyBuff(PlayerMovement player)
-    {
-        float originalSpeed = player.GetMoveSpeed();
+    // public void Apply(GameObject target)
+    // {
+    //     PlayerMovement player = target.GetComponent<PlayerMovement>();
 
-        float buffedSpeed = originalSpeed * speedMultiplier;
+    //     if (player != null)
+    //     {
+    //         player.StartCoroutine(ApplyBuff(player));
+    //     }
+    // }
 
-        player.SetMoveSpeed(buffedSpeed);
+    // private IEnumerator ApplyBuff(PlayerMovement player)
+    // {
+    //     float originalSpeed = player.GetMoveSpeed();
 
-        yield return new WaitForSeconds(duration);
+    //     float buffedSpeed = originalSpeed * _buff;
 
-        player.SetMoveSpeed(originalSpeed);
-    }
+    //     player.SetMoveSpeed(buffedSpeed);
+
+    //     yield return new WaitForSeconds(_duration);
+
+    //     player.SetMoveSpeed(originalSpeed);
+    // }
 }
