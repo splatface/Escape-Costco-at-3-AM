@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6525030194517419051}
   m_Layer: 0
   m_Name: 2Club
-  m_TagString: Untagged
+  m_TagString: PlayingCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
