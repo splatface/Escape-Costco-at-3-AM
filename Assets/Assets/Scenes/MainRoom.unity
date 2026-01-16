@@ -2893,7 +2893,7 @@ GameObject:
   - component: {fileID: 1057231190}
   - component: {fileID: 1057231189}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: Guard 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3617,6 +3617,7 @@ GameObject:
   - component: {fileID: 1329961289}
   - component: {fileID: 1329961288}
   - component: {fileID: 1329961287}
+  - component: {fileID: 1329961290}
   m_Layer: 0
   m_Name: Guard 1
   m_TagString: Untagged
@@ -3655,8 +3656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 714599a42c527194c8c6b3094e913beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoMoveBackAndForth
-  delta: 300
-  speed: 6
 --- !u!114 &1329961288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3695,6 +3694,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329961285}
   m_CullTransparentMesh: 1
+--- !u!114 &1329961290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329961285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af89d6b94b1d3248b872285f9618d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FastGuard
 --- !u!1 &1330780827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4789,6 +4800,7 @@ GameObject:
   - component: {fileID: 1609017993}
   - component: {fileID: 1609017992}
   - component: {fileID: 1609017991}
+  - component: {fileID: 1609017994}
   m_Layer: 0
   m_Name: Guard 2
   m_TagString: Untagged
@@ -4827,8 +4839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 714599a42c527194c8c6b3094e913beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoMoveBackAndForth
-  delta: 80
-  speed: 4
 --- !u!114 &1609017992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4867,6 +4877,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609017989}
   m_CullTransparentMesh: 1
+--- !u!114 &1609017994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609017989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a60c8945a46465408e02fd4c05d7334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlowGuard
 --- !u!1 &1641792404
 GameObject:
   m_ObjectHideFlags: 0
@@ -5642,16 +5664,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853052249}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1953957267}
+  m_Father: {fileID: 1896519513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 0.0000019073}
+  m_AnchoredPosition: {x: 17.00003, y: 169.83333}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1853052251
@@ -5857,6 +5879,7 @@ Transform:
   - {fileID: 119791209}
   - {fileID: 557342465}
   - {fileID: 571086736}
+  - {fileID: 1853052250}
   m_Father: {fileID: 1953957267}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907313660
@@ -6239,7 +6262,6 @@ RectTransform:
   - {fileID: 1027268405}
   - {fileID: 941081503}
   - {fileID: 1896519513}
-  - {fileID: 1853052250}
   - {fileID: 1329961286}
   - {fileID: 1609017990}
   - {fileID: 1645150301}

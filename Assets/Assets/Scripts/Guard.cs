@@ -1,17 +1,31 @@
 using UnityEngine;
 
-public class AutoMoveBackAndForth : MonoBehaviour
+public abstract class Guard : MonoBehaviour
 {
-public float delta = 3.0f;
-public float speed = 2.0f;
-private Vector3 startPos;
-void Start()
-{
-startPos = transform.position;
-}
-void Update()
-{
-float newX = startPos.x + delta * Mathf.Sin(Time.time * speed);
-transform.position = new Vector3(newX, startPos.y, startPos.z);
-}
+    // encapsulated variables
+    protected float _speed;
+    protected float _patrolDistance;
+
+    private Vector3 _startPosition;
+    private int _direction = 1;
+
+    void Start()
+    {
+        _startPosition = transform.position;
+    }
+
+    void Update()
+    {
+        MoveBackAndForth();
+    }
+
+    private void MoveBackAndForth()
+    {
+        transform.position += new Vector3(_direction * _speed * Time.deltaTime, 0f, 0f);
+
+        if (Vector3.Distance(transform.position, _startPosition) >= _patrolDistance)
+        {
+            _direction *= -1;
+        }
+    }
 }
