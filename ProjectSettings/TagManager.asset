@@ -7,6 +7,11 @@ TagManager:
   - Milk
   - Banana
   - PlayingCard
+  - Shoe
+  - Flash
+  - Muscle
+  - Hulk
+  - Heart
   layers:
   - Default
   - TransparentFX
