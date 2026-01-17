@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CreateGas : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class CreateGas : MonoBehaviour
     public GameObject Transition4;
 
     public GameObject ToxicGas;
+    public GameObject CollectGasButton;
     
     private int _substances = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,6 +32,8 @@ public class CreateGas : MonoBehaviour
         Transition4.SetActive(false);
         OneSubstance.SetActive(false);
         TwoSubstances.SetActive(false);
+        ToxicGas.SetActive(false);
+        CollectGasButton.SetActive(false); 
 
     }
 
@@ -80,7 +84,7 @@ public class CreateGas : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Transition4.SetActive(true);
 
-        Instantiate(ToxicGas, transform.position, transform.rotation);
+        ToxicGas.SetActive(true);
         Bowl.SetActive(false);
         OneSubstance.SetActive(false);
         TwoSubstances.SetActive(false);
@@ -93,9 +97,15 @@ public class CreateGas : MonoBehaviour
         Transition2.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         Transition1.SetActive(false);
+        CollectGasButton.SetActive(true);
     }
     public void StartTransition()
     {
         StartCoroutine(Transition());
+    }
+    public void CollectGas()
+    {
+        // REMEMBER TO ADD GAS TO INVENTORY, ASK TIFFANY HOW IT WORKS
+        SceneManager.LoadScene("AssistantRoom");
     }
 }

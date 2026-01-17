@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class CardDeck : MonoBehaviour
@@ -15,8 +17,10 @@ public class CardDeck : MonoBehaviour
     public GameObject CheckButton;
     public GameObject SortInstructions;
     public GameObject SuitInstructions;
+    public GameObject BigTextBoard;
     public GameObject CongratsText;
     public GameObject CollectButton;
+    public GameObject WrongText;
 
     private GameObject[] _cards = new GameObject[8];
 
@@ -34,6 +38,14 @@ public class CardDeck : MonoBehaviour
         _cards[6] = Card7;
         _cards[7] = Card8;
         InstantiateAll(this._layerNumber);
+        ShuffleButton.SetActive(true);
+        CheckButton.SetActive(true);
+        SortInstructions.SetActive(true);
+        SuitInstructions.SetActive(true);
+        BigTextBoard.SetActive(false);
+        CongratsText.SetActive(false);
+        CollectButton.SetActive(false);
+        WrongText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -117,14 +129,37 @@ public class CardDeck : MonoBehaviour
     public void CheckOrder()
     {
         GameObject[] correctList = { Card4, Card6, Card5, Card1, Card8, Card7, Card2, Card3 };
-        if (_cards == correctList)
+        if (_cards.SequenceEqual(correctList))
         {
             // make stuff on screen disappear (including instructions, instruction boards, and buttons)
             // display correct text and have a button to "collect bleach/vinegar" then go back to other scene 
+            ShuffleButton.SetActive(false);
+            CheckButton.SetActive(false);
+            SortInstructions.SetActive(false);
+            SuitInstructions.SetActive(false);
+
+            BigTextBoard.SetActive(true);
+            CongratsText.SetActive(true);
+            CollectButton.SetActive(true); 
         }
         else
         {
-            // display wrong text for like 2 secs then let them continue 
+            StartCoroutine(WrongOrder());
         }
+    }
+    IEnumerator WrongOrder()
+    {
+        BigTextBoard.SetActive(true);
+        WrongText.SetActive(true);
+        yield return new WaitForSeconds(3);
+        BigTextBoard.SetActive(false);
+        WrongText.SetActive(false);
+    }
+
+    public void SceneTransition()
+    {
+        // load back to other scene
+        // should be triggered when user clicks "collect bleach" button
+        // add bleach to inventory 
     }
 }
