@@ -11,6 +11,18 @@ public class LoadingLogic : MonoBehaviour
     {
         File.ReadAllLines(filePath);
     }
+
+    public void ButtonClicked(int buttonID)
+    {
+        if (buttonID == 0)
+        {
+            Load(filePath1);
+        }
+        else
+        {
+            Load(filePath2);
+        }
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -4,8 +4,7 @@ using UnityEngine;
 public class BarInventory : MonoBehaviour
 {
     //variables for state of inventory
-    public FullInventory InventoryFull;
-    public SpriteRenderer InventoryBar;
+    public SpriteRenderer InventoryBarRenderer;
     private bool _showState;
 
     //variables for putting items into inventory / current items in inventory
@@ -14,6 +13,8 @@ public class BarInventory : MonoBehaviour
     public ItemSpawner Spawner;
     private GameObject[] _previousObjectList;
     private GameObject[] SpawnedObjects = new GameObject[4];
+    
+    public static BarInventory Instance {get; set;}
 
     public void PlaceIntoInven(string itemTag)
     {
@@ -88,25 +89,35 @@ public class BarInventory : MonoBehaviour
     {
     }
 
+    
+    // singleton logic so will always exist
     void Awake()
     {
-        //PlaceIntoInven(Milk);
+        if (Instance == null) // makes it so that only one exists at a time
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject); // destroy this would destroy the one we want
+        }
     }
 
     void Update()
     {
 
         //changes state of bar inventory
-        _showState = InventoryFull.GetOpenState();
+        _showState = FullInventory.Instance.GetOpenState();
 
         if (_showState == false) // if the full inventory is NOT being shown
         {
-            InventoryBar.sortingLayerName = "ShowInventory";
+            InventoryBarRenderer.sortingLayerName = "ShowInventory";
             ShowItems();
         }
         else
         {
-            InventoryBar.sortingLayerName = "HideInventory";
+            InventoryBarRenderer.sortingLayerName = "HideInventory";
         }
 
     }

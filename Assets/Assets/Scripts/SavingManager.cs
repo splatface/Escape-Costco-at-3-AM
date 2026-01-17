@@ -35,23 +35,23 @@ public class SavingManager : MonoBehaviour
         #region Saving
 
         // saving playerPos
-        File.WriteAllText(filePath, playerPos.position.ToString());
-        File.WriteAllText(filePath, playerPos.rotation.ToString());
-        File.WriteAllText(filePath, playerPos.localScale.ToString());
+        File.WriteAllText(filePath, playerPos.position.ToString()); // clears all by writing
+        File.AppendAllText(filePath, playerPos.rotation.ToString()); // adds to it by appending
+        File.AppendAllText(filePath, playerPos.localScale.ToString());
 
         // saving scene
-        File.WriteAllText(filePath, currentSceneName);
+        File.AppendAllText(filePath, currentSceneName);
 
         // saving currently equipped items
         foreach (string item in allItems)
         {
-        File.WriteAllText(filePath, item);
+        File.AppendAllText(filePath, item);
         }
 
         // saving all items in inventory
         foreach (string item in allItems) // because at very end, know the exact position it starts and ends at
         {
-        File.WriteAllText(filePath, item);
+        File.AppendAllText(filePath, item);
         }
 
         #endregion

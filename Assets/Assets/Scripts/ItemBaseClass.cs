@@ -13,21 +13,11 @@ public class ItemBaseClass : MonoBehaviour
 
     //extra needed for equipping
     public PlayerMovement Player;
-    public FullInventory Inventory;
     public Canvas Renderer;
-
-    public void EquipItem(ItemBaseClass item)
-    {
-    }
 
     public virtual void UseItem()
     {
-        
-    }
-
-    public void OnClickTakeButton()
-    {
-        Inventory.PlaceIntoInven(tag);
+        Debug.Log("used");
     }
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,28 +29,28 @@ public class ItemBaseClass : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        // Item.position = transform.position;
+        Item.position = transform.position;
 
-        // Vector3 playerPosition = Player.GetCurrentPosition();
+        Vector3 playerPosition = Player.GetCurrentPosition();
 
-        // float x = playerPosition.x - Item.position.x;
-        // float y = playerPosition.y - Item.position.y;
+        float x = playerPosition.x - Item.position.x;
+        float y = playerPosition.y - Item.position.y;
 
-        // float distance = Mathf.Sqrt((float)(Math.Pow(x,2) + Math.Pow(y,2))); //change to calculate the distance between the player and the item
+        float distance = Mathf.Sqrt((float)(Math.Pow(x,2) + Math.Pow(y,2))); //change to calculate the distance between the player and the item
 
-        // if (distance <= 5)
-        // {
-        //     Renderer.sortingLayerName = "ShowInventory";
+        if (distance <= 5)
+        {
+            Renderer.sortingLayerName = "ShowInventory";
 
-        //     if (Keyboard.current.eKey.wasPressedThisFrame)
-        //     {
-        //         Inventory.PlaceIntoInven(tag);
-        //     }
-        // }
-        // else
-        // {
-        //     Renderer.sortingLayerName = "HideInventory";
-        // }
+            if (Keyboard.current.eKey.wasPressedThisFrame)
+            {
+                FullInventory.Instance.PlaceIntoInven(tag);
+            }
+        }
+        else
+        {
+            Renderer.sortingLayerName = "HideInventory";
+        }
 
     }
 }

@@ -11,7 +11,6 @@ public class FullInventory : MonoBehaviour
     public SpriteRenderer InventoryBox;
     private static bool _isOpen = false;
     private int _lengthRow = 6; // for putting the images on the screen
-    public BarInventory BarInventory;
     public Canvas DropdownCanvas;
 
 
@@ -79,7 +78,7 @@ public class FullInventory : MonoBehaviour
         {
             string itemTag = _itemsInside[cursor];
 
-            if (BarInventory.GetCurrentItems().Contains(itemTag)) // assumes will only have 1 of each item at a time
+            if (BarInventory.Instance.GetCurrentItems().Contains(itemTag)) // assumes will only have 1 of each item at a time
             {
                 continue; //goes onto next item
             }

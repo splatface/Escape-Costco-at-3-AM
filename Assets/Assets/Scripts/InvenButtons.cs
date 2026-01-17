@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class InvenButtons : MonoBehaviour
 {
-    public FullInventory Inventory;
     public Canvas Renderer;
     public void ButtonClicked(int buttonNum)
     {
-        Inventory.OnClickItem(buttonNum);
+        FullInventory.Instance.OnClickItem(buttonNum);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +16,7 @@ public class InvenButtons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Inventory.GetOpenState() == true)
+        if (FullInventory.Instance.GetOpenState() == true)
         {
                 Renderer.sortingLayerName = "ShowInventory";
         }
