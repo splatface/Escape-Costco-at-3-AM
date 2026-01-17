@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -58,6 +59,14 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("WalkUp",    direction == Vector3.up);
         anim.SetBool("WalkLeft",  direction == Vector3.left);
         anim.SetBool("WalkRight", direction == Vector3.right);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Final Door"))
+        {
+            SceneManager.LoadScene("WinScreen");
+        }
     }
 
     public Vector3 GetCurrentPosition()
