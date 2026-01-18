@@ -2,11 +2,17 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Scripting;
+using TMPro;
 
 public class ShopManager : MonoBehaviour
 {
     private static List<PowerUpEffect> _powerupList;
     private static List<GameObject> _powerupObjects;
+
+    private static List<PowerUpEffect> _powerupSearchList;
+    private static List<GameObject> _powerupSearchObjects;
+
+
     private static List<Vector2> _powerupPositions = new List<Vector2>
     {
         new Vector2(-496f, 35f),
@@ -19,6 +25,10 @@ public class ShopManager : MonoBehaviour
     public void Awake()
     {
         _powerupList = new List<PowerUpEffect>(GetComponentsInChildren<PowerUpEffect>());
+
+        _powerupObjects = new List<GameObject>();
+        foreach (PowerUpEffect p in _powerupList)
+            _powerupObjects.Add(p.gameObject);
     }
 
     public static void SortTimePlusPower()
@@ -44,8 +54,6 @@ public class ShopManager : MonoBehaviour
         }
 
         AddObjectsInOrder();
-
-        ChangePositions();
     }
 
     public static void AddObjectsInOrder()
@@ -69,4 +77,60 @@ public class ShopManager : MonoBehaviour
             }
         }
     }
+
+    public static void ResetAllVisible()
+    {
+        foreach (GameObject obj in _powerupObjects)
+            obj.SetActive(true);
+    }
+
+    public static int BinarySearchTimePlusPower(int target)
+    {
+        SortTimePlusPower();
+        _powerupSearchList = new List<PowerUpEffect>(_powerupList);
+        
+        int low = 0;
+        int high = _powerupList.Count - 1;
+        int result = -1;
+
+        while (low <= high)
+        {
+            int mid = (low + high) / 2;
+
+            if (_powerupList[mid].GetBuff() + _powerupList[mid].GetDuration() >= target)
+            {
+                result = mid;
+                high = mid - 1;
+            }
+            else
+            {
+                low = mid + 1;
+            }
+        }
+
+        return result;
+    }
+
+    public static void FilterTimePlusPower(string op, int value)
+    {
+        ResetAllVisible();
+        
+        foreach (PowerUpEffect p in _powerupList)
+        {
+            int total = p.GetBuff() + p.GetDuration();
+
+            bool hide = false;
+
+            if (op == "<" && total >= value)
+                hide = true;
+            else if (op == ">" && total <= value)
+                hide = true;
+            else if (op == "=" && total != value)
+                hide = true;
+
+            if (hide)
+                p.gameObject.SetActive(false);
+        }
+    }
+
 }

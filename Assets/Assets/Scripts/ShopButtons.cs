@@ -6,6 +6,7 @@ public class ShopButtons : MonoBehaviour
     public void SortTimePower()
     {
         ShopManager.SortTimePlusPower();
+        ShopManager.ChangePositions();
     }
 
     public void Purchase()
