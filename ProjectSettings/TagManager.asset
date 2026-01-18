@@ -14,6 +14,7 @@ TagManager:
   - Heart
   - Final Door
   - PuzzleButton
+  - Coin
   layers:
   - Default
   - TransparentFX

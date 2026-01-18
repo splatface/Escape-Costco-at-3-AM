@@ -6,7 +6,7 @@ public class KeyCard : ItemBaseClass
 
     protected override void Start()
     {
-        this.Name = "keycard";
+        this.Name = "Keycard";
         this.Description = "Use this to open specific colour-coded locked doors";
         this.Type = "interactable";
         base.Start();
