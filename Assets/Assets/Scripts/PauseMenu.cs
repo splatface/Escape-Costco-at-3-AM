@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class PauseManager : MonoBehaviour
+
+public class PauseMenu : MonoBehaviour
 {
-    public static PauseManager Instance;
-    public GameObject pauseMenuUI;
+    public static PauseMenu Instance;
+    [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject settingsUI;
+
     private bool isPaused = false;
 
     void Awake()
@@ -18,27 +21,25 @@ public class PauseManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-   void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
-    void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
-
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        Resume(); // Ensures new scenes start at Time.timeScale = 1
-    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            TogglePause();
+            if (settingsUI.activeSelf)
+                CloseSettings();
+            else
+                TogglePause();
         }
     }
 
-    void TogglePause()
+    public void TogglePause()
     {
         isPaused = !isPaused;
 
         pauseMenuUI.SetActive(isPaused);
+        settingsUI.SetActive(false);
+
         Time.timeScale = isPaused ? 0f : 1f;
     }
 
@@ -46,6 +47,24 @@ public class PauseManager : MonoBehaviour
     {
         isPaused = false;
         pauseMenuUI.SetActive(false);
+        settingsUI.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void OpenSettings()
+    {
+        pauseMenuUI.SetActive(false);
+        settingsUI.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        settingsUI.SetActive(false);
+        pauseMenuUI.SetActive(true);
+    }
+    public void GoToOpeningScene()
+    {
+        Resume();
+        SceneManager.LoadScene("OpeningScene");
     }
 }

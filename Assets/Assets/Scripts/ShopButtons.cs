@@ -8,7 +8,11 @@ public class ShopButtons : MonoBehaviour
         ShopManager.SortTimePlusPower();
         ShopManager.ChangePositions();
     }
-
+    public void SortPriceAlpha()
+    {
+        ShopManager.SortPricePlusAlpha();
+        ShopManager.ChangePositions();
+    }
     public void Purchase()
     {
         string parentTag = transform.parent.tag;

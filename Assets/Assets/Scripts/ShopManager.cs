@@ -56,6 +56,41 @@ public class ShopManager : MonoBehaviour
         AddObjectsInOrder();
     }
 
+        public static void SortPricePlusAlpha()
+    {
+        for (int i = 0; i < (_powerupList.Count - 1); i++)
+        {
+            int minIndex = i;
+
+            for (int j = i + 1; j < _powerupList.Count; j++)
+            {
+                if (_powerupList[j].GetPrice() < _powerupList[minIndex].GetPrice())
+                {
+                    minIndex = j;
+                }
+                else if (_powerupList[j].GetPrice() == _powerupList[minIndex].GetPrice())
+                {
+                    if (string.Compare(
+                            _powerupList[j].GetName(),
+                            _powerupList[minIndex].GetName()
+                        ) < 0)
+                    {
+                        minIndex = j;
+                    }
+                }
+            }
+
+            if (minIndex != i)
+            {
+                PowerUpEffect min = _powerupList[minIndex];
+
+                _powerupList[minIndex] = _powerupList[i];
+                _powerupList[i] = min;
+            }
+        }
+
+        AddObjectsInOrder();
+    }
     public static void AddObjectsInOrder()
     {
         _powerupObjects = new List<GameObject>();
