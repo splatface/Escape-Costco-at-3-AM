@@ -15,6 +15,7 @@ TagManager:
   - Final Door
   - PuzzleButton
   - Coin
+  - Gas
   layers:
   - Default
   - TransparentFX

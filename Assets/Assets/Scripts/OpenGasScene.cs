@@ -23,6 +23,5 @@ public class OpenGasScene : MonoBehaviour
             GasSign.SetActive(false);
             SceneManager.LoadScene("GasCreation");
         }
-        
     }
 }

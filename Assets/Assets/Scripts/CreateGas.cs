@@ -18,8 +18,10 @@ public class CreateGas : MonoBehaviour
 
     public GameObject ToxicGas;
     public GameObject CollectGasButton;
+    public GameObject GasTransition;
     
     private int _substances = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +36,7 @@ public class CreateGas : MonoBehaviour
         TwoSubstances.SetActive(false);
         ToxicGas.SetActive(false);
         CollectGasButton.SetActive(false); 
+        GasTransition.SetActive(false);
 
     }
 
@@ -105,7 +108,7 @@ public class CreateGas : MonoBehaviour
     }
     public void CollectGas()
     {
-        // REMEMBER TO ADD GAS TO INVENTORY, ASK TIFFANY HOW IT WORKS
+        FullInventory.Instance.PlaceIntoInven("Gas");
         SceneManager.LoadScene("AssistantRoom");
     }
 }
