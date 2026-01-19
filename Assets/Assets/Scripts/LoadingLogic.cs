@@ -1,15 +1,27 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.IO;
 
 public class LoadingLogic : MonoBehaviour
 {
 
-    string filePath1 = "save1.txt";
-    string filePath2 = "save2.txt";
+    string filePath1 = Path.Combine(Application.persistentDataPath, "save1.json");
+    string filePath2 = Path.Combine(Application.persistentDataPath, "save2.json");
 
     void Load(string filePath)
     {
         File.ReadAllLines(filePath);
+
+        SavingManager data = JsonUtility.FromJson<SavingManager>(filePath);
+
+        #region Loading Data Logic
+
+        // player stuff; need Instance to get
+        FullInventory.Instance.SetAllItems(data.allPossessedItems);
+        BarInventory.Instance.SetEquippedItems(data.allEquippedItems);
+        SceneManager.LoadScene(data.currentSceneName);
+
+        #endregion
     }
 
     public void ButtonClicked(int buttonID)

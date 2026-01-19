@@ -84,6 +84,17 @@ public class BarInventory : MonoBehaviour
     {
         return _currentItems;
     }
+
+    public void SetEquippedItems(string[] equippedItems)
+    {
+        _currentItems = equippedItems;
+
+        foreach (string item in _currentItems)
+        {
+            PlaceIntoInven(item); // to show the item in the actual inventory
+        }
+    }
+
     
     void Start()
     {

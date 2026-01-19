@@ -111,6 +111,10 @@ public class FullInventory : MonoBehaviour
         return _itemsInside;
     }
 
+    public void SetAllItems(string[] allItems)
+    {
+        _itemsInside = allItems;
+    }
 
     //getters for encapsulation
     public ItemBaseClass GetCurrentItem()
