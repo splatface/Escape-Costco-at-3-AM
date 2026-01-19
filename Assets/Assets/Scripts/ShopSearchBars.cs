@@ -16,23 +16,13 @@ public class ShopSearchBars : MonoBehaviour
 
         if (string.IsNullOrEmpty(text))
         {
-            ShopManager.ResetAllVisible();
+            ShopManager.ResetAllVisible(); //Every time the text changes, the search should reset for the new number.
             return;
         }
 
-        char op = '>';
-        int number = 0;
-
-        if (text.StartsWith(">") || text.StartsWith("<") || text.StartsWith("="))
+        if (int.TryParse(text, out int number))
         {
-            op = text[0];
-            int.TryParse(text.Substring(1), out number);
+            ShopManager.SearchTimePlusPower(number); //Uses the number as a target to search.
         }
-        else
-        {
-            int.TryParse(text, out number);
-        }
-
-        ShopManager.FilterTimePlusPower(op.ToString(), number);
     }
 }
