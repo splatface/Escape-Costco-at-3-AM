@@ -2,26 +2,30 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using System.Linq;
+using System;
+using System.Collections;
 
 public class SavingManager : MonoBehaviour
 {
-    // variables that need saving
+    // variables that need saving (public for loading)
     public Vector3 playerPos;
     public string currentSceneName;
     public string[] allPossessedItems;
     public string[] allEquippedItems;
 
+    // showing Saved! icon
+    public Canvas SavedIconRenderer;
+
     // for singleton
     public static SavingManager Instance {get; set;}
 
     // for showing the inventory
-    public SpriteRenderer Renderer;
+    public Canvas ScreenRenderer;
     private bool _isOpen = false;
 
     // file paths
-    string filePath1 = Path.Combine(Application.persistentDataPath, "save1.json"); // saves to a specific folder that Unity always knows where to find
-    string filePath2 = Path.Combine(Application.persistentDataPath, "save2.json");
+    private string _filePath1;
+    private string _filePath2;
 
     public void Save(int buttonNum)
     {
@@ -29,11 +33,11 @@ public class SavingManager : MonoBehaviour
 
         if (buttonNum == 0) // chooses the right file
         {
-            path = filePath1;
+            path = _filePath1;
         }
         else
         {
-            path = filePath2;
+            path = _filePath2;
         }
 
 
@@ -47,14 +51,10 @@ public class SavingManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
 
         // all items in inventory
-        GameObject InventoryObject = GameObject.FindWithTag("Inventory");
-        FullInventory Inventory = InventoryObject.GetComponent<FullInventory>();
-        string[] allItems = Inventory.GetAllItems();
+        string[] allItems = FullInventory.Instance.GetAllItems();
 
         // currently equipped items
-        GameObject SmallInventoryObject = GameObject.FindWithTag("SmallInventory");
-        BarInventory SmallInventory = SmallInventoryObject.GetComponent<BarInventory>();
-        string[] equippedItems = SmallInventory.GetCurrentItems();
+        string[] equippedItems = BarInventory.Instance.GetCurrentItems();
 
         #endregion
 
@@ -72,12 +72,30 @@ public class SavingManager : MonoBehaviour
         File.WriteAllText(path, json);
         // now mine again
 
+        // for displaying and hiding the saving icon
+        StartSavedIconCoroutine();
+
+    }
+
+    IEnumerator DisplaySavedIcon()
+    {
+        SavedIconRenderer.sortingLayerName = "ShowInventory";
+        yield return new WaitForSeconds(2f);
+        SavedIconRenderer.sortingLayerName = "HideInventory";
+    }
+
+    public void StartSavedIconCoroutine()
+    {
+        StartCoroutine(DisplaySavedIcon());
     }
 
 
 
     void Awake()
     {
+        _filePath1 = Path.Combine(Application.persistentDataPath, "save1.json"); // saves to a specific folder that Unity always knows where to find
+        _filePath2 = Path.Combine(Application.persistentDataPath, "save2.json");
+
         if (Instance == null) // makes it so that only one exists at a time
         {
             Instance = this;
@@ -91,14 +109,17 @@ public class SavingManager : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.sKey.wasPressedThisFrame && Keyboard.current.ctrlKey.wasPressedThisFrame) // ctrl+s = save
+        if (Keyboard.current.shiftKey.wasPressedThisFrame && _isOpen == false) // ctrl+s = save
         {
-            Renderer.sortingLayerName = "ShowInventory";
+            ScreenRenderer.sortingLayerName = "ShowInventory";
+            Debug.Log("showing");
+            _isOpen = true;
         }
         if (Keyboard.current.escapeKey.wasPressedThisFrame && _isOpen == true)
         {
             _isOpen = false;
-            Renderer.sortingLayerName = "HideInventory";
+            ScreenRenderer.sortingLayerName = "HideInventory";
+            Debug.Log("hiding");
         }
     }
 }

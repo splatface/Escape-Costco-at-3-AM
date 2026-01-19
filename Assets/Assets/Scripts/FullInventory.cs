@@ -39,7 +39,7 @@ public class FullInventory : MonoBehaviour
     }
 
     // what happens when the inventory is revealed onto the screen
-    public void ShowInvenItems(string[] items=null)
+    public void ShowInvenItems(string[] itemsTag=null)
     {
         float startingLength = -3.5f;
         float endingLength = startingLength+(_lengthRow-1)*_boxSideLength;
@@ -60,15 +60,28 @@ public class FullInventory : MonoBehaviour
 
             Vector3 position = new Vector3 (x,y);
 
-            if (items != null) // if argument given
+            if (itemsTag != null) // if argument given
             {
-                Spawner.SpawnItem(items[cursor], position); // goes based off of the sorted list
+                Spawner.SpawnItem(itemsTag[cursor], position); // goes based off of the sorted list
             }
             else
             {
                 Spawner.SpawnItem(_itemsInside[cursor], position); // goes based off unsorted list
             }
 
+        }
+    }
+
+    public void ShowFromSearch(string itemTag)
+    {
+        DestroyInvenItems(); // clears UI of any items
+
+        // CHANGE TO AS TYPING IT IN (A.K.A. MANUAL SEARCH THRU ALL TAGS TO FIND ONES THAT FIT)
+
+        if (_itemsInside.Contains(itemTag)) // checks if player has item first
+        {
+            Vector3 position = new Vector3 (-2f, 3f);
+            Spawner.SpawnItem(itemTag, position);
         }
     }
 
