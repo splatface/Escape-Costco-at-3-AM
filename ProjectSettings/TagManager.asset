@@ -16,6 +16,12 @@ TagManager:
   - PuzzleButton
   - Coin
   - Gas
+  - BlueKeyCard
+  - GreenKeyCard
+  - YellowKeyCard
+  - RedKeyCard
+  - Bleach
+  - Vinegar
   layers:
   - Default
   - TransparentFX

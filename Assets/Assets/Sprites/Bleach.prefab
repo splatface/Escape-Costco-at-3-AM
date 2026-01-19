@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3820540175711842837}
   m_Layer: 0
   m_Name: Bleach
-  m_TagString: Untagged
+  m_TagString: Bleach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

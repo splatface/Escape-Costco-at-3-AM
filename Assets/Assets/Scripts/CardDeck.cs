@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CardDeck : MonoBehaviour
 {
@@ -158,8 +159,7 @@ public class CardDeck : MonoBehaviour
 
     public void SceneTransition()
     {
-        // load back to other scene
-        // should be triggered when user clicks "collect bleach" button
-        // add bleach to inventory 
+        FullInventory.Instance.PlaceIntoInven("Bleach");
+        SceneManager.LoadScene("CardRoom");
     }
 }
