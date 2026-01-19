@@ -2,9 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEditor;
 using UnityEngine.Pool;
-public class GameController : MonoBehaviour
+public class MemoryGameController : MonoBehaviour
 {   
     [SerializeField] private Sprite backgroundImage;
 
@@ -114,12 +115,15 @@ public class GameController : MonoBehaviour
     void CheckIfTheGameIsFinished()
     {
         countCorrectGuesses++;
+
         if (countCorrectGuesses == gameGuesses)
         {
-            Debug.Log("Game Finished");
-            Debug.Log("It took you" + gameGuesses +"guesses to finish the game");
+        Debug.Log("Game Finished");
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainRoom");
         }
-    }
+}
 
     void Shuffle(List<Sprite> list)
     {

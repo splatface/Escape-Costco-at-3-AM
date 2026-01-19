@@ -167,5 +167,65 @@ public class ShopManager : MonoBehaviour
                 p.gameObject.SetActive(false);
         }
     }
+    public static int BinarySearchPricePlusAlpha(int targetPrice)
+    {
+    SortPricePlusAlpha();
+    _powerupSearchList = new List<PowerUpEffect>(_powerupList);
 
+    int low = 0;
+    int high = _powerupList.Count - 1;
+    int result = -1;
+
+    while (low <= high)
+    {
+        int mid = (low + high) / 2;
+
+        if (_powerupList[mid].GetPrice() >= targetPrice)
+        {
+            result = mid;
+            high = mid - 1; 
+        }
+        else
+        {
+            low = mid + 1; 
+        }
+    }
+
+    return result; 
+    }
+    public static void FilterPricePlusAlpha(string op, string value)
+    {
+    ResetAllVisible();
+
+    if (op == ">" || op == "<" || op == "=")
+        {
+        int priceValue;
+        if (!int.TryParse(value, out priceValue)) return;
+
+        foreach (PowerUpEffect p in _powerupList)
+            {
+            int price = p.GetPrice();
+            bool hide = false;
+
+            if (op == ">" && price <= priceValue)
+                hide = true;
+            else if (op == "<" && price >= priceValue)
+                hide = true;
+            else if (op == "=" && price != priceValue)
+                hide = true;
+
+            if (hide)
+                p.gameObject.SetActive(false);
+            }
+        }
+    else
+        {
+        string search = value.ToLower();
+        foreach (PowerUpEffect p in _powerupList)
+            {
+            if (!p.GetName().ToLower().Contains(search))
+                p.gameObject.SetActive(false);
+            }
+        }
+    }
 }

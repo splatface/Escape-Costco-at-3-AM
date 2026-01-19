@@ -7,7 +7,7 @@ public class HealthBuff : PowerUpEffect
 {
     private void Awake()
     {
-                _price = 25;
+        _price = 25;
         _powerUpName = "Health Buff";
         _buff = 10;
         _duration = 100;
