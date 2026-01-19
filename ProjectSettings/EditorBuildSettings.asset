@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Assets/Scenes/MainRoom.unity
     guid: 6465cf04c1e09324fb53f952d038da70
   - enabled: 1
+    path: Assets/Assets/Scenes/MemoryGame.unity
+    guid: 62b4700212e4b73458950c3717b0d9be
+  - enabled: 1
     path: Assets/Assets/Scenes/FinalRoom.unity
     guid: 93ec391dee650405cb65ffe659c889ec
   - enabled: 1

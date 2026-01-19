@@ -11,7 +11,7 @@ public class PowerUpEffect : MonoBehaviour
     protected int _duration;
     public int GetPrice()
     {
-        return +_price;
+        return _price;
     }
     public void SetPrice(int price)
     {

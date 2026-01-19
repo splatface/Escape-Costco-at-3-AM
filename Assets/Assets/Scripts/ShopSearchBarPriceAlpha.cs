@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class ShopSearchBars : MonoBehaviour
+public class ShopSearchBarPriceAlpha : MonoBehaviour
 {
     public TMP_InputField searchInput;
 
@@ -16,13 +16,19 @@ public class ShopSearchBars : MonoBehaviour
 
         if (string.IsNullOrEmpty(text))
         {
-            ShopManager.ResetAllVisible(); //Every time the text changes, the search should reset for the new number.
+            ShopManager.ResetAllVisible();
             return;
         }
 
-        if (int.TryParse(text, out int number))
+        string op = "";
+        string value = text;
+
+        if (text.StartsWith(">") || text.StartsWith("<") || text.StartsWith("="))
         {
-            ShopManager.SearchTimePlusPower(number); //Uses the number as a target to search.
+            op = text[0].ToString();
+            value = text.Substring(1);
         }
+
+        ShopManager.FilterPricePlusAlpha(op, value);
     }
 }

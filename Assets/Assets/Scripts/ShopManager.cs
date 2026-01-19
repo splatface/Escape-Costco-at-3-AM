@@ -8,14 +8,11 @@ public class ShopManager : MonoBehaviour
 {
     private static List<PowerUpEffect> _powerupList;
     private static List<GameObject> _powerupObjects;
-
-    private static List<PowerUpEffect> _powerupSearchList;
-    private static List<GameObject> _powerupSearchObjects;
-
+    private static List<PowerUpEffect> _powerupSearchList; //Will be _powerupList but filtered for the search criteria
 
     private static List<Vector2> _powerupPositions = new List<Vector2>
     {
-        new Vector2(-496f, 35f),
+        new Vector2(-496f, 35f), //Locations saved for rearranging during sort
         new Vector2(-248f, 35f),
         new Vector2(0f, 35f),
         new Vector2(248f, 35f),
@@ -28,32 +25,35 @@ public class ShopManager : MonoBehaviour
 
         _powerupObjects = new List<GameObject>();
         foreach (PowerUpEffect p in _powerupList)
+        {
             _powerupObjects.Add(p.gameObject);
+        }
     }
 
     public static void SortTimePlusPower()
-    {
+    { // Selection Sort used for efficiency
         for (int i = 0; i < (_powerupList.Count - 1); i++)
         {
-            int minIndex = i;
+            int minIndex = i; //Index of lowest found value assumed to be i
             for (int j = i+1; j < _powerupList.Count; j++)
             {
-                if ((_powerupList[j].GetBuff() + _powerupList[j].GetDuration()) < (_powerupList[minIndex].GetBuff() + _powerupList[minIndex].GetDuration()))
+                int currentBuffSum = _powerupList[j].GetBuff() + _powerupList[j].GetDuration(); //Sum for index j
+                int minBuffSum = _powerupList[minIndex].GetBuff() + _powerupList[minIndex].GetDuration(); //Sum for minIndex
+
+                if (currentBuffSum < minBuffSum) 
                 {
-                    minIndex = j;
+                    minIndex = j; //If index j has a lower sum, it becomes the new minIndex
                 }
             }
 
-            if (minIndex != i)
+            if (minIndex != i) //Checks that the minIndex changed because the following code would be useless/inefficient
             {
                 PowerUpEffect min = _powerupList[minIndex];
                 
                 _powerupList[minIndex] = _powerupList[i];
-                _powerupList[i] = min;
+                _powerupList[i] = min; //Swaps the location of the objects at minIndex and i
             }
         }
-
-        AddObjectsInOrder();
     }
 
         public static void SortPricePlusAlpha()
@@ -89,18 +89,18 @@ public class ShopManager : MonoBehaviour
             }
         }
 
-        AddObjectsInOrder();
+        CreateObjectList();
     }
-    public static void AddObjectsInOrder()
+    public static void CreateObjectList()
     {
-        _powerupObjects = new List<GameObject>();
+        _powerupObjects = new List<GameObject>(); //Adds sorted powerups into object list for drawing to screen
         foreach (PowerUpEffect p in _powerupList)
         {
             _powerupObjects.Add(p.gameObject);
         }
     }
     
-    public static void ChangePositions()
+    public static void ChangeObjectPositions() //Uses location list to draw objects on screen in correct order
     {
         for (int i = 0; i < _powerupObjects.Count; i++)
         {
@@ -113,28 +113,32 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    public static void ResetAllVisible()
+    public static void ResetAllVisible() //Ensures all powerups are visible on screen every time user changes the search
     {
         foreach (GameObject obj in _powerupObjects)
             obj.SetActive(true);
     }
 
-    public static int BinarySearchTimePlusPower(int target)
+    public static void SearchTimePlusPower(int target)
     {
+        // Must sort list before binary search
         SortTimePlusPower();
-        _powerupSearchList = new List<PowerUpEffect>(_powerupList);
+        CreateObjectList();
+        ChangeObjectPositions();
+
         
         int low = 0;
         int high = _powerupList.Count - 1;
-        int result = -1;
+        int lowBoundaryIndex = -1;
 
         while (low <= high)
         {
             int mid = (low + high) / 2;
+            int sum = _powerupList[mid].GetBuff() + _powerupList[mid].GetDuration();
 
-            if (_powerupList[mid].GetBuff() + _powerupList[mid].GetDuration() >= target)
+            if (sum >= target)
             {
-                result = mid;
+                lowBoundaryIndex = mid; //lowBoundaryIndex is going to be placed at the lowest index that is equal or above the target
                 high = mid - 1;
             }
             else
@@ -143,29 +147,87 @@ public class ShopManager : MonoBehaviour
             }
         }
 
-        return result;
+        FilterTimePlusPower(lowBoundaryIndex, target);
     }
 
-    public static void FilterTimePlusPower(string op, int value)
+    public static void FilterTimePlusPower(int lowBoundaryIndex, int target)
     {
         ResetAllVisible();
         
-        foreach (PowerUpEffect p in _powerupList)
+        if (lowBoundaryIndex == -1) //Target is higher than all sums, so all objects should hide.
         {
-            int total = p.GetBuff() + p.GetDuration();
-
-            bool hide = false;
-
-            if (op == "<" && total >= value)
-                hide = true;
-            else if (op == ">" && total <= value)
-                hide = true;
-            else if (op == "=" && total != value)
-                hide = true;
-
-            if (hide)
+            foreach (PowerUpEffect p in _powerupList)
+            {
                 p.gameObject.SetActive(false);
+            }
+            return;
+        }  
+
+        for (int i = 0; i < lowBoundaryIndex; i++) //Shows all powerups better than the lower boundary index
+        {
+            _powerupList[i].gameObject.SetActive(false);
         }
     }
+    
+    public static int BinarySearchPricePlusAlpha(int targetPrice)
+    {
+        SortPricePlusAlpha();
+        _powerupSearchList = new List<PowerUpEffect>(_powerupList);
 
+        int low = 0;
+        int high = _powerupList.Count - 1;
+        int result = -1;
+
+        while (low <= high)
+        {
+            int mid = (low + high) / 2;
+
+            if (_powerupList[mid].GetPrice() >= targetPrice)
+            {
+                result = mid;
+                high = mid - 1; 
+            }
+            else
+            {
+                low = mid + 1; 
+            }
+        }
+
+        return result; 
+    }
+    public static void FilterPricePlusAlpha(string op, string value)
+    {
+        ResetAllVisible();
+
+        if (op == ">" || op == "<" || op == "=")
+        {
+            int priceValue;
+            if (!int.TryParse(value, out priceValue)) return;
+
+            foreach (PowerUpEffect p in _powerupList)
+            {
+                int price = p.GetPrice();
+                bool hide = false;
+
+                if (op == ">" && price <= priceValue)
+                    hide = true;
+                else if (op == "<" && price >= priceValue)
+                    hide = true;
+                else if (op == "=" && price != priceValue)
+                    hide = true;
+
+                if (hide)
+                    p.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            string search = value.ToLower();
+            foreach (PowerUpEffect p in _powerupList)
+            {
+                if (!p.GetName().ToLower().Contains(search))
+                    p.gameObject.SetActive(false);
+            }
+        }
+    }
 }
