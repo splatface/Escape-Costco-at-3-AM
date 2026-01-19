@@ -7,8 +7,8 @@ public class SearchInventory : MonoBehaviour
 
     public void GetEnteredText()
     {
-        string text = SearchInputField.text;
+        // string text = SearchInputField.text;
 
-        FullInventory.Instance.ShowFromSearch(text);
+        // FullInventory.Instance.ShowInvenItems(text);
     }
 }

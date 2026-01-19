@@ -45,8 +45,18 @@ public class FullInventory : MonoBehaviour
         float endingLength = startingLength+(_lengthRow-1)*_boxSideLength;
         float y = 3f;
         float x = startingLength;
+        int lastPosition;
 
-        for (int cursor=0; cursor<_nextPosition; cursor += 1)
+        if (itemsTag != null)
+        {
+            lastPosition = itemsTag.Length;
+        }
+        else
+        {
+            lastPosition = _nextPosition;
+        }
+
+        for (int cursor=0; cursor<lastPosition; cursor += 1)
         {
             if (x<=endingLength)
             {
@@ -69,19 +79,6 @@ public class FullInventory : MonoBehaviour
                 Spawner.SpawnItem(_itemsInside[cursor], position); // goes based off unsorted list
             }
 
-        }
-    }
-
-    public void ShowFromSearch(string itemTag)
-    {
-        DestroyInvenItems(); // clears UI of any items
-
-        // CHANGE TO AS TYPING IT IN (A.K.A. MANUAL SEARCH THRU ALL TAGS TO FIND ONES THAT FIT)
-
-        if (_itemsInside.Contains(itemTag)) // checks if player has item first
-        {
-            Vector3 position = new Vector3 (-2f, 3f);
-            Spawner.SpawnItem(itemTag, position);
         }
     }
 
@@ -155,7 +152,7 @@ public class FullInventory : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject); // destroy this would destroy the one we want
+            Destroy(gameObject); // destroy(this) would destroy the one we want
         }
     }
 
@@ -179,7 +176,7 @@ public class FullInventory : MonoBehaviour
                 InventoryBox.sortingLayerName = "ShowInventory";
                 InventoryBox.sortingOrder = 0;
                 _isOpen = true;
-                ShowInvenItems(_itemsInside);
+                ShowInvenItems();
                 TextRender.sortingLayerName = "Text";
                 DropdownCanvas.sortingLayerName = "ShowInventory";
                 TextRender.sortingOrder = 10;

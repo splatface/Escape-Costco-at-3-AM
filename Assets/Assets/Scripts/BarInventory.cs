@@ -11,7 +11,6 @@ public class BarInventory : MonoBehaviour
     private string[] _currentItems = new string[4];
     private float _itemSpacing = 1.5f;
     public ItemSpawner Spawner;
-    private GameObject[] _previousObjectList;
     private GameObject[] SpawnedObjects = new GameObject[4];
     
     public static BarInventory Instance {get; set;}
