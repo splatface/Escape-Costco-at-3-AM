@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BananaItem : ItemBaseClass
+public class BananaItem : ItemBase
 {
 
     public override void UseItem()

@@ -18,7 +18,7 @@ public class BarInventory : MonoBehaviour
     public void PlaceIntoInven(string itemTag)
     {
         GameObject itemObject = GameObject.FindWithTag(itemTag);
-        ItemBaseClass item = itemObject.GetComponent<ItemBaseClass>();
+        ItemBase item = itemObject.GetComponent<ItemBase>();
         string type = item.Type;
         float newX = 3.7f;
         float newY = -3.7f;

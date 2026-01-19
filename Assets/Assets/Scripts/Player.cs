@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private int _health = 100;
     private Animator _anim;
     private Vector3 _movementDirection;
-    private ItemBaseClass _weapon;
+    private ItemBase _weapon;
     //Aggregaton where the Player holds and uses the ItemBaseClass class
 
     public void Awake()
@@ -142,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public ItemBaseClass GetWeapon()
+    public ItemBase GetWeapon()
     {
         //Cannot return the weapon if the player is not holding a weapon
         if (this._weapon == null)
@@ -153,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
         return this._weapon;
     }
 
-    public void SetWeapon(ItemBaseClass newWeapon)
+    public void SetWeapon(ItemBase newWeapon)
     {   
         if (this._weapon != null)
         {

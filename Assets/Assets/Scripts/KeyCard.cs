@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class KeyCard : ItemBaseClass
+public class KeyCard : ItemBase
 {
     public string Colour = "";
 

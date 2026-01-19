@@ -6,7 +6,7 @@ public class EquipButton : MonoBehaviour
 
     public void OnClick()
     {
-        ItemBaseClass item = FullInventory.Instance.GetCurrentItem();
+        ItemBase item = FullInventory.Instance.GetCurrentItem();
         BarInventory.Instance.PlaceIntoInven(item.tag);
         //equip item into 4 slots based on type
     }

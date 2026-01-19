@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b707c4e38f1e7e04cafa93389e7b5a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaceItemInvenFull
-  InventoryBox: {fileID: 748652641}
+  InventoryRenderer: {fileID: 748652641}
   DropdownCanvas: {fileID: 380660168}
   Spawner: {fileID: 394976991}
   ItemTitle: {fileID: 973309043}

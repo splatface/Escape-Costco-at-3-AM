@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MilkItem : ItemBaseClass
+public class MilkItem : ItemBase
 {
 
     public override void UseItem()

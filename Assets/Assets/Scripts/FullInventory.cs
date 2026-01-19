@@ -8,7 +8,7 @@ using System.Linq;
 public class FullInventory : MonoBehaviour
 {
     //variables for showing the inventory
-    public SpriteRenderer InventoryBox;
+    public SpriteRenderer InventoryRenderer;
     private static bool _isOpen = false;
     private int _lengthRow = 6; // for putting the images on the screen
     public Canvas DropdownCanvas;
@@ -18,7 +18,7 @@ public class FullInventory : MonoBehaviour
     private string[] _itemsInside = new string[30]; // array of all items in the inventory as their tags
     private int _nextPosition = 0; // cursor in array
     private float _boxSideLength = 1.5f; // (PLACEHOLDER FOR NOW! CHECK LENGTH)
-    private ItemBaseClass _currentItem;
+    private ItemBase _currentItem;
     public ItemSpawner Spawner;
 
 
@@ -108,7 +108,7 @@ public class FullInventory : MonoBehaviour
     {
         string itemTag = _itemsInside[itemNumber];
         GameObject itemObject = GameObject.FindWithTag(itemTag);
-        ItemBaseClass item = itemObject.GetComponent<ItemBaseClass>();
+        ItemBase item = itemObject.GetComponent<ItemBase>();
         _currentItem = item;
 
         //updates the item's text
@@ -127,7 +127,7 @@ public class FullInventory : MonoBehaviour
     }
 
     //getters for encapsulation
-    public ItemBaseClass GetCurrentItem()
+    public ItemBase GetCurrentItem()
     {
         return _currentItem;
     }
@@ -173,8 +173,8 @@ public class FullInventory : MonoBehaviour
 
             if (_isOpen == false)
             {
-                InventoryBox.sortingLayerName = "ShowInventory";
-                InventoryBox.sortingOrder = 0;
+                InventoryRenderer.sortingLayerName = "ShowInventory";
+                InventoryRenderer.sortingOrder = 0;
                 _isOpen = true;
                 ShowInvenItems();
                 TextRender.sortingLayerName = "Text";
@@ -184,7 +184,7 @@ public class FullInventory : MonoBehaviour
             }
             else
             {
-                InventoryBox.sortingLayerName = "HideInventory";                
+                InventoryRenderer.sortingLayerName = "HideInventory";                
                 _isOpen = false;
                 DestroyInvenItems();
                 TextRender.sortingLayerName = "HideInventory";

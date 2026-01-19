@@ -3,7 +3,7 @@ using Unity.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ItemBaseClass : MonoBehaviour
+public class ItemBase : MonoBehaviour
 {
     //properties of item
     public string Name = "";
