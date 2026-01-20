@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -41,27 +42,21 @@ public class ManagerEnemy : MonoBehaviour
 
         float distance = CalculateDistanceApart(playerPos, managerPos);
 
-        if (distance > 2f)
+        if (playerPos.x < managerPos.x)
         {
-            if (playerPos.x < managerPos.x)
-            {
-                transform.position -= new Vector3 (0.1f, 0);
-            }
-            else if (playerPos.x > managerPos.x)
-            {
-                transform.position += new Vector3 (0.1f, 0);
-            }
-            if (playerPos.y < managerPos.y)
-            {
-                transform.position -= new Vector3 (0, 0.1f);
-            }
-            else if (playerPos.y > managerPos.y)
-            {
-                transform.position += new Vector3 (0, 0.1f);
-            }
-
-            NormalMovement(); //check logic if recursion works, not sure
-            
+            transform.position -= new Vector3 (0.1f, 0);
+        }
+        else if (playerPos.x > managerPos.x)
+        {
+            transform.position += new Vector3 (0.1f, 0);
+        }
+        if (playerPos.y < managerPos.y)
+        {
+            transform.position -= new Vector3 (0, 0.1f);
+        }
+        else if (playerPos.y > managerPos.y)
+        {
+            transform.position += new Vector3 (0, 0.1f);
         }
     }
 
@@ -97,11 +92,27 @@ public class ManagerEnemy : MonoBehaviour
         _healthValue -= damage;
     }
 
+    // Coroutine function for waiting
+    IEnumerator WaitBasicAttack()
+    {
+        while (true)
+        {
+            BasicAttack();
+            yield return new WaitForSeconds(4f);
+        }
+    }
+
+    public void StartBasicAttack()
+    {
+        StartCoroutine(WaitBasicAttack());
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         NormalMovement(); // need to find a condition in update to call it on; check
+        StartBasicAttack();
     }
 
     // Update is called once per frame
@@ -119,11 +130,12 @@ public class ManagerEnemy : MonoBehaviour
 
         float distance = CalculateDistanceApart(playerPos, managerPos);
 
-        if (distance > 3f)
+        if (distance > 7f)
         {
             _runMovementAgain = true;
         }
-    
+
+        // ultimate attack triggered    
         if (_healthValue < 10 && _ultUsed == false)
         {
             ChargeULT();

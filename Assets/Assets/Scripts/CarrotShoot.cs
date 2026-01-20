@@ -3,20 +3,33 @@ using UnityEngine;
 
 public class CarrotShoot : MonoBehaviour
 {
-    private float _carrotSpeed = 3f;
-    private float _disappearTime = 4f;
+    private float _carrotSpeed = 5f;
+
+    private int _carrotDamage = 10;
 
     private Rigidbody2D rigidBody;
     private Transform _playerPos;
+    private GameObject _player;
+
+
+    void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        PlayerMovement _playerUsed = _player.GetComponent<PlayerMovement>();
+
+        if (otherObject.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            int currentHealth = _playerUsed.GetHealth();
+            _playerUsed.SetHealth(currentHealth-_carrotDamage);
+        }
+    }
 
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        GameObject Player = GameObject.FindGameObjectWithTag("Player");
-        _playerPos = Player.transform;
-
-        Destroy(gameObject, _disappearTime); // destroys bullet after a certain amount of time
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _playerPos = _player.transform;
 
     }
 
@@ -29,5 +42,8 @@ public class CarrotShoot : MonoBehaviour
 
         rigidBody.linearVelocity = direction * _carrotSpeed; // test logic in game; moves bullet according to where the player is
         rigidBody.rotation = angleBullet;
+
+        Debug.Log(rigidBody.position.x + "" + rigidBody.position.y);
+
     }
 }
