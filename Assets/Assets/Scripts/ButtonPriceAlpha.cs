@@ -1,8 +1,10 @@
 using UnityEngine;
 
 public class ButtonPriceAlpha : MonoBehaviour
-{    public void OnButtonClicked()
+{    
+    [SerializeField] private ShopManager _shopManager;
+    public void OnButtonClicked()
     {
-        ShopManager.SortTimePlusPower();
+        _shopManager.SortTimePlusPower();
     }
 }

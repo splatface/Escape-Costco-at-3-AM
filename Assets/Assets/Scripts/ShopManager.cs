@@ -4,18 +4,19 @@ using UnityEngine;
 using UnityEngine.Scripting;
 using TMPro;
 using System.Collections;
+using System;
 
 public class ShopManager : MonoBehaviour
 {
-    private static List<PowerUpEffect> _powerupList;
-    private static List<GameObject> _powerupObjects;
-    private static List<PowerUpEffect> _powerupSearchList; //Will be _powerupList but filtered for the search criteria
+    private List<PowerUpEffect> _powerupList;
+    private List<GameObject> _powerupObjects;
+    private List<PowerUpEffect> _powerupSearchList; //Will be _powerupList but filtered for the search criteria
 
     [SerializeField] private CurrencyManager cm;
     [SerializeField] private TMP_Text _noFundsMessage;
     private Coroutine _noFundsCoroutine;
 
-    private static List<Vector2> _powerupPositions = new List<Vector2>
+    private List<Vector2> _powerupPositions = new List<Vector2>
     {
         new Vector2(-496f, 35f), //Locations saved for rearranging during sort
         new Vector2(-248f, 35f),
@@ -24,9 +25,13 @@ public class ShopManager : MonoBehaviour
         new Vector2(496f, 35f)
     };
 
-    public void Awake()
+    public void Start()
     {
         _powerupList = new List<PowerUpEffect>(GetComponentsInChildren<PowerUpEffect>());
+        for(int i = 0; i < _powerupList.Count; i++)
+        {
+            Debug.Log("Name:" + _powerupList[i].GetName());
+        }
 
         _powerupObjects = new List<GameObject>();
         foreach (PowerUpEffect p in _powerupList)
@@ -37,7 +42,7 @@ public class ShopManager : MonoBehaviour
         _noFundsMessage.gameObject.SetActive(false);
     }
 
-    public static void SortTimePlusPower()
+    public void SortTimePlusPower()
     { // Selection Sort used for efficiency
         for (int i = 0; i < (_powerupList.Count - 1); i++)
         {
@@ -61,9 +66,14 @@ public class ShopManager : MonoBehaviour
                 _powerupList[i] = min; //Swaps the location of the objects at minIndex and i
             }
         }
+        
+        for(int i = 0; i < _powerupList.Count; i++)
+        {
+            Debug.Log("Name:" + _powerupList[i].GetName());
+        }
     }
 
-        public static void SortPricePlusAlpha()
+        public void SortPricePlusAlpha()
     {
         for (int i = 0; i < (_powerupList.Count - 1); i++)
         {
@@ -98,16 +108,17 @@ public class ShopManager : MonoBehaviour
 
         CreateObjectList();
     }
-    public static void CreateObjectList()
+    public void CreateObjectList()
     {
         _powerupObjects = new List<GameObject>(); //Adds sorted powerups into object list for drawing to screen
         foreach (PowerUpEffect p in _powerupList)
         {
             _powerupObjects.Add(p.gameObject);
+            Debug.Log("Number");
         }
     }
     
-    public static void ChangeObjectPositions() //Uses location list to draw objects on screen in correct order
+    public void ChangeObjectPositions() //Uses location list to draw objects on screen in correct order
     {
         for (int i = 0; i < _powerupObjects.Count; i++)
         {
@@ -120,13 +131,13 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    public static void ResetAllVisible() //Ensures all powerups are visible on screen every time user changes the search
+    public void ResetAllVisible() //Ensures all powerups are visible on screen every time user changes the search
     {
         foreach (GameObject obj in _powerupObjects)
             obj.SetActive(true);
     }
 
-    public static void SearchTimePlusPower(int target)
+    public void SearchTimePlusPower(int target)
     {
         // Must sort list before binary search
         SortTimePlusPower();
@@ -157,7 +168,7 @@ public class ShopManager : MonoBehaviour
         FilterTimePlusPower(lowBoundaryIndex, target);
     }
 
-    public static void FilterTimePlusPower(int lowBoundaryIndex, int target)
+    public void FilterTimePlusPower(int lowBoundaryIndex, int target)
     {
         ResetAllVisible();
         
@@ -176,7 +187,7 @@ public class ShopManager : MonoBehaviour
         }
     }
     
-    public static int BinarySearchPricePlusAlpha(int targetPrice)
+    public int BinarySearchPricePlusAlpha(int targetPrice)
     {
         SortPricePlusAlpha();
         _powerupSearchList = new List<PowerUpEffect>(_powerupList);
@@ -202,7 +213,7 @@ public class ShopManager : MonoBehaviour
 
         return result; 
     }
-    public static void FilterPricePlusAlpha(string op, string value)
+    public void FilterPricePlusAlpha(string op, string value)
     {
         ResetAllVisible();
 

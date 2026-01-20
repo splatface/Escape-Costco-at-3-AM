@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Scenes/CardRoom.unity
     guid: dd2c6e134a1feae428f2a8f9ea8c9c27
+  - enabled: 1
+    path: Assets/Assets/Scenes/Shop.unity
+    guid: 9e04797cf357940f6b9fb069cd26046f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 941eee556eaa0e747bf3568ee7aaa8ac, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

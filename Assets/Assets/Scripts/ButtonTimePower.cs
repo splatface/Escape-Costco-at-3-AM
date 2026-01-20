@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class ButtonTimePower : MonoBehaviour
 {
+    [SerializeField] private ShopManager _shopManager;
     public void OnButtonClicked()
     {
-        ShopManager.SortTimePlusPower();
+        _shopManager.SortTimePlusPower();
     }
 }

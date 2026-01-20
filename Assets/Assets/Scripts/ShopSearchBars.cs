@@ -4,6 +4,7 @@ using UnityEngine;
 public class ShopSearchBars : MonoBehaviour
 {
     public TMP_InputField searchInput;
+    [SerializeField] private ShopManager _shopManager;
 
     private void Start()
     {
@@ -16,13 +17,13 @@ public class ShopSearchBars : MonoBehaviour
 
         if (string.IsNullOrEmpty(text))
         {
-            ShopManager.ResetAllVisible(); //Every time the text changes, the search should reset for the new number.
+            _shopManager.ResetAllVisible(); //Every time the text changes, the search should reset for the new number.
             return;
         }
 
         if (int.TryParse(text, out int number))
         {
-            ShopManager.SearchTimePlusPower(number); //Uses the number as a target to search.
+            _shopManager.SearchTimePlusPower(number); //Uses the number as a target to search.
         }
     }
 }

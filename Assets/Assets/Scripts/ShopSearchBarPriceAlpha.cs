@@ -4,6 +4,7 @@ using UnityEngine;
 public class ShopSearchBarPriceAlpha : MonoBehaviour
 {
     public TMP_InputField searchInput;
+    [SerializeField] private ShopManager _shopManager;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class ShopSearchBarPriceAlpha : MonoBehaviour
 
         if (string.IsNullOrEmpty(text))
         {
-            ShopManager.ResetAllVisible();
+            _shopManager.ResetAllVisible();
             return;
         }
 
@@ -29,6 +30,6 @@ public class ShopSearchBarPriceAlpha : MonoBehaviour
             value = text.Substring(1);
         }
 
-        ShopManager.FilterPricePlusAlpha(op, value);
+        _shopManager.FilterPricePlusAlpha(op, value);
     }
 }

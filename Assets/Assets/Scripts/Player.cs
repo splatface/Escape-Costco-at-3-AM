@@ -66,6 +66,9 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Final Door"))
         {
             SceneManager.LoadScene("WinScreen");
+        } else if (other.CompareTag("Shop"))
+        {
+            SceneManager.LoadScene("Shop");
         }
     }
 

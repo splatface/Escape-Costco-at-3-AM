@@ -1,17 +1,24 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShopButtons : MonoBehaviour
 {
+    [SerializeField] private ShopManager _shopManager;
     public void SortTimePower()
     {
-        ShopManager.SortTimePlusPower(); //Sort
-        ShopManager.CreateObjectList(); 
-        ShopManager.ChangeObjectPositions(); //Change visual powerup locations according to sort
+        _shopManager.SortTimePlusPower(); //Sort
+        _shopManager.CreateObjectList(); 
+        _shopManager.ChangeObjectPositions(); //Change visual powerup locations according to sort
     }
     public void SortPriceAlpha()
     {
-        ShopManager.SortPricePlusAlpha();
-        ShopManager.ChangeObjectPositions();
+        _shopManager.SortPricePlusAlpha();
+        _shopManager.ChangeObjectPositions();
+    }
+
+    public void ExitShop()
+    {
+        SceneManager.LoadScene("MainRoom");
     }
 }
