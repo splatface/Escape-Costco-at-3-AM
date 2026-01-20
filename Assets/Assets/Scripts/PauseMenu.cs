@@ -7,29 +7,20 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject settingsUI;
 
-    private bool isPaused = false;
-
-    void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    private static bool isPaused = false;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (settingsUI.activeSelf)
-                CloseSettings();
+            if (isPaused)
+            {
+                Resume();
+            }
             else
+            {
                 TogglePause();
+            }
         }
     }
 
@@ -51,6 +42,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("OpeningScene");
+    }
     public void OpenSettings()
     {
         pauseMenuUI.SetActive(false);

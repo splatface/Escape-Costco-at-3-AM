@@ -5,7 +5,7 @@ public class SlowGuard : Guard
 {
     void Awake()
     {
-        _speed = 80f;
-        _patrolDistance = 100f;
+        _speed = 5f;
+        _patrolDistance = 3f;
     }
 }
