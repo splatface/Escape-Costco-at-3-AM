@@ -14,9 +14,4 @@ public class ShopButtons : MonoBehaviour
         ShopManager.SortPricePlusAlpha();
         ShopManager.ChangeObjectPositions();
     }
-    public void Purchase()
-    {
-        string parentTag = transform.parent.tag; //Get proper tag
-        FullInventory.Instance.PlaceIntoInven(parentTag); 
-    }
 }

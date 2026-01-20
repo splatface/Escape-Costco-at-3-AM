@@ -3,12 +3,17 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Scripting;
 using TMPro;
+using System.Collections;
 
 public class ShopManager : MonoBehaviour
 {
     private static List<PowerUpEffect> _powerupList;
     private static List<GameObject> _powerupObjects;
     private static List<PowerUpEffect> _powerupSearchList; //Will be _powerupList but filtered for the search criteria
+
+    [SerializeField] private CurrencyManager cm;
+    [SerializeField] private TMP_Text _noFundsMessage;
+    private Coroutine _noFundsCoroutine;
 
     private static List<Vector2> _powerupPositions = new List<Vector2>
     {
@@ -28,6 +33,8 @@ public class ShopManager : MonoBehaviour
         {
             _powerupObjects.Add(p.gameObject);
         }
+
+        _noFundsMessage.gameObject.SetActive(false);
     }
 
     public static void SortTimePlusPower()
@@ -229,5 +236,34 @@ public class ShopManager : MonoBehaviour
                     p.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void Purchase()
+    {
+        string parentTag = transform.parent.tag; //Get proper tag
+        int funds = cm.GetCoins();
+        int price = transform.parent.GetComponent<PowerUpEffect>().GetPrice();
+
+        if (funds >= price)
+        {
+            cm.SubtractCoins(price);
+            FullInventory.Instance.PlaceIntoInven(parentTag); 
+        }
+        else
+        {
+            if (_noFundsCoroutine != null)
+                StopCoroutine(_noFundsCoroutine);
+
+            _noFundsCoroutine = StartCoroutine(ShowInsufficientFunds());
+        }
+    }
+
+    private IEnumerator ShowInsufficientFunds()
+    {
+        _noFundsMessage.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(2f);
+
+        _noFundsMessage.gameObject.SetActive(false);
     }
 }

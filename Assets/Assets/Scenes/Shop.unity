@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b707c4e38f1e7e04cafa93389e7b5a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FullInventory
-  InventoryBox: {fileID: 0}
+  InventoryRenderer: {fileID: 0}
   DropdownCanvas: {fileID: 0}
   Spawner: {fileID: 0}
   ItemTitle: {fileID: 0}
@@ -891,6 +891,10 @@ RectTransform:
   - {fileID: 70971985}
   - {fileID: 861636815}
   - {fileID: 947401233}
+  - {fileID: 1140016405}
+  - {fileID: 1356851426}
+  - {fileID: 950861421}
+  - {fileID: 1985047326}
   m_Father: {fileID: 885261015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -910,6 +914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e2c29880a5a498e8c5be051591a7e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopManager
+  cm: {fileID: 1140016406}
+  _noFundsMessage: {fileID: 1356851427}
 --- !u!1 &265472742
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -152.59, y: -257}
+  m_AnchoredPosition: {x: -152.59, y: -279}
   m_SizeDelta: {x: 305.19, y: 53.305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &265472744
@@ -1069,6 +1075,7 @@ GameObject:
   - component: {fileID: 365644299}
   - component: {fileID: 365644298}
   - component: {fileID: 365644301}
+  - component: {fileID: 365644302}
   m_Layer: 0
   m_Name: Buy Flash
   m_TagString: Untagged
@@ -1140,8 +1147,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 365644301}
-        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+      - m_Target: {fileID: 365644302}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 1
         m_Arguments:
@@ -1202,6 +1209,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2438ac237039744ecb4cfb26d2b0cdcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopButtons
+--- !u!114 &365644302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365644296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e2c29880a5a498e8c5be051591a7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopManager
+  cm: {fileID: 1140016406}
+  _noFundsMessage: {fileID: 1356851427}
 --- !u!1 &381246306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,7 +1824,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -152.59404, y: -181}
+  m_AnchoredPosition: {x: -152.59, y: -203}
   m_SizeDelta: {x: 305.1854, y: 53.3046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &739032708
@@ -1925,6 +1946,7 @@ GameObject:
   - component: {fileID: 751788416}
   - component: {fileID: 751788415}
   - component: {fileID: 751788418}
+  - component: {fileID: 751788419}
   m_Layer: 0
   m_Name: Buy Muscle
   m_TagString: Untagged
@@ -1996,8 +2018,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 751788418}
-        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+      - m_Target: {fileID: 751788419}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 1
         m_Arguments:
@@ -2058,6 +2080,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2438ac237039744ecb4cfb26d2b0cdcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopButtons
+--- !u!114 &751788419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751788413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e2c29880a5a498e8c5be051591a7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopManager
+  cm: {fileID: 1140016406}
+  _noFundsMessage: {fileID: 1356851427}
 --- !u!1 &760005385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,7 +2499,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 331.39197, y: -181}
+  m_AnchoredPosition: {x: 331.39197, y: -203}
   m_SizeDelta: {x: 615.316, y: 53.306}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861636816
@@ -2713,8 +2749,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 258471419}
-  - {fileID: 950861421}
-  - {fileID: 1985047326}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2928,6 +2962,7 @@ GameObject:
   - component: {fileID: 915705362}
   - component: {fileID: 915705361}
   - component: {fileID: 915705364}
+  - component: {fileID: 915705365}
   m_Layer: 0
   m_Name: Buy Hulk
   m_TagString: Untagged
@@ -2999,8 +3034,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 915705364}
-        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+      - m_Target: {fileID: 915705365}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 1
         m_Arguments:
@@ -3061,6 +3096,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2438ac237039744ecb4cfb26d2b0cdcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopButtons
+--- !u!114 &915705365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915705359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e2c29880a5a498e8c5be051591a7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopManager
+  cm: {fileID: 1140016406}
+  _noFundsMessage: {fileID: 1356851427}
 --- !u!1 &929308568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3149,7 +3198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 331.39, y: -257}
+  m_AnchoredPosition: {x: 331.39, y: -279}
   m_SizeDelta: {x: 615.31, y: 53.306}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &947401234
@@ -3329,16 +3378,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950861420}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 885261015}
+  m_Father: {fileID: 258471419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -512, y: -185}
+  m_AnchoredPosition: {x: -518, y: -207}
   m_SizeDelta: {x: 254.9409, y: 47.8023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &950861422
@@ -3733,6 +3782,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103521378}
   m_CullTransparentMesh: 1
+--- !u!1 &1140016404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1140016405}
+  - component: {fileID: 1140016406}
+  m_Layer: 5
+  m_Name: CurrencyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1140016405
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140016404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 258471419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1140016406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140016404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18601936823db304b80f8dc68c6c2451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CurrencyManager
 --- !u!1 &1184879628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,6 +4018,142 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RectMask2D
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &1356851425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356851426}
+  - component: {fileID: 1356851428}
+  - component: {fileID: 1356851427}
+  m_Layer: 5
+  m_Name: NoFundMessage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1356851426
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356851425}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 258471419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015259, y: -138}
+  m_SizeDelta: {x: 880.554, y: 39.6882}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1356851427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356851425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Insufficient funds available to purchase powerup!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3ab98c079a49a4e5d81c3e4b3461f5d2, type: 2}
+  m_sharedMaterial: {fileID: 1702080348740462014, guid: 3ab98c079a49a4e5d81c3e4b3461f5d2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279116104
+  m_fontColor: {r: 0.28235295, g: 0.12941177, b: 0.05490196, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1356851428
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356851425}
+  m_CullTransparentMesh: 1
 --- !u!1 &1467756083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4676,16 +4909,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985047325}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 885261015}
+  m_Father: {fileID: 258471419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -482.33, y: -269}
+  m_AnchoredPosition: {x: -488.33, y: -291}
   m_SizeDelta: {x: 314.277, y: 47.8023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1985047327
@@ -4800,6 +5033,7 @@ GameObject:
   - component: {fileID: 2000924456}
   - component: {fileID: 2000924455}
   - component: {fileID: 2000924458}
+  - component: {fileID: 2000924459}
   m_Layer: 0
   m_Name: Buy Heart
   m_TagString: Untagged
@@ -4871,8 +5105,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000924458}
-        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+      - m_Target: {fileID: 2000924459}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 1
         m_Arguments:
@@ -4933,6 +5167,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2438ac237039744ecb4cfb26d2b0cdcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopButtons
+--- !u!114 &2000924459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000924453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e2c29880a5a498e8c5be051591a7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopManager
+  cm: {fileID: 1140016406}
+  _noFundsMessage: {fileID: 1356851427}
 --- !u!1 &2026897517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5180,6 +5428,7 @@ GameObject:
   - component: {fileID: 2061474647}
   - component: {fileID: 2061474646}
   - component: {fileID: 2061474649}
+  - component: {fileID: 2061474650}
   m_Layer: 0
   m_Name: Buy Shoe
   m_TagString: Untagged
@@ -5251,8 +5500,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2061474649}
-        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+      - m_Target: {fileID: 2061474650}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 1
         m_Arguments:
@@ -5313,6 +5562,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2438ac237039744ecb4cfb26d2b0cdcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopButtons
+--- !u!114 &2061474650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061474644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e2c29880a5a498e8c5be051591a7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopManager
+  cm: {fileID: 1140016406}
+  _noFundsMessage: {fileID: 1356851427}
 --- !u!1 &2137677380
 GameObject:
   m_ObjectHideFlags: 0
