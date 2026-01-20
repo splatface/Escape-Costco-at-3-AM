@@ -3,19 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static PauseMenu Instance;
-    [SerializeField] private GameObject pauseMenuUI;
-    [SerializeField] private GameObject settingsUI;
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject settingsPanel;
 
-    private static bool isPaused = false;
+    private bool isPaused = false;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isPaused)
+            if (settingsPanel.activeSelf)
             {
-                Resume();
+                BackFromSettings();
             }
             else
             {
@@ -28,38 +27,46 @@ public class PauseMenu : MonoBehaviour
     {
         isPaused = !isPaused;
 
-        pauseMenuUI.SetActive(isPaused);
-        settingsUI.SetActive(false);
+        if (isPaused)
+        {
+            // Show pause menu, hide settings
+            pausePanel.SetActive(true);
+            settingsPanel.SetActive(false);
 
-        Time.timeScale = isPaused ? 0f : 1f;
+            Time.timeScale = 0f; 
+        }
+        else
+        {
+            // Hide everything
+            pausePanel.SetActive(false);
+            settingsPanel.SetActive(false);
+
+            Time.timeScale = 1f; 
+        }
     }
-
     public void Resume()
     {
         isPaused = false;
-        pauseMenuUI.SetActive(false);
-        settingsUI.SetActive(false);
+        pausePanel.SetActive(false);
+        settingsPanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("OpeningScene");
-    }
     public void OpenSettings()
     {
-        pauseMenuUI.SetActive(false);
-        settingsUI.SetActive(true);
+        pausePanel.SetActive(false);
+        settingsPanel.SetActive(true);
     }
 
-    public void CloseSettings()
+    public void BackFromSettings()
     {
-        settingsUI.SetActive(false);
-        pauseMenuUI.SetActive(true);
+        settingsPanel.SetActive(false);
+        pausePanel.SetActive(true);
     }
-    public void GoToOpeningScene()
+
+    public void GoToMainMenu()
     {
-        Resume();
+        Time.timeScale = 1f;
         SceneManager.LoadScene("OpeningScene");
     }
 }
