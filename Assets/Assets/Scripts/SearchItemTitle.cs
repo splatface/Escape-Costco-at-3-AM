@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class SearchInventoryTitle : MonoBehaviour
+public class SearchItemTitle : MonoBehaviour
 {
     public TMP_InputField SearchInputField;
 
