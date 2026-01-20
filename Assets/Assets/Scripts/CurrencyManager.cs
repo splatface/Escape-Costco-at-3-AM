@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class CurrencyManager : MonoBehaviour
 {
-    private int _coins = 0;
-
-    // REMEMBER TO ATTACH THIS SCRIPT TO THE PLAYER
+    private int _coins;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
