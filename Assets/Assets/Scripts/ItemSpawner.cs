@@ -4,6 +4,7 @@ public class ItemSpawner : MonoBehaviour
 {
     public GameObject MilkPrefab;
     public GameObject BananaPrefab;
+    public GameObject YellowKeyCardPrefab;
     private GameObject ItemSpawned;
     private SpriteRenderer ItemRender;
     public GameObject SpawnItem(string itemTag, Vector3 position)
@@ -19,7 +20,12 @@ public class ItemSpawner : MonoBehaviour
             ItemSpawned = Instantiate(BananaPrefab, position, transform.rotation);
             ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
         }
-        ItemRender.sortingLayerName = "ShowInventory";
+        else if (itemTag == "YellowKeyCard") 
+        {
+            ItemSpawned = Instantiate(YellowKeyCardPrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+            ItemRender.sortingLayerName = "ShowInventory";
         ItemRender.sortingOrder = 10;
 
         return ItemSpawned;

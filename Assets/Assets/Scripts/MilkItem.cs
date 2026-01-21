@@ -14,7 +14,7 @@ public class MilkItem : ItemBase
     {
       base.Name = "Milk";
         base.Description = "Slightly spoiled.";
-        base.Type = "interactable";
+        base.Type = "weapon";
         base.Start();  
     }
 

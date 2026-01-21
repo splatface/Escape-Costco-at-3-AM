@@ -26,12 +26,13 @@ public class SearchInvDesc : MonoBehaviour
         int size = 0; 
         foreach (string item in inventoryItems)
         {
-            GameObject itemObject = GameObject.FindWithTag(item);
-            ItemBase itemInfo = itemObject.GetComponent<ItemBase>();
-            string itemDesc = itemInfo.Description;
 
             if (string.IsNullOrEmpty(item) == false)
             {
+                GameObject itemObject = GameObject.FindWithTag(item);
+                ItemBase itemInfo = itemObject.GetComponent<ItemBase>();
+                string itemDesc = itemInfo.Description;
+
                 string textMod = text.ToLower();
                 string itemDescMod = itemDesc.ToLower();
                 if (itemDescMod.Contains(textMod))
@@ -54,6 +55,7 @@ public class SearchInvDesc : MonoBehaviour
                 string itemDescMod = itemDesc.ToLower(); 
                 if (itemDescMod.Contains(textMod))
                 {
+                    Debug.Log("here");
                     itemsToShow[cursor] = inventoryItems[i];
                     cursor++; 
                 }

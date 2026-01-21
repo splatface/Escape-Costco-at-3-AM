@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RedRoomDoor : MonoBehaviour
+public class YellowRoomDoor : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,9 +17,14 @@ public class RedRoomDoor : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         string[] inv = BarInventory.Instance.GetCurrentItems();
-        if (collision.gameObject.CompareTag("Player") && inv[1] == "RedKeyCard")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("FinalRoom");
+            Debug.Log("collided");
+            Debug.Log(inv[1]);
+        }
+        if (collision.gameObject.CompareTag("Player") && inv[1] == "YellowKeyCard")
+        {
+            SceneManager.LoadScene("ManagerRoom");
         }
     }
 }

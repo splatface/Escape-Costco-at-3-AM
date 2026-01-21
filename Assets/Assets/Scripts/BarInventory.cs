@@ -70,6 +70,7 @@ public class BarInventory : MonoBehaviour
         {
             if (_currentItems[cursor] != null)
             {
+                
                 GameObject itemName = GameObject.FindWithTag(_currentItems[cursor]);
                 SpriteRenderer renderer = itemName.GetComponent<SpriteRenderer>();
                 
