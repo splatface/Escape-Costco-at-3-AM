@@ -14,6 +14,7 @@ public class ShopButtons : MonoBehaviour
     public void SortPriceAlpha()
     {
         _shopManager.SortPricePlusAlpha();
+        _shopManager.CreateObjectList(); 
         _shopManager.ChangeObjectPositions();
     }
 

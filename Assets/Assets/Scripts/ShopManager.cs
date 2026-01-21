@@ -33,11 +33,13 @@ public class ShopManager : MonoBehaviour
             Debug.Log("Name:" + _powerupList[i].GetName());
         }
 
+
         _powerupObjects = new List<GameObject>();
         foreach (PowerUpEffect p in _powerupList)
         {
             _powerupObjects.Add(p.gameObject);
         }
+
 
         _noFundsMessage.gameObject.SetActive(false);
     }
@@ -72,42 +74,69 @@ public class ShopManager : MonoBehaviour
             Debug.Log("Name:" + _powerupList[i].GetName());
         }
     }
-
-        public void SortPricePlusAlpha()
+    private bool ComesBefore(PowerUpEffect a, PowerUpEffect b)
     {
-        for (int i = 0; i < (_powerupList.Count - 1); i++)
+        if (a.GetPrice() != b.GetPrice())
+        return a.GetPrice() < b.GetPrice();
+
+        int nameCompare = string.Compare( 
+            a.GetName(), 
+            b.GetName(), 
+            System.StringComparison.OrdinalIgnoreCase 
+            ); 
+
+        return nameCompare <= 0; }
+    public void SortPricePlusAlpha()
+    {
+        _powerupList = MergeSort(_powerupList);
+        CreateObjectList();
+        ChangeObjectPositions();
+    }
+    private List<PowerUpEffect> MergeSort(List<PowerUpEffect> list)
+    {
+        if (list.Count <= 1)
+        return list;
+
+        int mid = list.Count / 2;
+
+        List<PowerUpEffect> left = MergeSort(list.GetRange(0, mid));
+        List<PowerUpEffect> right = MergeSort(list.GetRange(mid, list.Count - mid));
+
+        return Merge(left, right);
+    }
+    private bool AreEqual(PowerUpEffect a, PowerUpEffect b)
+    {
+        return a.GetPrice() == b.GetPrice() &&
+        string.Equals(a.GetName(), b.GetName(), System.StringComparison.OrdinalIgnoreCase);
+    }
+    private List<PowerUpEffect> Merge(List<PowerUpEffect> left, List<PowerUpEffect> right)
+    {
+        List<PowerUpEffect> result = new List<PowerUpEffect>();
+        int i = 0, j = 0;
+
+        while (i < left.Count && j < right.Count)
         {
-            int minIndex = i;
-
-            for (int j = i + 1; j < _powerupList.Count; j++)
+            if (ComesBefore(left[i], right[j])) 
             {
-                if (_powerupList[j].GetPrice() < _powerupList[minIndex].GetPrice())
-                {
-                    minIndex = j;
-                }
-                else if (_powerupList[j].GetPrice() == _powerupList[minIndex].GetPrice())
-                {
-                    if (string.Compare(
-                            _powerupList[j].GetName(),
-                            _powerupList[minIndex].GetName()
-                        ) < 0)
-                    {
-                        minIndex = j;
-                    }
-                }
+                result.Add(left[i]);
+                i++;
             }
-
-            if (minIndex != i)
+            else
             {
-                PowerUpEffect min = _powerupList[minIndex];
-
-                _powerupList[minIndex] = _powerupList[i];
-                _powerupList[i] = min;
+                result.Add(right[j]);
+                j++;
             }
         }
 
-        CreateObjectList();
+        while (i < left.Count)
+            result.Add(left[i++]);
+
+        while (j < right.Count)
+            result.Add(right[j++]);
+
+        return result;
     }
+    
     public void CreateObjectList()
     {
         _powerupObjects = new List<GameObject>(); //Adds sorted powerups into object list for drawing to screen
@@ -117,7 +146,7 @@ public class ShopManager : MonoBehaviour
             Debug.Log("Number");
         }
     }
-    
+
     public void ChangeObjectPositions() //Uses location list to draw objects on screen in correct order
     {
         for (int i = 0; i < _powerupObjects.Count; i++)
@@ -190,11 +219,10 @@ public class ShopManager : MonoBehaviour
     public int BinarySearchPricePlusAlpha(int targetPrice)
     {
         SortPricePlusAlpha();
-        _powerupSearchList = new List<PowerUpEffect>(_powerupList);
 
         int low = 0;
         int high = _powerupList.Count - 1;
-        int result = -1;
+        int result = _powerupList.Count;
 
         while (low <= high)
         {
@@ -202,53 +230,50 @@ public class ShopManager : MonoBehaviour
 
             if (_powerupList[mid].GetPrice() >= targetPrice)
             {
-                result = mid;
-                high = mid - 1; 
+                result = mid;       
+                high = mid - 1;
             }
             else
             {
-                low = mid + 1; 
+                low = mid + 1;
             }
         }
 
         return result; 
     }
-    public void FilterPricePlusAlpha(string op, string value)
+    public void FilterPricePlusAlpha(string op, string value, int startIndex = 0)
     {
         ResetAllVisible();
 
         if (op == ">" || op == "<" || op == "=")
         {
-            int priceValue;
-            if (!int.TryParse(value, out priceValue)) return;
+            if (!int.TryParse(value, out int priceValue)) return;
 
-            foreach (PowerUpEffect p in _powerupList)
+            for (int i = 0; i < startIndex; i++)
+                _powerupList[i].gameObject.SetActive(false);
+
+            for (int i = startIndex; i < _powerupList.Count; i++)
             {
-                int price = p.GetPrice();
+                int price = _powerupList[i].GetPrice();
                 bool hide = false;
 
-                if (op == ">" && price <= priceValue)
-                    hide = true;
-                else if (op == "<" && price >= priceValue)
-                    hide = true;
-                else if (op == "=" && price != priceValue)
-                    hide = true;
+                if (op == ">" && price <= priceValue) hide = true;
+                else if (op == "<" && price >= priceValue) hide = true;
+                else if (op == "=" && price != priceValue) hide = true;
 
-                if (hide)
-                    p.gameObject.SetActive(false);
+                if (hide) _powerupList[i].gameObject.SetActive(false);
             }
         }
-        else
+        else 
         {
-            string search = value.ToLower();
-            foreach (PowerUpEffect p in _powerupList)
+            string search = value.ToLower().Trim();
+            foreach (var p in _powerupList)
             {
                 if (!p.GetName().ToLower().Contains(search))
-                    p.gameObject.SetActive(false);
+                p.gameObject.SetActive(false);
             }
         }
     }
-
     public void Purchase()
     {
         string parentTag = transform.parent.tag; //Get proper tag

@@ -3847,7 +3847,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Enter text or lower limit price. . . '
+  m_text: Enter Text . . .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3ab98c079a49a4e5d81c3e4b3461f5d2, type: 2}
   m_sharedMaterial: {fileID: 1702080348740462014, guid: 3ab98c079a49a4e5d81c3e4b3461f5d2, type: 2}

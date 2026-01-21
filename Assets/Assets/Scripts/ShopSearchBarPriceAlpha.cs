@@ -18,6 +18,7 @@ public class ShopSearchBarPriceAlpha : MonoBehaviour
         if (string.IsNullOrEmpty(text))
         {
             _shopManager.ResetAllVisible();
+            _shopManager.ChangeObjectPositions();
             return;
         }
 
@@ -27,9 +28,22 @@ public class ShopSearchBarPriceAlpha : MonoBehaviour
         if (text.StartsWith(">") || text.StartsWith("<") || text.StartsWith("="))
         {
             op = text[0].ToString();
-            value = text.Substring(1);
+            value = text.Substring(1).Trim();
         }
 
-        _shopManager.FilterPricePlusAlpha(op, value);
+        if (int.TryParse(value, out int number)) 
+        {
+
+            if (string.IsNullOrEmpty(op)) op = ">";
+
+            int startIndex = _shopManager.BinarySearchPricePlusAlpha(number);
+            _shopManager.FilterPricePlusAlpha(op, value, startIndex);
+        }
+        else 
+        {
+            _shopManager.FilterPricePlusAlpha("", value);
+        }
+
+        _shopManager.ChangeObjectPositions();
     }
 }
