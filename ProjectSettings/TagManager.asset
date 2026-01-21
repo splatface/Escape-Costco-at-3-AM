@@ -25,6 +25,7 @@ TagManager:
   - Shop
   - CarrotWeapon
   - Gun
+  - RoastChicken
   layers:
   - Default
   - TransparentFX

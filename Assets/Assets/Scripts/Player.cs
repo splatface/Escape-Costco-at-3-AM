@@ -74,6 +74,9 @@ public class PlayerMovement : MonoBehaviour
         } else if (other.CompareTag("Shop"))
         {
             SceneManager.LoadScene("Shop");
+        } else if (other.CompareTag("RoastChicken"))
+        {
+            Destroy(other.gameObject);
         }
     }
 
