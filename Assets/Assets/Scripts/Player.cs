@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private ItemBase _weapon;
     //Aggregaton where the Player holds and uses the ItemBaseClass class
 
+    [SerializeField] private FullInventory _inventory;
+
     public void Awake()
     {
         this.SetAnimator(GetComponent<Animator>());
@@ -21,7 +23,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void Update()
     {
-        Walk();
+        if (FullInventory.Instance.GetOpenState() == false)
+        {
+            Walk();
+        }
         AnimatePlayer();
     }
 
