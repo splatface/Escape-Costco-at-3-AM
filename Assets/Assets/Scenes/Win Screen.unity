@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 974935767}
   - component: {fileID: 974935766}
   - component: {fileID: 974935765}
+  - component: {fileID: 974935768}
   m_Layer: 5
   m_Name: Return Home
   m_TagString: Untagged
@@ -201,7 +202,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 974935766}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 974935768}
+        m_TargetAssemblyTypeName: WinButton, Assembly-CSharp
+        m_MethodName: ReturnHome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &974935766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +253,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974935763}
   m_CullTransparentMesh: 1
+--- !u!114 &974935768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974935763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6439e73acedc41eb9723ffd90ca3030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WinButton
 --- !u!1 &1436821749
 GameObject:
   m_ObjectHideFlags: 0

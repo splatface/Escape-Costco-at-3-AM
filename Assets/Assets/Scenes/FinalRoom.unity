@@ -523,6 +523,56 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.17, y: 0.40663815}
   m_EdgeRadius: 0
+--- !u!1 &569390535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569390537}
+  - component: {fileID: 569390536}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &569390536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569390535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b707c4e38f1e7e04cafa93389e7b5a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FullInventory
+  InventoryRenderer: {fileID: 0}
+  DropdownCanvas: {fileID: 0}
+  Spawner: {fileID: 0}
+  ItemTitle: {fileID: 0}
+  ItemDescrip: {fileID: 0}
+  TextRender: {fileID: 0}
+--- !u!4 &569390537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569390535}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.46165, y: -0.68573, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &593432878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -911,7 +961,7 @@ Transform:
   m_GameObject: {fileID: 1318900495}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4051, y: -0.052700043, z: 0}
+  m_LocalPosition: {x: 7.58, y: -0.052700043, z: 0}
   m_LocalScale: {x: 1.1480443, y: 1.1761183, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -929,6 +979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0a3187f390344d5b970b2759821a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  _inventory: {fileID: 569390536}
 --- !u!95 &1318900501
 Animator:
   serializedVersion: 7
@@ -1668,3 +1719,4 @@ SceneRoots:
   - {fileID: 1230422865}
   - {fileID: 507465564}
   - {fileID: 230941947}
+  - {fileID: 569390537}
