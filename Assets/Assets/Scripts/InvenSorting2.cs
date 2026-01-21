@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class InvenSorting2 : MonoBehaviour
 {
     public TMP_Dropdown Sorting2;
+    public InvenSorting1 Sorting1;
     private int _index = 0;
 
     private bool _needChange = false;
@@ -12,6 +14,11 @@ public class InvenSorting2 : MonoBehaviour
     {
         _index = newSort.value;
         _needChange = true;
+    }
+
+    public int GetIndex()
+    {
+        return _index;
     }
 
     public string[] SortItemType(string[] sortArray)
@@ -27,7 +34,7 @@ public class InvenSorting2 : MonoBehaviour
             ItemBase actualItem = item.GetComponent<ItemBase>();
 
             // logic to do initial sorting for items into the respective lists
-            string itemType = actualItem.Type;
+            string itemType = actualItem.Type.ToLower();
 
             if (itemType == "weapon")
             {
@@ -37,7 +44,7 @@ public class InvenSorting2 : MonoBehaviour
             {
                 interactableItemTags.Add(tag);
             }
-            else if (itemType == "powerups")
+            else if (itemType == "powerup")
             {
                 powerupTags.Add(tag);
             }
@@ -48,26 +55,26 @@ public class InvenSorting2 : MonoBehaviour
         }
 
         // assembling all of the items into one final list
-        List<string> finalArray = new List<string>();
+        List<string> finalList = new List<string>();
 
         foreach (string weapon in weaponTags)
         {
-            finalArray.Add(weapon);
+            finalList.Add(weapon);
         }
         foreach (string interactableItem in interactableItemTags)
         {
-            finalArray.Add(interactableItem);
+            finalList.Add(interactableItem);
         }
         foreach (string powerup in powerupTags)
         {
-            finalArray.Add(powerup);
+            finalList.Add(powerup);
         }
         foreach (string keycard in keycardTags)
         {
-            finalArray.Add(keycard);
+            finalList.Add(keycard);
         }
 
-        return finalArray.ToArray(); // return + change list to array
+        return finalList.ToArray(); // return + change list to array
     }
     
     void Start()
@@ -78,12 +85,14 @@ public class InvenSorting2 : MonoBehaviour
 
     void Update()
     {
+        int index1 = Sorting1.GetIndex();
+
         if (_index == 0 && _needChange == true)
         {
             FullInventory.Instance.ShowInvenItems();
             _needChange = false;
         }
-        else if (_index == 1) // item type
+        else if (_index == 1 && index1 == 0) // sort by item type ONLY
         {
             // gets all of the items that need sorting
             string[] allItems = FullInventory.Instance.GetAllItems();

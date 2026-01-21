@@ -2,23 +2,33 @@ using UnityEngine;
 
 public class TomatoShoot : MonoBehaviour
 {
-    private float _tomatoSpeed = 2f;
-    private float _disappearTime = 4f;
+    private float _tomatoSpeed = 5f;
+    private int  _tomatoDamage = 30;
 
 
     private Rigidbody2D rigidBody;
 
     private Transform _playerPos;
+    private GameObject _player;
 
+    void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        PlayerMovement _playerUsed = _player.GetComponent<PlayerMovement>();
+
+        if (otherObject.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            int currentHealth = _playerUsed.GetHealth();
+            _playerUsed.SetHealth(currentHealth-_tomatoDamage);
+
+        }
+    }
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        GameObject Player = GameObject.FindGameObjectWithTag("Player");
-        _playerPos = Player.transform;
-
-        Destroy(gameObject, _disappearTime); // destroys bullet after a certain amount of time
-
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _playerPos = _player.transform;
     }
 
     // Update is called once per frame

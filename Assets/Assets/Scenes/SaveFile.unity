@@ -221,7 +221,7 @@ RectTransform:
   - {fileID: 681982390}
   - {fileID: 1074853310}
   - {fileID: 1101505053}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1526171677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.04}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1440,7 +1440,7 @@ RectTransform:
   m_Children:
   - {fileID: 569711924}
   - {fileID: 1770123217}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1526171677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1609,10 +1609,12 @@ Transform:
   m_GameObject: {fileID: 1526171676}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03461, y: 0.36767998, z: 0}
+  m_LocalPosition: {x: -0.03461, y: 0.36767995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 33013162}
+  - {fileID: 1444762521}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1526171678
@@ -1627,10 +1629,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173ed32d219a954f8d59e2c4065c781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SavingManager
-  playerPos: {x: 0, y: 0, z: 0}
-  currentSceneName: 
-  allPossessedItems: []
-  allEquippedItems: []
   SavedIconRenderer: {fileID: 1444762520}
   ScreenRenderer: {fileID: 33013161}
 --- !u!1 &1770123216
@@ -2001,5 +1999,3 @@ SceneRoots:
   - {fileID: 1419138200}
   - {fileID: 990311610}
   - {fileID: 1526171677}
-  - {fileID: 33013162}
-  - {fileID: 1444762521}

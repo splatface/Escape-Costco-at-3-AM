@@ -43,7 +43,5 @@ public class CarrotShoot : MonoBehaviour
         rigidBody.linearVelocity = direction * _carrotSpeed; // test logic in game; moves bullet according to where the player is
         rigidBody.rotation = angleBullet;
 
-        Debug.Log(rigidBody.position.x + "" + rigidBody.position.y);
-
     }
 }

@@ -10,7 +10,7 @@ public class ManagerEnemy : MonoBehaviour
 
     // base variables
     private int _attackValue = 10;
-    private int _healthValue = 70;
+    private int _healthValue = 5;
 
     //variables for moving
     private bool _runMovementAgain = false;
@@ -79,7 +79,8 @@ public class ManagerEnemy : MonoBehaviour
 
     public void ChargeULT()
     {
-        Instantiate(TomatoBullet, ShootPos.position, ShootPos.rotation);
+        GameObject tomatoWeapon = Instantiate(TomatoBullet, ShootPos.position, ShootPos.rotation);
+        tomatoWeapon.transform.localScale += new Vector3 (0.5f, 0.5f);
     }
 
     public int GetAttackValue()
@@ -135,9 +136,10 @@ public class ManagerEnemy : MonoBehaviour
             _runMovementAgain = true;
         }
 
-        // ultimate attack triggered    
-        if (_healthValue < 10 && _ultUsed == false)
+        // ultimate attack triggered (when to start it and to keep it going for the scaling afterwards until it hits the player)
+        if (_healthValue < 10 && _ultUsed == false || GameObject.Find("Tomato") != null && _ultUsed == true)
         {
+            Debug.Log("continuing");
             ChargeULT();
             _ultUsed = true;
         }

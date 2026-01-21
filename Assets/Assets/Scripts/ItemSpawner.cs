@@ -19,7 +19,6 @@ public class ItemSpawner : MonoBehaviour
             ItemSpawned = Instantiate(BananaPrefab, position, transform.rotation);
             ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
         }
-
         ItemRender.sortingLayerName = "ShowInventory";
         ItemRender.sortingOrder = 10;
 

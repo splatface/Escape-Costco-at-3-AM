@@ -9,7 +9,12 @@ using UnityEngine;
 public class InvenSorting1 : MonoBehaviour
 {
     public TMP_Dropdown Sorting1;
+    public InvenSorting2 Sorting2;
     private int _index = 0;
+
+    private int _indexInteractable;
+    private int _indexPowerup;
+    private int _indexKeycard;
 
     private static char[] _alphaOrder = new char[26] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
@@ -18,6 +23,11 @@ public class InvenSorting1 : MonoBehaviour
     {
         _index = newSort.value;
         _needChange = true;
+    }
+
+    public int GetIndex()
+    {
+        return _index;
     }
 
     // alphabetical sorting system
@@ -95,28 +105,96 @@ public class InvenSorting1 : MonoBehaviour
 
     void Update()
     {
+        int index2 = Sorting2.GetIndex(); // get state of the other sorting dropdown menu
+
+        // goes through all of the items and makes the list shorter by getting rid of null and whitespace values
+        FullInventory.Instance.DestroyInvenItems();
+        string[] allItems = FullInventory.Instance.GetAllItems();
+
+        List<string> shortenedItems = new List<string>();
+        
+        foreach (string item in allItems)
+        {
+            if (!string.IsNullOrWhiteSpace(item))
+            {
+                shortenedItems.Add(item);
+            }
+        }
+
+        // actual sorting part
         if (_index == 0 && _needChange == true)
         {
             FullInventory.Instance.ShowInvenItems();
             _needChange = false;
         }
-        else if (_index == 1) //alphabetical sorting
+        else if (_index == 1 && index2 == 0) // alphabetical sorting ONLY
         {
-            FullInventory.Instance.DestroyInvenItems();
-            string[] allItems = FullInventory.Instance.GetAllItems();
+            allItems = AlphaSort(shortenedItems, 0).ToArray();
+            FullInventory.Instance.ShowInvenItems(allItems);
+        }
+        else if (_index == 1 && index2 == 1) // sorts by type first then by alphabetical within each type
+        {
+            string[] sortedItems = Sorting2.SortItemType(shortenedItems.ToArray());
 
-            List<string> shortenedItems = new List<string>();
-            
-            foreach (string item in allItems)
+            int foundNum = 0; // 0 = weapons, 1 = interactable, 2 = powerup, 3 = keycard (in order of their placements after going thorugh SortItemType)
+
+            for (int cursor=0; cursor<sortedItems.Length; cursor+=1)
             {
-                if (!string.IsNullOrWhiteSpace(item))
+                GameObject item = GameObject.FindWithTag(sortedItems[cursor]);
+                ItemBase actualItem = item.GetComponent<ItemBase>();
+
+                string itemType = actualItem.Type.ToLower();
+
+                if (itemType == "interactable" && foundNum == 0)
                 {
-                    shortenedItems.Add(item);
+                    foundNum += 1;
+                    _indexInteractable = cursor;
+                }
+                else if (itemType == "powerup" && foundNum == 1)
+                {
+                    foundNum += 1;
+                    _indexPowerup = cursor;
+                }
+                else if (itemType == "keycard" && foundNum == 2)
+                {
+                    foundNum += 1;
+                    _indexKeycard = cursor;
                 }
             }
 
-            allItems = AlphaSort(shortenedItems, 0).ToArray();
-            FullInventory.Instance.ShowInvenItems(allItems);
+            // gives each type its own array to sort through alphabetically before combining them again
+            string[] weapons = sortedItems[.._indexInteractable];
+            string[] interactableItems = sortedItems[_indexInteractable.._indexPowerup];
+            string[] powerups = sortedItems[_indexPowerup.._indexKeycard];
+            string[] keycards = sortedItems[_indexKeycard..];
+
+            weapons = AlphaSort(weapons.ToList(), 0).ToArray();
+            interactableItems = AlphaSort(interactableItems.ToList(), 0).ToArray();
+            powerups = AlphaSort(powerups.ToList(), 0).ToArray();
+            keycards = AlphaSort(keycards.ToList(), 0).ToArray();
+
+            List<string> finalList = new List<string>();
+
+
+            // combine all of the arrays together
+            foreach (string weapon in weapons)
+            {
+                finalList.Add(weapon);
+            }
+            foreach (string interactableItem in interactableItems)
+            {
+                finalList.Add(interactableItem);
+            }
+            foreach (string powerup in powerups)
+            {
+                finalList.Add(powerup);
+            }
+            foreach (string keycard in keycards)
+            {
+                finalList.Add(keycard);
+            }
+
+            FullInventory.Instance.ShowInvenItems(finalList.ToArray()); // show the sorted items
         }
     }
 }

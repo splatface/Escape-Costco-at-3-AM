@@ -176,10 +176,12 @@ public class FullInventory : MonoBehaviour
         if (Keyboard.current.aKey.wasPressedThisFrame)
         {
             PlaceIntoInven("Milk");
+            Debug.Log("placed");
         }
         if (Keyboard.current.sKey.wasPressedThisFrame)
         {
             PlaceIntoInven("Banana");
+            Debug.Log("placed2");
         }
 
         //changes state of whether inventory is shown or not

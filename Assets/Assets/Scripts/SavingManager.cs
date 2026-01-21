@@ -8,10 +8,7 @@ using System.Collections;
 public class SavingManager : MonoBehaviour
 {
     // variables that need saving (public for loading)
-    public Vector3 playerPos;
-    public string currentSceneName;
-    public string[] allPossessedItems;
-    public string[] allEquippedItems;
+
 
     // showing Saved! icon
     public Canvas SavedIconRenderer;
@@ -51,21 +48,21 @@ public class SavingManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
 
         // all items in inventory
-        string[] allItems = FullInventory.Instance.GetAllItems();
+        // string[] allItems = FullInventory.Instance.GetAllItems();
 
-        // currently equipped items
-        string[] equippedItems = BarInventory.Instance.GetCurrentItems();
+        // // currently equipped items
+        // string[] equippedItems = BarInventory.Instance.GetCurrentItems();
 
         #endregion
 
 
         // not my code
-        SavingManager data = new SavingManager() // makes new SavingmManager and saves the data to it for easy writing
+        SavedData data = new SavedData() // makes new SavingmManager and saves the data to it for easy writing
         {
             playerPos = playerPos.position,
-            currentSceneName = currentScene.name,
-            allEquippedItems = equippedItems,
-            allPossessedItems = allItems
+            currentSceneName = currentScene.name
+            // allEquippedItems = equippedItems,
+            // allPossessedItems = allItems
         };
 
         string json = JsonUtility.ToJson(data, true);
@@ -99,11 +96,11 @@ public class SavingManager : MonoBehaviour
         if (Instance == null) // makes it so that only one exists at a time
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(transform.root.gameObject);
         }
         else
         {
-            Destroy(gameObject); // destroy this would destroy the one we want
+            Destroy(transform.root.gameObject); // destroy this would destroy the one we want
         }
     }
 
