@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class YellowRoomDoor : MonoBehaviour
+public class GreenRoomDoor : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,9 +17,9 @@ public class YellowRoomDoor : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         string[] inv = BarInventory.Instance.GetCurrentItems();
-        if (collision.gameObject.CompareTag("Player") && inv[1] == "YellowKeyCard")
+        if (collision.gameObject.CompareTag("Player") && inv[1] == "GreenKeyCard")
         {
-            SceneManager.LoadScene("ManagerRoom");
+            SceneManager.LoadScene("AssistantRoom");
         }
     }
 }
