@@ -23,6 +23,8 @@ TagManager:
   - Bleach
   - Vinegar
   - Shop
+  - CarrotWeapon
+  - Gun
   layers:
   - Default
   - TransparentFX

@@ -29,8 +29,12 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            // should check whether gun is equipped or not 
-            PlayerAttack();
+            string[] inv = BarInventory.Instance.GetCurrentItems();
+            if (inv[0] == "Gun")
+            {
+                PlayerAttack();
+            }
+                
         }
     }
 }
