@@ -108,7 +108,6 @@ public class InvenSorting1 : MonoBehaviour
         int index2 = Sorting2.GetIndex(); // get state of the other sorting dropdown menu
 
         // goes through all of the items and makes the list shorter by getting rid of null and whitespace values
-        FullInventory.Instance.DestroyInvenItems();
         string[] allItems = FullInventory.Instance.GetAllItems();
 
         List<string> shortenedItems = new List<string>();
@@ -129,11 +128,13 @@ public class InvenSorting1 : MonoBehaviour
         }
         else if (_index == 1 && index2 == 0) // alphabetical sorting ONLY
         {
+            FullInventory.Instance.DestroyInvenItems();
             allItems = AlphaSort(shortenedItems, 0).ToArray();
             FullInventory.Instance.ShowInvenItems(allItems);
         }
         else if (_index == 1 && index2 == 1) // sorts by type first then by alphabetical within each type
         {
+            FullInventory.Instance.DestroyInvenItems();
             string[] sortedItems = Sorting2.SortItemType(shortenedItems.ToArray());
 
             int foundNum = 0; // 0 = weapons, 1 = interactable, 2 = powerup, 3 = keycard (in order of their placements after going thorugh SortItemType)

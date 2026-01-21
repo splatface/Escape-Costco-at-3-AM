@@ -23,7 +23,6 @@ public class FullInventory : MonoBehaviour
     public ItemSpawner Spawner;
 
 
-
     //text objects for the item when clicked
     public TMP_Text ItemTitle;
     public TMP_Text ItemDescrip;
@@ -54,7 +53,7 @@ public class FullInventory : MonoBehaviour
     }
 
     // what happens when the inventory is revealed onto the screen
-    public void ShowInvenItems(string[] itemsTag=null)
+    public void ShowInvenItems(string[] itemsTag=null) // allows no argument to be given when called
     {
         float startingLength = -3.5f;
         float endingLength = startingLength+(_lengthRow-1)*_boxSideLength;
@@ -62,6 +61,7 @@ public class FullInventory : MonoBehaviour
         float x = startingLength;
         int lastPosition;
 
+        // sets the length it should look through to put all items on the screen
         if (itemsTag != null)
         {
             lastPosition = itemsTag.Length;
@@ -97,6 +97,7 @@ public class FullInventory : MonoBehaviour
         }
     }
 
+    // destroys the image of the items on the screen
     public void DestroyInvenItems()
     {
         for (int cursor=0; cursor<_nextPosition; cursor += 1)
@@ -116,6 +117,8 @@ public class FullInventory : MonoBehaviour
             }
 
         }
+
+        Debug.Log("destroyed items");
     }
 
     // what happens when you click on an item in the inventory
@@ -131,6 +134,7 @@ public class FullInventory : MonoBehaviour
         ItemDescrip.text = item.Description;
     }
 
+    //getters and setters for encapsulation
     public string[] GetAllItems()
     {
         return _itemsInside;
@@ -141,7 +145,6 @@ public class FullInventory : MonoBehaviour
         _itemsInside = allItems;
     }
 
-    //getters for encapsulation
     public ItemBase GetCurrentItem()
     {
         return _currentItem;

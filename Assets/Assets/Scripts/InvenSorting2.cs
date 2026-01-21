@@ -92,8 +92,10 @@ public class InvenSorting2 : MonoBehaviour
             FullInventory.Instance.ShowInvenItems();
             _needChange = false;
         }
-        else if (_index == 1 && index1 == 0) // sort by item type ONLY
+        if (_index == 1 && index1 == 0) // sort by item type ONLY
         {
+            FullInventory.Instance.DestroyInvenItems();
+            
             // gets all of the items that need sorting
             string[] allItems = FullInventory.Instance.GetAllItems();
             List<string> shortenedItems = new List<string>();
