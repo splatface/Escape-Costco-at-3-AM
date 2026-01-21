@@ -106,21 +106,12 @@ public class FullInventory : MonoBehaviour
         {
             string itemTag = _itemsInside[cursor];
 
-            if (BarInventory.Instance.GetCurrentItems().Contains(itemTag)) // assumes will only have 1 of each item at a time
-            {
-                continue; //goes onto next item
-            }
             GameObject[] items = GameObject.FindGameObjectsWithTag(itemTag);
 
-            for (int itemNum=0; itemNum<items.Length; itemNum += 1)
-            {
-                Destroy(items[itemNum]);
-                
-            }
+            Destroy(items[0]);
 
         }
 
-        Debug.Log("destroyed items");
     }
 
     // what happens when you click on an item in the inventory
@@ -173,7 +164,6 @@ public class FullInventory : MonoBehaviour
         else
         {
             Destroy(gameObject); // destroy(this) would destroy the one we want
-            Debug.Log("destroyed inventory");
         }
     }
 
@@ -193,17 +183,6 @@ public class FullInventory : MonoBehaviour
         AllButtonsCanvas.scaleFactor = 0.97F;
         }
         
-
-        if (Keyboard.current.aKey.wasPressedThisFrame)
-        {
-            PlaceIntoInven("Milk");
-            Debug.Log("placed");
-        }
-        if (Keyboard.current.sKey.wasPressedThisFrame)
-        {
-            PlaceIntoInven("Banana");
-            Debug.Log("placed2");
-        }
 
         //changes state of whether inventory is shown or not
         if (Keyboard.current.iKey.wasPressedThisFrame)

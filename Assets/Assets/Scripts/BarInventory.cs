@@ -62,7 +62,6 @@ public class BarInventory : MonoBehaviour
         if (pastItemObject[index] != null && noDestroy == null)
         {
             Destroy(pastItemObject[index]); // destroys previous sprite at that specific location
-            Debug.Log("1");
         }
     }
 
@@ -123,7 +122,6 @@ public class BarInventory : MonoBehaviour
         else
         {
             Destroy(gameObject); // destroy this would destroy the one we want
-            Debug.Log("destroyed bar inventory" + SceneManager.GetActiveScene().name);
         }
     }
 
