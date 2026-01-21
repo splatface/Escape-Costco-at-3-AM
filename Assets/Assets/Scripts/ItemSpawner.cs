@@ -8,6 +8,10 @@ public class ItemSpawner : MonoBehaviour
     public GameObject BlueKeyCardPrefab;
     public GameObject GreenKeyCardPrefab;
     public GameObject RedKeyCardPrefab;
+    public GameObject BleachPrefab;
+    public GameObject VinegarPrefab;
+    public GameObject GunPrefab;
+    public GameObject GasPrefab;
     private GameObject ItemSpawned;
     private SpriteRenderer ItemRender;
     public GameObject SpawnItem(string itemTag, Vector3 position)
@@ -43,7 +47,27 @@ public class ItemSpawner : MonoBehaviour
             ItemSpawned = Instantiate(BlueKeyCardPrefab, position, transform.rotation);
             ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
         }
-            ItemRender.sortingLayerName = "ShowInventory";
+        else if (itemTag == "Bleach")
+        {
+            ItemSpawned = Instantiate(BleachPrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        else if (itemTag == "Vinegar")
+        {
+            ItemSpawned = Instantiate(VinegarPrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        else if (itemTag == "Gun")
+        {
+            ItemSpawned = Instantiate(GunPrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        else if (itemTag == "Gas")
+        {
+            ItemSpawned = Instantiate(GasPrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        ItemRender.sortingLayerName = "ShowInventory";
         ItemRender.sortingOrder = 10;
 
         return ItemSpawned;

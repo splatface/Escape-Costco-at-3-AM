@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.31902838, y: 0.31902838, z: 0.31902838}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,9 +107,6 @@ MonoBehaviour:
   Name: 
   Description: 
   Type: 
-  Item: {fileID: 616228977397105672}
-  Player: {fileID: 0}
-  Renderer: {fileID: 0}
 --- !u!50 &616228977397105672
 Rigidbody2D:
   serializedVersion: 5

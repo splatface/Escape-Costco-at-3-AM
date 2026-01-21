@@ -18,17 +18,16 @@ public class AssistantMechanism : MonoBehaviour
         GasCloud.SetActive(false);
         Gun.SetActive(false);
         UseGasButton.SetActive(false);
-        string[] inv = BarInventory.Instance.GetCurrentItems();
-        if (inv[0] == "Gas")
-        {
-            UseGasButton.SetActive(true);
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        string[] inv = BarInventory.Instance.GetCurrentItems();
+        if (inv[0] == "Gas")
+        {
+            UseGasButton.SetActive(true);
+        }
     }
     public void StartGasRelease()
     {
@@ -44,5 +43,6 @@ public class AssistantMechanism : MonoBehaviour
         Gun.SetActive(true);
         yield return new WaitForSeconds(1f);
         GasCloud.SetActive(false);
+        UseGasButton.SetActive(false);
     }
 }
