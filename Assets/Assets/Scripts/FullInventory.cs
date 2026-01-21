@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Linq;
+using System.Collections.Generic;
 
 //script includes: logic behind placing items into the correct box for the full inventory screen
 public class FullInventory : MonoBehaviour
@@ -36,6 +37,20 @@ public class FullInventory : MonoBehaviour
     {
         _itemsInside[_nextPosition] = itemTag;
         _nextPosition += 1;
+    }
+
+    public void RemoveFromInven(string itemTag)
+    {
+        List<string> newItems = new List<string>();
+
+        foreach (string item in _itemsInside)
+        {
+            if (item != itemTag)
+            {
+                newItems.Add(item);
+            }
+        }
+        _itemsInside = newItems.ToArray();
     }
 
     // what happens when the inventory is revealed onto the screen

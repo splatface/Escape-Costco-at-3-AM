@@ -14,7 +14,6 @@ public class InvenSorting1 : MonoBehaviour
     private static char[] _alphaOrder = new char[26] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
     private bool _needChange = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void ChangeSort(TMP_Dropdown newSort)
     {
         _index = newSort.value;
@@ -90,7 +89,7 @@ public class InvenSorting1 : MonoBehaviour
 
     void Start()
     {
-        Sorting1.onValueChanged.AddListener(delegate{ChangeSort(Sorting1);}); // calls this function; not mine :(
+        Sorting1.onValueChanged.AddListener(delegate{ChangeSort(Sorting1);}); // calls this function; not my code
     }
 
 
