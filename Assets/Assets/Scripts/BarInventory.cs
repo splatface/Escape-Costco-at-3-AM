@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //script includes: the inventory bar shows or hides itself 
 public class BarInventory : MonoBehaviour
@@ -15,7 +16,7 @@ public class BarInventory : MonoBehaviour
     
     public static BarInventory Instance {get; set;}
 
-    public void PlaceIntoInven(string itemTag)
+    public void PlaceIntoInven(string itemTag, string noDestroy=null)
     {
         GameObject itemObject = GameObject.FindWithTag(itemTag);
         ItemBase item = itemObject.GetComponent<ItemBase>();
@@ -58,9 +59,10 @@ public class BarInventory : MonoBehaviour
 
         SpawnedObjects[index] = Spawner.SpawnItem(item.tag, position);
 
-        if (pastItemObject[index] != null)
+        if (pastItemObject[index] != null && noDestroy == null)
         {
             Destroy(pastItemObject[index]); // destroys previous sprite at that specific location
+            Debug.Log("1");
         }
     }
 
@@ -70,8 +72,17 @@ public class BarInventory : MonoBehaviour
         {
             if (_currentItems[cursor] != null)
             {
-                
+                if (GameObject.FindWithTag(_currentItems[cursor]) == null)
+                {
+                    foreach (string itemTag in _currentItems)
+                    {
+                        Vector3 position = new Vector3 (0, 0);
+                        Spawner.SpawnItem(itemTag, position);
+                        PlaceIntoInven(itemTag, "no");
+                    }
+                }
                 GameObject itemName = GameObject.FindWithTag(_currentItems[cursor]);
+
                 SpriteRenderer renderer = itemName.GetComponent<SpriteRenderer>();
                 
                 renderer.sortingLayerName = "ShowInventory";
@@ -112,6 +123,7 @@ public class BarInventory : MonoBehaviour
         else
         {
             Destroy(gameObject); // destroy this would destroy the one we want
+            Debug.Log("destroyed bar inventory" + SceneManager.GetActiveScene().name);
         }
     }
 

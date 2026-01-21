@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Linq;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 //script includes: logic behind placing items into the correct box for the full inventory screen
 public class FullInventory : MonoBehaviour
@@ -13,6 +14,7 @@ public class FullInventory : MonoBehaviour
     private static bool _isOpen = false;
     private int _lengthRow = 6; // for putting the images on the screen
     public Canvas DropdownCanvas;
+    public Canvas AllButtonsCanvas;
 
 
     //variables for storing items in the inventory
@@ -171,11 +173,27 @@ public class FullInventory : MonoBehaviour
         else
         {
             Destroy(gameObject); // destroy(this) would destroy the one we want
+            Debug.Log("destroyed inventory");
         }
     }
 
     void Update()
     {
+        Camera sceneCamera = Camera.main;
+
+        TextRender.worldCamera = sceneCamera;
+        DropdownCanvas.worldCamera = sceneCamera;
+        AllButtonsCanvas.worldCamera = sceneCamera;
+
+        TextRender.scaleFactor = 0.4F;
+        DropdownCanvas.scaleFactor = 0.4F;
+
+        if (SceneManager.GetActiveScene().name == "ManagerRoom")
+        {
+        AllButtonsCanvas.scaleFactor = 0.97F;
+        }
+        
+
         if (Keyboard.current.aKey.wasPressedThisFrame)
         {
             PlaceIntoInven("Milk");
