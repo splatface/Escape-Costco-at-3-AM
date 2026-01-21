@@ -5,6 +5,7 @@ public abstract class Guard : MonoBehaviour
     // encapsulated variables
     protected float _speed;
     protected float _patrolDistance;
+    protected int _damage = 10;
 
     private Vector3 _startPosition;
     private int _direction = 1;
@@ -26,6 +27,16 @@ public abstract class Guard : MonoBehaviour
         if (Vector3.Distance(transform.position, _startPosition) >= _patrolDistance)
         {
             _direction *= -1;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        PlayerMovement player = other.GetComponent<PlayerMovement>();
+
+        if (player != null)
+        {
+            int newHealth = player.GetHealth() - _damage;
+            player.SetHealth(newHealth);
         }
     }
 }
