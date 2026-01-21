@@ -10,7 +10,7 @@ public class ShopManager : MonoBehaviour
 {
     private List<PowerUpEffect> _powerupList;
     private List<GameObject> _powerupObjects;
-    private List<PowerUpEffect> _powerupSearchList; //Will be _powerupList but filtered for the search criteria
+    private List<PowerUpEffect> _powerupSearchList; // _powerupList but filtered for the search criteria
 
     [SerializeField] private CurrencyManager cm;
     [SerializeField] private TMP_Text _noFundsMessage;
@@ -27,19 +27,13 @@ public class ShopManager : MonoBehaviour
 
     public void Start()
     {
-        _powerupList = new List<PowerUpEffect>(GetComponentsInChildren<PowerUpEffect>());
-        for(int i = 0; i < _powerupList.Count; i++)
-        {
-            Debug.Log("Name:" + _powerupList[i].GetName());
-        }
-
+        _powerupList = new List<PowerUpEffect>(GetComponentsInChildren<PowerUpEffect>()); //Add powerups on screen to _powerupList
 
         _powerupObjects = new List<GameObject>();
         foreach (PowerUpEffect p in _powerupList)
         {
-            _powerupObjects.Add(p.gameObject);
+            _powerupObjects.Add(p.gameObject); //Add Game Object attached to script to _powerupObjects -- allows movement later
         }
-
 
         _noFundsMessage.gameObject.SetActive(false);
     }
@@ -67,11 +61,6 @@ public class ShopManager : MonoBehaviour
                 _powerupList[minIndex] = _powerupList[i];
                 _powerupList[i] = min; //Swaps the location of the objects at minIndex and i
             }
-        }
-        
-        for(int i = 0; i < _powerupList.Count; i++)
-        {
-            Debug.Log("Name:" + _powerupList[i].GetName());
         }
     }
     private bool ComesBefore(PowerUpEffect a, PowerUpEffect b)
@@ -280,7 +269,7 @@ public class ShopManager : MonoBehaviour
         int funds = cm.GetCoins();
         int price = transform.parent.GetComponent<PowerUpEffect>().GetPrice();
 
-        if (funds >= price)
+        if (funds >= price) //Check that there are enough funds to purchase
         {
             cm.SubtractCoins(price);
             FullInventory.Instance.PlaceIntoInven(parentTag); 
@@ -290,11 +279,11 @@ public class ShopManager : MonoBehaviour
             if (_noFundsCoroutine != null)
                 StopCoroutine(_noFundsCoroutine);
 
-            _noFundsCoroutine = StartCoroutine(ShowInsufficientFunds());
+            _noFundsCoroutine = StartCoroutine(ShowInsufficientFunds()); //Display "Insufficient Funds" message
         }
     }
 
-    private IEnumerator ShowInsufficientFunds()
+    private IEnumerator ShowInsufficientFunds() //Add 2 second delay for gamer to read message
     {
         _noFundsMessage.gameObject.SetActive(true);
 

@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -12,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _movementDirection;
     private ItemBase _weapon;
     //Aggregaton where the Player holds and uses the ItemBaseClass class
-
     [SerializeField] private FullInventory _inventory;
 
     public void Awake()
@@ -70,13 +70,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Final Door"))
         {
-            SceneManager.LoadScene("WinScreen");
+            SceneManager.LoadScene("WinScreen"); //Go to win screen
         } else if (other.CompareTag("Shop"))
         {
-            SceneManager.LoadScene("Shop");
+            SceneManager.LoadScene("Shop"); //Enter shop
         } else if (other.CompareTag("RoastChicken"))
         {
-            Destroy(other.gameObject);
+            Destroy(other.gameObject); //Collect chicken
         }
     }
 
@@ -172,7 +172,4 @@ public class PlayerMovement : MonoBehaviour
             this._weapon = newWeapon;
         }
     }
-
-    //Add a method where you use the weapon probably
-
 }

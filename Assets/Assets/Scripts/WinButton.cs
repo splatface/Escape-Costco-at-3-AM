@@ -5,6 +5,6 @@ public class WinButton : MonoBehaviour
 {
     public void ReturnHome()
     {
-        SceneManager.LoadScene("OpeningScene");
+        SceneManager.LoadScene("OpeningScene"); //Goes to main menu
     }
 }
