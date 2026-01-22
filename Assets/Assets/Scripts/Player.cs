@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
     public float GetMoveSpeed()
     {
         //If the move speed is somehow set out of range, it should not be used
-        if (_moveSpeed <= 0 || _moveSpeed > 10)
+        if (_moveSpeed <= 0 || _moveSpeed > 18)
         {
             throw new System.Exception("Move speed is out of range.");
         }
@@ -155,20 +155,16 @@ public class Player : MonoBehaviour
 
     public ItemBase GetWeapon()
     {
-        //Cannot return the weapon if the player is not holding a weapon
-        if (this._weapon == null)
-        {
-            throw new System.Exception("Weapon is null.");
-        }
-        
         return this._weapon;
     }
 
-    public void SetWeapon(ItemBase newWeapon)
-    {   
-        if (this._weapon != null)
-        {
-            this._weapon = newWeapon;
-        }
+    public void EquipWeapon(ItemBase weapon)
+    {
+        _weapon = weapon;
+    }
+
+    public void UnequipWeapon()
+    {
+        _weapon = null;
     }
 }
