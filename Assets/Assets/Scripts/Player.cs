@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
 
     private float _moveSpeed = 10f;
@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator _anim;
     private Vector3 _movementDirection;
     private ItemBase _weapon;
-    //Aggregaton where the Player holds and uses the ItemBaseClass class
+    //Aggregaton where the Player holds the ItemBaseClass attribute
     [SerializeField] private FullInventory _inventory;
 
     public void Awake()
@@ -33,21 +33,21 @@ public class PlayerMovement : MonoBehaviour
     public void Walk()
     {
         //Get arrow key input
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
 
         //Set direction to nothing first
         this.SetMovementDirection(Vector3.zero);
 
         //Prevent the character from moving diagonally -- restrict to up, down, left, right so that it can be animated
-        if (horizontal != 0)
+        if (horizontalInput != 0)
         {
             //Identify and save direction so that player can be animated accordingly
-            this.SetMovementDirection(new Vector3(horizontal, 0f, 0f));
+            this.SetMovementDirection(new Vector3(horizontalInput, 0f, 0f));
         }
-        else if (vertical != 0)
+        else if (verticalInput != 0)
         {
-            this.SetMovementDirection(new Vector3(0f, vertical, 0f));
+            this.SetMovementDirection(new Vector3(0f, verticalInput, 0f));
         }
 
         //Move player
@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
         //If the move speed is somehow set out of range, it should not be used
         if (_moveSpeed <= 0 || _moveSpeed > 10)
         {
-            throw new System.Exception("Move speed is negative.");
+            throw new System.Exception("Move speed is out of range.");
         }
         
         return this._moveSpeed;
@@ -168,7 +168,6 @@ public class PlayerMovement : MonoBehaviour
     {   
         if (this._weapon != null)
         {
-            //add back to inventory
             this._weapon = newWeapon;
         }
     }

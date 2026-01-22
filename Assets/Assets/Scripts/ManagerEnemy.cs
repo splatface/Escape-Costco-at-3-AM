@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class ManagerEnemy : MonoBehaviour
 {
-    public PlayerMovement Player;
+    public Player Player;
 
     // base variables
     private int _attackValue = 10;

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class TakeItemIcon : MonoBehaviour
 {
-    public PlayerMovement Player;
+    public Player Player;
     public Canvas Renderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +20,7 @@ public class TakeItemIcon : MonoBehaviour
         if (FullInventory.Instance.GetOpenState() == false) // will only check if you can get items when the inventory is not open
         {
             GameObject playerBase = GameObject.FindWithTag("Player");
-            Player = playerBase.GetComponent<PlayerMovement>();
+            Player = playerBase.GetComponent<Player>();
 
             ItemBase[] item = GameObject.FindObjectsByType<ItemBase>(FindObjectsSortMode.None); // find all items in the scene
 

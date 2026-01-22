@@ -13,7 +13,7 @@ public class TomatoShoot : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D otherObject)
     {
-        PlayerMovement _playerUsed = _player.GetComponent<PlayerMovement>();
+        Player _playerUsed = _player.GetComponent<Player>();
 
         if (otherObject.gameObject.CompareTag("Player"))
         {

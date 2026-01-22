@@ -31,7 +31,7 @@ public abstract class Guard : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerMovement player = other.GetComponent<PlayerMovement>();
+        Player player = other.GetComponent<Player>();
 
         if (player != null)
         {
