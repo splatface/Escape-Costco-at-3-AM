@@ -11,7 +11,7 @@ public class ManagerEnemy : MonoBehaviour
 
     // base variables
     private int _attackValue = 10;
-    private int _healthValue = 5;
+    private int _healthValue = 70;
     public TMP_Text HealthText;
     public Canvas HealthCanvas;
 
