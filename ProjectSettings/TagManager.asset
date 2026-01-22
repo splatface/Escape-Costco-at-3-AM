@@ -73,5 +73,8 @@ TagManager:
   - name: Text
     uniqueID: 247508753
     locked: 0
+  - name: Health Text
+    uniqueID: 1943204539
+    locked: 0
   m_RenderingLayers:
   - Default
