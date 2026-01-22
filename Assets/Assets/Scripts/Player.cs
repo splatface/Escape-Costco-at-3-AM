@@ -163,8 +163,9 @@ public class Player : MonoBehaviour
         _weapon = weapon;
     }
 
-    public void UnequipWeapon()
+    public ItemBase UnequipWeapon()
     {
-        _weapon = null;
+        this._weapon = null;
+        return _weapon;
     }
 }
