@@ -109,6 +109,10 @@ public class ManagerEnemy : MonoBehaviour
                 BasicAttack();
                 yield return new WaitForSeconds(4f);
             }
+            else
+            {
+                yield return null;
+            }
         }
     }
 
@@ -162,7 +166,7 @@ public class ManagerEnemy : MonoBehaviour
             _diedAlready = true;
             Vector3 position = new Vector3 (0, 0);
             Spawner.SpawnItem("RedKeyCard", position);
-            Renderer.sortingLayerName = "HideInventory";
+            Destroy(gameObject);
         }
     }
 }
