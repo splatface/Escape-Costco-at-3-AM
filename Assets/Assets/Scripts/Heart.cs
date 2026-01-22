@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Health : ItemBase
+public class Heart : ItemBase
 {
     protected override void Start()
     {
