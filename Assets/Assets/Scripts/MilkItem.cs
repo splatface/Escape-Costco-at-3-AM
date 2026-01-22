@@ -5,7 +5,12 @@ public class MilkItem : ItemBase
 
     public override void UseItem()
     {
-        
+        GameObject player = GameObject.FindWithTag("Player");
+        Player actualPlayer = player.GetComponent<Player>();
+
+        int health = actualPlayer.GetHealth();
+
+        actualPlayer.SetHealth(health-5);
     }
 
     

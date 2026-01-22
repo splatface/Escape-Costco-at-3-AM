@@ -37,6 +37,6 @@ public class ItemBase : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-
+        
     }
 }
