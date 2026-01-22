@@ -12,7 +12,6 @@ public class ShopManager : MonoBehaviour
     private List<GameObject> _powerupObjects;
     private List<PowerUpEffect> _powerupSearchList; // _powerupList but filtered for the search criteria
 
-    [SerializeField] private CurrencyManager cm;
     [SerializeField] private TMP_Text _noFundsMessage;
     private Coroutine _noFundsCoroutine;
 
@@ -266,12 +265,12 @@ public class ShopManager : MonoBehaviour
     public void Purchase()
     {
         string parentTag = transform.parent.tag; //Get proper tag
-        int funds = cm.GetCoins();
+        int funds = CurrencyManager.Instance.GetCoins();
         int price = transform.parent.GetComponent<PowerUpEffect>().GetPrice();
 
         if (funds >= price) //Check that there are enough funds to purchase
         {
-            cm.SubtractCoins(price);
+            CurrencyManager.Instance.SubtractCoins(price);
             FullInventory.Instance.PlaceIntoInven(parentTag); 
         }
         else

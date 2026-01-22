@@ -13,4 +13,12 @@ public class CoinMovement : MonoBehaviour
     {
         transform.Rotate(0, 0, 50 * Time.deltaTime);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            CurrencyManager.Instance.AddCoins(1);
+            Destroy(this.gameObject);
+        }
+    }
 }
