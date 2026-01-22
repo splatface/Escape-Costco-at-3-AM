@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 //script includes: the inventory bar shows or hides itself 
@@ -71,20 +72,20 @@ public class BarInventory : MonoBehaviour
         {
             if (_currentItems[cursor] != null)
             {
-                if (GameObject.FindWithTag(_currentItems[cursor]) == null)
-                {
-                    foreach (string itemTag in _currentItems)
-                    {
-                        Vector3 position = new Vector3 (0, 0);
-                        Spawner.SpawnItem(itemTag, position);
-                        PlaceIntoInven(itemTag, "no");
-                    }
-                }
+                string itemTag = _currentItems[cursor];
+                
+                Debug.Log("item: "+ itemTag);
+                Vector3 position = new Vector3 (0, 0);
+                Spawner.SpawnItem(itemTag, position);
+                PlaceIntoInven(itemTag, "do"); // moves it to the specific position needed
+
                 GameObject itemName = GameObject.FindWithTag(_currentItems[cursor]);
 
                 SpriteRenderer renderer = itemName.GetComponent<SpriteRenderer>();
                 
                 renderer.sortingLayerName = "ShowInventory";
+
+                Debug.Log(_currentItems[1]);
                 
             }
         }
@@ -129,17 +130,25 @@ public class BarInventory : MonoBehaviour
     {
 
         //changes state of bar inventory
-        _showState = FullInventory.Instance.GetOpenState();
 
-        if (_showState == false) // if the full inventory is NOT being shown
+        if (Keyboard.current.iKey.wasPressedThisFrame)
         {
-            InventoryBarRenderer.sortingLayerName = "ShowInventory";
-            ShowItems();
+            FullInventory.Instance.ShowAllInventory();
+            _showState = FullInventory.Instance.GetOpenState(); // makes sure that this occurs after the logic in showallinventory does
+
+            if (_showState == false) // if the full inventory is NOT being shown
+            {
+                InventoryBarRenderer.sortingLayerName = "ShowInventory";
+                FullInventory.Instance.DestroyInvenItems();
+                ShowItems();
+                Debug.Log("here");
+            }
+            else
+            {
+                InventoryBarRenderer.sortingLayerName = "HideInventory";
+            }
         }
-        else
-        {
-            InventoryBarRenderer.sortingLayerName = "HideInventory";
-        }
+
 
     }
 }
