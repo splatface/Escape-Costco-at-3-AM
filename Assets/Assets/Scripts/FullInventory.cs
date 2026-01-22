@@ -108,7 +108,10 @@ public class FullInventory : MonoBehaviour
 
             GameObject[] items = GameObject.FindGameObjectsWithTag(itemTag);
 
-            Destroy(items[0]);
+            foreach (GameObject item in items) // destroys all items with that tag
+            {
+                Destroy(item);
+            }
 
         }
 
@@ -131,6 +134,29 @@ public class FullInventory : MonoBehaviour
     public string[] GetAllItems()
     {
         return _itemsInside;
+    }
+
+    public void ShowAllInventory()
+    {
+        if (_isOpen == false)
+        {
+            DestroyInvenItems();
+            InventoryRenderer.sortingLayerName = "ShowInventory";
+            InventoryRenderer.sortingOrder = 0;
+            _isOpen = true;
+            ShowInvenItems();
+            TextRender.sortingLayerName = "Text";
+            DropdownCanvas.sortingLayerName = "ShowInventory";
+            TextRender.sortingOrder = 10;
+            DropdownCanvas.sortingOrder = 10;
+        }
+        else
+        {
+            InventoryRenderer.sortingLayerName = "HideInventory";                
+            _isOpen = false;
+            TextRender.sortingLayerName = "HideInventory";
+            DropdownCanvas.sortingLayerName = "HideInventory";
+        }
     }
 
     public void SetAllItems(string[] allItems)
@@ -178,35 +204,7 @@ public class FullInventory : MonoBehaviour
         TextRender.scaleFactor = 0.4F;
         DropdownCanvas.scaleFactor = 0.4F;
 
-        if (SceneManager.GetActiveScene().name == "ManagerRoom")
-        {
         AllButtonsCanvas.scaleFactor = 0.97F;
-        }
         
-
-        //changes state of whether inventory is shown or not
-        if (Keyboard.current.iKey.wasPressedThisFrame)
-        {
-
-            if (_isOpen == false)
-            {
-                InventoryRenderer.sortingLayerName = "ShowInventory";
-                InventoryRenderer.sortingOrder = 0;
-                _isOpen = true;
-                ShowInvenItems();
-                TextRender.sortingLayerName = "Text";
-                DropdownCanvas.sortingLayerName = "ShowInventory";
-                TextRender.sortingOrder = 10;
-                DropdownCanvas.sortingOrder = 10;
-            }
-            else
-            {
-                InventoryRenderer.sortingLayerName = "HideInventory";                
-                _isOpen = false;
-                DestroyInvenItems();
-                TextRender.sortingLayerName = "HideInventory";
-                DropdownCanvas.sortingLayerName = "HideInventory";
-            }
-        }
     }
 }
