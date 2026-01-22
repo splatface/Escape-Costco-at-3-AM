@@ -159,7 +159,7 @@ public class CardDeck : MonoBehaviour
 
     public void SceneTransition()
     {
-        FullInventory.Instance.PlaceIntoInven("Bleach");
+        FullInventory.Instance.PlaceIntoInven("Vinegar");
         SceneManager.LoadScene("CardRoom");
     }
 }

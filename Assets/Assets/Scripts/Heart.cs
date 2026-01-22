@@ -6,7 +6,7 @@ public class Heart : ItemBase
     {
         this.Name = "heart";
         this.Description = "Health +10";
-        this.Type = "interactable";
+        this.Type = "powerup";
         base.Start();
     }
 }

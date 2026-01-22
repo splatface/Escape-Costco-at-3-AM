@@ -14,7 +14,7 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GetInput();
     }
     public void PlayerAttack()
     {

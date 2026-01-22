@@ -9,7 +9,7 @@ public class OpenCardScene : MonoBehaviour
     void Start()
     {
         string[] inv = FullInventory.Instance.GetAllItems();
-        if (inv.Contains("Bleach"))
+        if (inv.Contains("Vinegar"))
         {
             CardButton.SetActive(false);
         }

@@ -38,13 +38,13 @@ public class BarInventory : MonoBehaviour
             _currentItems[0] = itemTag;
             index = 0;
         }
-        else if (type == "interactable")
+        else if (type == "keycard")
         {
             _currentItems[1] = itemTag;
             newX += _itemSpacing;
             index = 1;
         }
-        else if (type == "keycard")
+        else if (type == "interactable")
         {
             _currentItems[2] = itemTag;
             newX += 2*_itemSpacing;

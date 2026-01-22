@@ -32,7 +32,6 @@ public class AssistantMechanism : MonoBehaviour
     public void StartGasRelease()
     {
         StartCoroutine(ReleaseGas());
-        FullInventory.Instance.RemoveFromInven("Gas");
     }
     IEnumerator ReleaseGas()
     {

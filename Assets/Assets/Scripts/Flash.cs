@@ -6,7 +6,7 @@ public class Flash : ItemBase
     {
         this.Name = "flash";
         this.Description = "Speed +8 for 10 seconds";
-        this.Type = "interactable";
+        this.Type = "powerup";
         base.Start();
     }
 }

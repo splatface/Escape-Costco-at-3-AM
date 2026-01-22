@@ -6,7 +6,7 @@ public class Hulk : ItemBase
     {
         this.Name = "hulk";
         this.Description = "Attack +6 for 10 seconds";
-        this.Type = "interactable";
+        this.Type = "powerup";
         base.Start();
     }
 }

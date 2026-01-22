@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3846454249872430486}
   - component: {fileID: -7424824967994300935}
+  - component: {fileID: -9206509563500196516}
   m_Layer: 0
   m_Name: Muscle
   m_TagString: Muscle
@@ -90,3 +91,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-9206509563500196516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155445625471387167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5026c537265eec242925a6cdf28f1794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Muscle
+  Name: 
+  Description: 
+  Type: 
+  ItemRigidBody: {fileID: 0}

@@ -6,7 +6,7 @@ public class Shoe : ItemBase
     {
         this.Name = "shoes";
         this.Description = "Speed +5 for 5 seconds";
-        this.Type = "interactable";
+        this.Type = "powerup";
         base.Start();
     }
 }

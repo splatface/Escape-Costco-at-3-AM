@@ -1417,6 +1417,7 @@ GameObject:
   - component: {fileID: 939138894}
   - component: {fileID: 939138893}
   - component: {fileID: 939138892}
+  - component: {fileID: 939138898}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1605,6 +1606,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939138898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939138891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e2704c9e7e10b4187f7f389e2ead71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
+  Bullet: {fileID: 5599069150730850812, guid: 558f82b29d984534f9e3f9cf975f85a1, type: 3}
 --- !u!1 &1032182473
 GameObject:
   m_ObjectHideFlags: 0
