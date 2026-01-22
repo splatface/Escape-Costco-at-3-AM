@@ -11,7 +11,7 @@ public class ManagerEnemy : MonoBehaviour
 
     // base variables
     private int _attackValue = 10;
-    private int _healthValue = 5;
+    private int _healthValue = 70;
     public TMP_Text HealthText;
     public Canvas HealthCanvas;
 
@@ -109,6 +109,10 @@ public class ManagerEnemy : MonoBehaviour
                 BasicAttack();
                 yield return new WaitForSeconds(4f);
             }
+            else
+            {
+                yield return null;
+            }
         }
     }
 
@@ -162,7 +166,7 @@ public class ManagerEnemy : MonoBehaviour
             _diedAlready = true;
             Vector3 position = new Vector3 (0, 0);
             Spawner.SpawnItem("RedKeyCard", position);
-            Renderer.sortingLayerName = "HideInventory";
+            Destroy(gameObject);
         }
     }
 }
