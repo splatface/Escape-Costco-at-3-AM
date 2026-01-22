@@ -12,6 +12,11 @@ public class ItemSpawner : MonoBehaviour
     public GameObject VinegarPrefab;
     public GameObject GunPrefab;
     public GameObject GasPrefab;
+    public GameObject ShoePrefab;
+    public GameObject FlashPrefab;
+    public GameObject MusclePrefab;
+    public GameObject HulkPrefab;
+    public GameObject HeartPrefab;
     private GameObject ItemSpawned;
     private SpriteRenderer ItemRender;
     public GameObject SpawnItem(string itemTag, Vector3 position)
@@ -65,6 +70,31 @@ public class ItemSpawner : MonoBehaviour
         else if (itemTag == "Gas")
         {
             ItemSpawned = Instantiate(GasPrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        else if (itemTag == "Show")
+        {
+            ItemSpawned = Instantiate(ShoePrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        else if (itemTag == "Flash")
+        {
+            ItemSpawned = Instantiate(FlashPrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        else if (itemTag == "Muscle")
+        {
+            ItemSpawned = Instantiate(MusclePrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        else if (itemTag == "Hulk")
+        {
+            ItemSpawned = Instantiate(HulkPrefab, position, transform.rotation);
+            ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
+        }
+        else if (itemTag == "Heart")
+        {
+            ItemSpawned = Instantiate(HeartPrefab, position, transform.rotation);
             ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
         }
         ItemRender.sortingLayerName = "ShowInventory";

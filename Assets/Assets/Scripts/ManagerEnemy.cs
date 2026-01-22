@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,7 +11,9 @@ public class ManagerEnemy : MonoBehaviour
 
     // base variables
     private int _attackValue = 10;
-    private int _healthValue = 5;
+    private int _healthValue = 70;
+    public TMP_Text HealthText;
+    public Canvas HealthCanvas;
 
     //variables for moving
     private bool _runMovementAgain = false;
@@ -119,6 +122,8 @@ public class ManagerEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        HealthText.text = "Manager Health: " + _healthValue;
+
         //when to call movement function
         if (_runMovementAgain == true)
         {

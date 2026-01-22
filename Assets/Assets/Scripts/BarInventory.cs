@@ -73,11 +73,12 @@ public class BarInventory : MonoBehaviour
             if (_currentItems[cursor] != null)
             {
                 string itemTag = _currentItems[cursor];
-                
+
                 Debug.Log("item: "+ itemTag);
                 Vector3 position = new Vector3 (0, 0);
-                Spawner.SpawnItem(itemTag, position);
+                GameObject itemToRemove = Spawner.SpawnItem(itemTag, position);
                 PlaceIntoInven(itemTag, "do"); // moves it to the specific position needed
+                Destroy(itemToRemove);
 
                 GameObject itemName = GameObject.FindWithTag(_currentItems[cursor]);
 
