@@ -26,6 +26,7 @@ TagManager:
   - CarrotWeapon
   - Gun
   - RoastChicken
+  - ItemSpawner
   layers:
   - Default
   - TransparentFX
