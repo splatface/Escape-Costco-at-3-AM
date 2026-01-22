@@ -17,10 +17,10 @@ public class MilkItem : ItemBase
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
     {
-      base.Name = "Milk";
+        base.Name = "Milk";
         base.Description = "Slightly spoiled.";
         base.Type = "weapon";
-        base.Start();  
+        base.Start();
     }
 
     // Update is called once per frame

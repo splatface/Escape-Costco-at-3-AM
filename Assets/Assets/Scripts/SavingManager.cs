@@ -106,17 +106,24 @@ public class SavingManager : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.shiftKey.wasPressedThisFrame && _isOpen == false) // ctrl+s = save
+        Camera mainCamera = Camera.main;
+        ScreenRenderer.worldCamera = mainCamera;
+        
+        if (Keyboard.current.shiftKey.wasPressedThisFrame)
         {
-            ScreenRenderer.sortingLayerName = "ShowInventory";
-            Debug.Log("showing");
-            _isOpen = true;
+            if (_isOpen == false) // ctrl+s = save
+            {
+                ScreenRenderer.sortingLayerName = "ShowInventory";
+                Debug.Log("showing");
+                _isOpen = true;
+            }
+            else if (_isOpen == true)
+            {
+                ScreenRenderer.sortingLayerName = "HideInventory";
+                Debug.Log("hiding");
+                _isOpen = false;
+            }
         }
-        if (Keyboard.current.escapeKey.wasPressedThisFrame && _isOpen == true)
-        {
-            _isOpen = false;
-            ScreenRenderer.sortingLayerName = "HideInventory";
-            Debug.Log("hiding");
+
         }
-    }
 }

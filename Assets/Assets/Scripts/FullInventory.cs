@@ -130,12 +130,6 @@ public class FullInventory : MonoBehaviour
         ItemDescrip.text = item.Description;
     }
 
-    //getters and setters for encapsulation
-    public string[] GetAllItems()
-    {
-        return _itemsInside;
-    }
-
     public void ShowAllInventory()
     {
         if (_isOpen == false)
@@ -157,6 +151,12 @@ public class FullInventory : MonoBehaviour
             TextRender.sortingLayerName = "HideInventory";
             DropdownCanvas.sortingLayerName = "HideInventory";
         }
+    }
+
+    //getters and setters for encapsulation
+    public string[] GetAllItems()
+    {
+        return _itemsInside;
     }
 
     public void SetAllItems(string[] allItems)
