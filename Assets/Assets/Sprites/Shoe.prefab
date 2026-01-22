@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7287708359073955563}
   - component: {fileID: 6002146923276920145}
+  - component: {fileID: 6151880342159752200}
   m_Layer: 0
   m_Name: Shoe
   m_TagString: Shoe
@@ -90,3 +91,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6151880342159752200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180697409817832960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8df858653829d94ea1c031291f69e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shoe
+  Name: 
+  Description: 
+  Type: 
+  ItemRigidBody: {fileID: 0}

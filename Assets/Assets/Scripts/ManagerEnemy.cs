@@ -11,18 +11,21 @@ public class ManagerEnemy : MonoBehaviour
 
     // base variables
     private int _attackValue = 10;
-    private int _healthValue = 70;
+    private int _healthValue = 5;
     public TMP_Text HealthText;
     public Canvas HealthCanvas;
 
     //variables for moving
     private bool _runMovementAgain = false;
+    public ItemSpawner Spawner;
+    public SpriteRenderer Renderer;
 
     //variables for attacking
     public Transform ShootPos;
     public GameObject CarrotBullet;
     public GameObject TomatoBullet;
     private bool _ultUsed = false;
+    private bool _diedAlready = false;
 
 
 
@@ -101,8 +104,11 @@ public class ManagerEnemy : MonoBehaviour
     {
         while (true)
         {
-            BasicAttack();
-            yield return new WaitForSeconds(4f);
+            if (_healthValue > 0)
+            {
+                BasicAttack();
+                yield return new WaitForSeconds(4f);
+            }
         }
     }
 
@@ -115,7 +121,6 @@ public class ManagerEnemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        NormalMovement(); // need to find a condition in update to call it on; check
         StartBasicAttack();
     }
 
@@ -147,6 +152,17 @@ public class ManagerEnemy : MonoBehaviour
             Debug.Log("continuing");
             ChargeULT();
             _ultUsed = true;
+        }
+
+        if (_healthValue <= 0 && _diedAlready == false)
+        {
+            GameObject itemSpawn = GameObject.FindWithTag("ItemSpawner");
+            Spawner = itemSpawn.GetComponent<ItemSpawner>();
+            _healthValue = 0;
+            _diedAlready = true;
+            Vector3 position = new Vector3 (0, 0);
+            Spawner.SpawnItem("RedKeyCard", position);
+            Renderer.sortingLayerName = "HideInventory";
         }
     }
 }

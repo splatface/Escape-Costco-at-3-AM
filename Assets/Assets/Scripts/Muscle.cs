@@ -6,7 +6,7 @@ public class Muscle : ItemBase
     {
         this.Name = "muscle";
         this.Description = "Attack +3 for 5 seconds";
-        this.Type = "interactable";
+        this.Type = "powerup";
         base.Start();
     }
 }

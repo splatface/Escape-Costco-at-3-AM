@@ -72,7 +72,7 @@ public class ItemSpawner : MonoBehaviour
             ItemSpawned = Instantiate(GasPrefab, position, transform.rotation);
             ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
         }
-        else if (itemTag == "Show")
+        else if (itemTag == "Shoe")
         {
             ItemSpawned = Instantiate(ShoePrefab, position, transform.rotation);
             ItemRender = ItemSpawned.GetComponent<SpriteRenderer>();
