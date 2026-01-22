@@ -14,6 +14,7 @@ public class ManagerEnemy : MonoBehaviour
     private int _healthValue = 70;
     public TMP_Text HealthText;
     public Canvas HealthCanvas;
+    public GameObject RedKeyCard;
 
     //variables for moving
     private bool _runMovementAgain = false;
@@ -126,6 +127,7 @@ public class ManagerEnemy : MonoBehaviour
     void Start()
     {
         StartBasicAttack();
+        RedKeyCard.SetActive(false);
     }
 
     // Update is called once per frame
@@ -165,7 +167,7 @@ public class ManagerEnemy : MonoBehaviour
             _healthValue = 0;
             _diedAlready = true;
             Vector3 position = new Vector3 (0, 0);
-            Spawner.SpawnItem("RedKeyCard", position);
+            RedKeyCard.SetActive(true);
             Destroy(gameObject);
         }
     }
